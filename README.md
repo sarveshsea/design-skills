@@ -41,8 +41,8 @@ memi notes list
 For local review from this checkout:
 
 ```bash
-MEMOIRE_COMMUNITY_NOTES_ROOT="$PWD" npm --prefix ../ark run check:community-notes
-MEMOIRE_COMMUNITY_NOTES_ROOT="$PWD" npm --prefix ../ark run build:community-notes-catalog
+MEMOIRE_COMMUNITY_NOTES_ROOT="$PWD" npm --prefix ../memi run check:community-notes
+MEMOIRE_COMMUNITY_NOTES_ROOT="$PWD" npm --prefix ../memi run build:community-notes-catalog
 ```
 
 ## Included starter Notes
@@ -77,6 +77,24 @@ Community Notes must include:
 
 Installs do not execute scripts from downloaded archives. Any resource files are treated as passive content until a human or agent reviews them.
 
+## Distribution proof
+
+Use this repo when submitting memi to MCP, Agent Skills, shadcn, and agent-template directories. Every submission should point at one installable Note plus a runnable CLI proof:
+
+```bash
+npm i -g @memi-design/cli
+memi notes install memoire-mcp-agent-skills --catalog https://www.memoire.cv/notes/community/catalog.v1.json
+memi mcp start --no-figma
+```
+
+Catalog health check:
+
+```bash
+curl -fsSL https://www.memoire.cv/notes/community/catalog.v1.json
+```
+
+The live catalog should contain at least the five starter Notes above. If it returns an empty `notes` array, fix `memoire.cv` before doing any outreach.
+
 ## Submit a Note
 
 1. Fork this repo.
@@ -84,7 +102,7 @@ Installs do not execute scripts from downloaded archives. Any resource files are
 3. Run validation:
 
 ```bash
-MEMOIRE_COMMUNITY_NOTES_ROOT="$PWD" npm --prefix ../ark run check:community-notes
+MEMOIRE_COMMUNITY_NOTES_ROOT="$PWD" npm --prefix ../memi run check:community-notes
 ```
 
 4. Open a pull request.
