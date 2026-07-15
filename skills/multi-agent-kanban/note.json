@@ -22,8 +22,8 @@
     {
       "file": "SKILL.md",
       "name": "Multi Agent Kanban",
-      "activateOn": "multi agent board, kanban swarm, agent coordination, durable task board",
-      "freedomLevel": "high"
+      "activateOn": "multi-agent-kanban",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

@@ -17,8 +17,8 @@
     {
       "file": "SKILL.md",
       "name": "Atomic Design",
-      "activateOn": "Atomic Design quick reference — levels, composition rules, tokens, naming",
-      "freedomLevel": "high"
+      "activateOn": "atomic-design",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

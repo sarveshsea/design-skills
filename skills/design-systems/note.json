@@ -21,8 +21,8 @@
     {
       "file": "SKILL.md",
       "name": "Design Systems",
-      "activateOn": "component-creation",
-      "freedomLevel": "high"
+      "activateOn": "design-systems",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

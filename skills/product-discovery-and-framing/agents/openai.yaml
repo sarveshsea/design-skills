@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Discovery and Framing"
+  short_description: "Frame product opportunities with evidence"
+  default_prompt: "Use $product-discovery-and-framing to frame this product opportunity and define success."

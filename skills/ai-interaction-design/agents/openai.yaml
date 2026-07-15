@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Interaction Design"
+  short_description: "Design trustworthy human-AI workflows"
+  default_prompt: "Use $ai-interaction-design to design this AI workflow with clear control, provenance, and recovery."

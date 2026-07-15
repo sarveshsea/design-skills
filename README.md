@@ -4,116 +4,136 @@
 [![Agent Skills](https://skills.sh/b/sarveshsea/design-skills)](https://skills.sh/sarveshsea/design-skills)
 [![License: MIT](https://img.shields.io/badge/license-MIT-111827.svg)](LICENSE)
 
-Practical design judgment for AI coding agents. Design Skills packages Mémoire's complete skill corpus with attributed, licensed adaptations from respected design engineers.
+Design Skills is a curated library of product-design workflows for AI coding agents. It combines portable design judgment with clearly labeled integration workflows for Figma, Mémoire, research tools, code generation, motion, and agent operations.
 
-The repository currently contains **78 installable skills** across interface craft, research, generation, Figma, agent workflows, and design-tool integrations. Every skill uses the standard `skills/<name>/SKILL.md` layout and also includes a Mémoire `note.json` manifest.
+The repository keeps three sources of truth:
 
-## Install
+- `skills/<name>/SKILL.md` contains the workflow an agent reads.
+- `registry/` contains routing, lifecycle, capability, collection, maturity, and compatibility metadata.
+- `provenance.json` contains authorship, immutable revisions, license evidence, and quarantine decisions.
 
-Install the collection with any Agent Skills-compatible client:
+`note.json` manifests and `catalog.json` are deterministic generated projections. Do not edit them directly.
 
-```bash
-npx skills@latest add sarveshsea/design-skills
-```
+## Install safely
 
-Install one skill:
-
-```bash
-npx skills@latest add sarveshsea/design-skills --skill better-ui
-npx skills@latest add sarveshsea/design-skills --skill improve-animations
-npx skills@latest add sarveshsea/design-skills --skill figma-use
-```
-
-Inspect the repository before installing:
+Inspect the available skills before installing:
 
 ```bash
-npx skills@latest add sarveshsea/design-skills --list
+npx skills@1.5.17 add sarveshsea/design-skills --list
 ```
 
-Mémoire users can install the same folders as Notes from the community catalog:
+Install only the workflow you need:
+
+```bash
+npx skills@1.5.17 add sarveshsea/design-skills --skill better-ui
+npx skills@1.5.17 add sarveshsea/design-skills --skill accessibility-audit
+```
+
+Installing the repository without `--skill` may offer or install the entire discoverable corpus, including integration-specific and internal compatibility payloads. Review [`catalog.json`](catalog.json) first. The upstream Skills CLI does not currently implement this repository's collection manifests as an installation primitive.
+
+Mémoire can consume the same folders as Notes:
 
 ```bash
 memi notes install better-ui --catalog https://www.memoire.cv/notes/community/catalog.v1.json
 ```
 
-## Start here
+## Portability
 
-| Goal | Skill |
-| --- | --- |
-| Improve an interface broadly | [`better-ui`](skills/better-ui/SKILL.md) |
-| Fix color and contrast | [`better-colors`](skills/better-colors/SKILL.md) |
-| Improve typography | [`better-typography`](skills/better-typography/SKILL.md) |
-| Review motion rigorously | [`review-animations`](skills/review-animations/SKILL.md) |
-| Audit and plan motion improvements | [`improve-animations`](skills/improve-animations/SKILL.md) |
-| Find useful animation opportunities | [`find-animation-opportunities`](skills/find-animation-opportunities/SKILL.md) |
-| Tune design values live | [`dialkit`](skills/dialkit/SKILL.md) |
-| Work directly in Figma | [`figma-use`](skills/figma-use/SKILL.md) |
-| Generate a Figma screen | [`figma-generate-design`](skills/figma-generate-design/SKILL.md) |
-| Build a design system | [`design-systems`](skills/design-systems/SKILL.md) |
-| Audit accessibility | [`accessibility-audit`](skills/accessibility-audit/SKILL.md) |
-| Turn research into a dashboard | [`dashboard-from-research`](skills/dashboard-from-research/SKILL.md) |
-| Set up Mémoire for an agent | [`memoire-design-tooling`](skills/memoire-design-tooling/SKILL.md) |
+- **Portable:** usable from supplied files, screenshots, or text without a proprietary runtime.
+- **Capability-gated:** requires a declared integration such as Figma, Docker, Linear, Notion, Remotion, or Hyperframes.
+- **Mémoire-only:** depends on the Mémoire engine or MCP surface.
+- **Quarantined:** blocked from public collections and routing when redistribution or safety evidence is unresolved.
+
+Discoverability does not imply that a client has every required tool. Check each catalog entry's `runtime.requires`, fallback, visibility, maturity, and status before use.
 
 ## Collections
 
-The folder structure stays flat for reliable discovery. Taxonomy lives in [`catalog.json`](catalog.json).
+Collections are curated navigation and policy manifests under `registry/collections/`. They do not duplicate skill payloads.
 
-### Craft · 28 skills
+<!-- GENERATED:COLLECTIONS:START -->
+| Collection | Skills | Availability | Purpose |
+| --- | ---: | --- | --- |
+| `core` | 15 | Recommended core | Recommended portable, stable design judgment for most product work. |
+| `design-systems` | 5 | Optional | Tokens, components, governance, and system architecture. |
+| `figma` | 15 | Optional | Capability-gated Figma workflows. |
+| `implementation` | 7 | Optional | Framework and design-to-code generation workflows. |
+| `memoire-operations` | 19 | Internal/optional | Mémoire-specific and agent-runtime operations. |
+| `motion-video` | 10 | Optional | Interaction motion, animation review, and product video workflows. |
+| `product-design` | 49 | Optional | Interface craft, product thinking, and design validation workflows. |
+| `research` | 9 | Optional | Evidence collection, synthesis, and evaluative research workflows. |
+<!-- GENERATED:COLLECTIONS:END -->
 
-Interface design, color, typography, motion, accessibility, mobile, design systems, tokens, Figma craft, and design critique.
+The default `core` collection is intentionally limited to public, stable, canonical, portable skills. Figma and Mémoire workflows live in capability-specific collections.
 
-`animation-craft` · `animation-vocabulary` · `apple-design` · `atomic-design` · `better-colors` · `better-typography` · `better-ui` · `component-catalog` · `design-sandbox-proof` · `design-systems` · `dialkit` · `emil-design-eng` · `figma-audit` · `figma-create-file` · `figma-design-systems` · `figma-ds-rules` · `figma-library-builder` · `figma-plugin-api` · `figma-use` · `find-animation-opportunities` · `improve-animations` · `interface-craft-gate` · `mobile-craft` · `motion-performance` · `motion-video` · `review-animations` · `token-architecture` · `ux-tenets-traps`
+## Compatibility migrations
 
-### Research · 10 skills
+Renamed or consolidated slugs remain self-contained for one compatibility release. They do not own primary routing intents or appear in collections.
 
-`accessibility-audit` · `browser-research-agent` · `competitive-intel` · `dashboard-from-research` · `data-synthesis` · `design-extract` · `design-system-reference` · `interview-research` · `usability-testing` · `web-research`
+| Historical slug | Canonical workflow |
+| --- | --- |
+| `browser-research-agent` | `web-research` |
+| `memoire-mcp-agent-skills` | `memoire-design-tooling` |
+| `design-sandbox-proof` | `memoire-design-tooling` |
+| `memoire-studio-macos` | `memoire-design-tooling` |
+| `memoire-v2-surface-map` | `memoire-design-tooling` |
+| `figma-library-builder` | `figma-generate-library` |
 
-The authoritative count and metadata live in the generated catalog; use it when this summary and the catalog differ.
+Explicit installation of a historical slug continues to work during the compatibility window. New documentation and collections use only canonical names.
 
-### Generation · 10 skills
+## Choosing a workflow
 
-Figma design and prototype generation, React Native, Flutter, Vue, Remotion, Hyperframes, Mermaid/JAM, and website-to-video workflows.
+| Goal | Start with |
+| --- | --- |
+| Improve an interface broadly | [`better-ui`](skills/better-ui/SKILL.md) |
+| Fix color or contrast | [`better-colors`](skills/better-colors/SKILL.md) |
+| Improve typography | [`better-typography`](skills/better-typography/SKILL.md) |
+| Audit accessibility | [`accessibility-audit`](skills/accessibility-audit/SKILL.md) |
+| Review a bounded animation change | [`review-animations`](skills/review-animations/SKILL.md) |
+| Plan motion improvements | [`improve-animations`](skills/improve-animations/SKILL.md) |
+| Synthesize research | [`data-synthesis`](skills/data-synthesis/SKILL.md) |
+| Work through Mémoire | [`memoire-design-tooling`](skills/memoire-design-tooling/SKILL.md) |
 
-### Connect · 30 skills
+## Provenance and trust
 
-Mémoire setup, MCP, Codex, research connectors, Figma sync, agent bridges, checkpoints, sandbox policy, secrets, scheduling, observability, and multi-agent coordination.
+Adapted material records its author, source repository, exact commit, license, and relationship in [`provenance.json`](provenance.json). The current attributed sources are:
 
-## What makes this repository trustworthy
+- Mémoire by Sarvesh Chidambaram
+- Jakub Krehel's MIT-licensed design skills
+- Emil Kowalski's MIT-licensed design-engineering skills
+- Josh Puckett's MIT-licensed DialKit repository
 
-- **Inspectable payloads.** Skills contain Markdown and passive resources. They do not run install-time scripts.
-- **Standalone validation.** CI checks folder names, frontmatter, local links, line limits, Note manifests, catalog parity, and immutable provenance.
-- **Dual compatibility.** One canonical folder works with Agent Skills and Mémoire Notes; there is no duplicated `notes/` tree.
-- **Pinned provenance.** Adaptations record author, repository, exact commit, relationship, and license in [`provenance.json`](provenance.json).
-- **Progressive disclosure.** Entrypoints stay under 500 lines; large field guides live in adjacent references.
-- **Explicit boundaries.** Paid or unlicensed sources are linked, not copied.
+Seven Figma integration entries are original link-only routers because the official MCP guide points to Figma Developer Terms without a standalone redistribution license. This repository does not include the upstream workflow prose, reference bundle, or scripts. See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
 
-Stars and install counts are useful discovery signals, not security guarantees. Review a skill before giving an agent write access to sensitive systems.
+Interface Craft is a paid Josh Puckett product without a public redistribution license. This repository does not copy its member curriculum.
 
-## Authors and sources
-
-- **Mémoire**, by Sarvesh Chidambaram: 68 first-party skills from [`sarveshsea/memi`](https://github.com/sarveshsea/memi).
-- **Jakub Krehel**: 3 MIT-licensed adaptations from [`jakubkrehel/skills`](https://github.com/jakubkrehel/skills).
-- **Emil Kowalski**: 6 MIT-licensed adaptations from [`emilkowalski/skills`](https://github.com/emilkowalski/skills).
-- **Josh Puckett**: 1 original workflow based on the MIT-licensed [`joshpuckett/dialkit`](https://github.com/joshpuckett/dialkit) repository.
-
-Interface Craft is a paid Josh Puckett product without a public redistribution license. This repository does not copy its member curriculum. See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) for the full policy and licenses.
+Stars and install counts are discovery signals, not security guarantees. Review a skill before granting an agent access to sensitive files, external services, or write-capable tools.
 
 ## Repository structure
 
 ```text
 skills/<skill>/
-├── SKILL.md       # Agent Skills entrypoint
-├── note.json      # Mémoire marketplace manifest
-└── references/    # Loaded only when the workflow needs detail
+├── SKILL.md       # Standard Agent Skills entrypoint
+├── note.json      # Generated Mémoire compatibility manifest
+└── references/    # Progressive-disclosure material
 
-catalog.json       # Generated searchable catalog
-provenance.json    # Pinned authorship and licensing record
-scripts/           # Repository validation and catalog tooling
-tests/             # Validator regression tests
+registry/skills.json          # Canonical behavioral metadata
+registry/collections/*.json   # Curated profiles
+provenance.json               # Canonical legal/source record
+catalog.json                  # Generated public catalog
+scripts/                      # Generation and validation
+tests/                        # Contract and regression tests
 ```
 
 ## Contribute
 
-Read [`CONTRIBUTING.md`](CONTRIBUTING.md) before opening a pull request. A contribution must have a bounded job, trigger-rich frontmatter, clear provenance, no unlicensed copied material, and a passing `npm run check`.
+Read [`CONTRIBUTING.md`](CONTRIBUTING.md) before opening a pull request. Every contribution needs a bounded job, explicit use and non-use conditions, concrete outputs, verification, capability requirements, collection placement, and defensible provenance.
 
-Security concerns should follow [`SECURITY.md`](SECURITY.md), not a public issue.
+Run the complete proof loop:
+
+```bash
+npm ci
+npm run check
+npx skills@1.5.17 add . --list
+```
+
+Report security issues through [`SECURITY.md`](SECURITY.md), not a public issue.

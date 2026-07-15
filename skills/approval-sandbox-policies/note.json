@@ -22,8 +22,8 @@
     {
       "file": "SKILL.md",
       "name": "Approval Sandbox Policies",
-      "activateOn": "agent approvals, sandbox mode, command allowlist, secure agent run",
-      "freedomLevel": "high"
+      "activateOn": "approval-sandbox-policies",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

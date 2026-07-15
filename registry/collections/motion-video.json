@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "motion-video",
+  "title": "Motion and Video",
+  "description": "Interaction motion, animation review, and product video workflows.",
+  "visibility": "public",
+  "defaultInstall": false,
+  "include": [
+    "animation-craft",
+    "animation-vocabulary",
+    "find-animation-opportunities",
+    "hyperframes-video",
+    "improve-animations",
+    "motion-performance",
+    "motion-video",
+    "remotion-video",
+    "review-animations",
+    "website-to-video"
+  ],
+  "dependencyPolicy": "include-required"
+}

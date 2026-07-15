@@ -1,0 +1,34 @@
+{
+  "name": "information-architecture",
+  "version": "1.0.0",
+  "description": "Organize product content, objects, navigation, search, filters, labels, and hierarchy around user mental models and retrieval tasks. Use when people cannot find, understand, or predict where information and actions belong.",
+  "author": "Sarvesh Chidambaram",
+  "category": "craft",
+  "tags": [
+    "information-architecture",
+    "taxonomy",
+    "navigation",
+    "search",
+    "filters",
+    "labels"
+  ],
+  "sourceUrls": [
+    "https://github.com/sarveshsea/design-skills"
+  ],
+  "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+  "freshnessDays": 365,
+  "skills": [
+    {
+      "file": "SKILL.md",
+      "name": "Information Architecture",
+      "activateOn": "design-information-architecture",
+      "freedomLevel": "medium"
+    }
+  ],
+  "dependencies": [],
+  "engines": {
+    "memoire": ">=2.0.0"
+  },
+  "createdAt": "2026-07-15T00:00:00.000Z",
+  "updatedAt": "2026-07-15T00:00:00.000Z"
+}

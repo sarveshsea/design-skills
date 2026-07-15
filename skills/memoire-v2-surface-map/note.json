@@ -27,8 +27,8 @@
     {
       "file": "SKILL.md",
       "name": "Memoire V2 Surface Map",
-      "activateOn": "memi setup, memoire surface map, package launch, distribution links, agent ecosystem",
-      "freedomLevel": "read-only"
+      "activateOn": "memoire-v2-surface-map",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

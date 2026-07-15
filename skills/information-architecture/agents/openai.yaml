@@ -1,0 +1,4 @@
+interface:
+  display_name: "Information Architecture"
+  short_description: "Structure navigation, labels, and retrieval"
+  default_prompt: "Use $information-architecture to organize this product content and validate its navigation."

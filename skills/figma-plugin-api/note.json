@@ -1,7 +1,7 @@
 {
   "name": "figma-plugin-api",
   "version": "1.0.0",
-  "description": "Figma Plugin API reference — gotchas, patterns, variables, components, text/effect styles, validation and error recovery",
+  "description": "Route exact Figma Plugin API questions to current official typings and developer documentation without redistributing upstream reference material. Use when an implementation depends on verified node, variable, component, style, or editor API behavior.",
   "author": "Sarvesh Chidambaram",
   "category": "craft",
   "tags": [
@@ -12,7 +12,8 @@
     "gotchas"
   ],
   "sourceUrls": [
-    "https://github.com/sarveshsea/memi"
+    "https://github.com/figma/mcp-server-guide",
+    "https://developers.figma.com/"
   ],
   "lastResearchedAt": "2026-07-15T00:00:00.000Z",
   "freshnessDays": 90,
@@ -20,8 +21,8 @@
     {
       "file": "SKILL.md",
       "name": "Figma Plugin Api",
-      "activateOn": "figma-canvas-operation",
-      "freedomLevel": "reference"
+      "activateOn": "figma-plugin-api",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

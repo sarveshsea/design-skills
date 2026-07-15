@@ -1,7 +1,7 @@
 {
   "name": "figma-design-systems",
   "version": "1.0.0",
-  "description": "Working with Design Systems in Figma — components, variables, text styles, effect styles, creation and usage patterns",
+  "description": "Route Figma-specific component, variable, style, and library questions to Figma's current official design-system guidance without reproducing upstream material. Use as a reference when exact Figma behavior matters.",
   "author": "Sarvesh Chidambaram",
   "category": "craft",
   "tags": [
@@ -13,7 +13,8 @@
     "styles"
   ],
   "sourceUrls": [
-    "https://github.com/sarveshsea/memi"
+    "https://github.com/figma/mcp-server-guide",
+    "https://developers.figma.com/"
   ],
   "lastResearchedAt": "2026-07-15T00:00:00.000Z",
   "freshnessDays": 90,
@@ -21,8 +22,8 @@
     {
       "file": "SKILL.md",
       "name": "Figma Design Systems",
-      "activateOn": "design-creation",
-      "freedomLevel": "reference"
+      "activateOn": "figma-design-systems",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

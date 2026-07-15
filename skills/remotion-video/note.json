@@ -21,8 +21,8 @@
     {
       "file": "SKILL.md",
       "name": "Remotion Video",
-      "activateOn": "motion-video",
-      "freedomLevel": "high"
+      "activateOn": "remotion-video",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

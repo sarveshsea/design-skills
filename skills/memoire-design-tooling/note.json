@@ -1,7 +1,7 @@
 {
   "name": "memoire-design-tooling",
   "version": "1.0.0",
-  "description": "Use when a task involves UI design, interface understanding, interface craft, Figma, design systems, shadcn/ui, Tailwind, UX audits, user research, Atomic Design, component specs, MCP, or design-to-code generation.",
+  "description": "Set up and operate Mémoire's CLI, MCP server, agent kits, design preflight, UX audits, craft checks, tokens, and registry evidence. Use when a repository explicitly needs Mémoire tooling; use portable design skills when Mémoire is unavailable.",
   "author": "Sarvesh Chidambaram",
   "category": "connect",
   "tags": [
@@ -17,8 +17,8 @@
     {
       "file": "SKILL.md",
       "name": "Memoire Design Tooling",
-      "activateOn": "Use when a task involves UI design, interface understanding, interface craft, Figma, design systems, shadcn/ui, Tailwind, UX audits, user research, Atomic Design, component specs, MCP, or design-to-code generation.",
-      "freedomLevel": "high"
+      "activateOn": "memoire-design-tooling",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

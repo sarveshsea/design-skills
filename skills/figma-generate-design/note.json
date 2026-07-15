@@ -17,8 +17,8 @@
     {
       "file": "SKILL.md",
       "name": "Figma Generate Design",
-      "activateOn": "Create new Figma screens and pages using existing components, variables, and design system",
-      "freedomLevel": "high"
+      "activateOn": "figma-generate-design",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

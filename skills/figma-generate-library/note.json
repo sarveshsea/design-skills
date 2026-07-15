@@ -17,8 +17,8 @@
     {
       "file": "SKILL.md",
       "name": "Figma Generate Library",
-      "activateOn": "Generate Figma component library from React/shadcn codebase with Code Connect parity",
-      "freedomLevel": "high"
+      "activateOn": "figma-generate-library",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

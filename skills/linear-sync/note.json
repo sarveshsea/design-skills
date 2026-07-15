@@ -21,8 +21,8 @@
     {
       "file": "SKILL.md",
       "name": "Linear Sync",
-      "activateOn": "always",
-      "freedomLevel": "high"
+      "activateOn": "linear-sync",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

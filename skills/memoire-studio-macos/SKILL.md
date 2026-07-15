@@ -5,6 +5,8 @@ description: Connect the Tauri/Rust macOS Studio app to the CLI, MCP, receipts, 
 
 # Memoire Studio macOS
 
+> Deprecated compatibility slug. Use `memoire-design-tooling` for current Studio, CLI, MCP, and artifact verification.
+
 Use this Note when a task needs the macOS Studio app linked back to the memi CLI and package surfaces.
 
 ## Positioning

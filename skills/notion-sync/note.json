@@ -21,8 +21,8 @@
     {
       "file": "SKILL.md",
       "name": "Notion Sync",
-      "activateOn": "always",
-      "freedomLevel": "high"
+      "activateOn": "notion-sync",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

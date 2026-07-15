@@ -20,8 +20,8 @@
     {
       "file": "SKILL.md",
       "name": "Competitive Intel",
-      "activateOn": "research-to-dashboard",
-      "freedomLevel": "high"
+      "activateOn": "competitive-intel",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

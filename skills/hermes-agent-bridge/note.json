@@ -22,8 +22,8 @@
     {
       "file": "SKILL.md",
       "name": "Hermes Agent Bridge",
-      "activateOn": "hermes agent setup, Hermes CLI delegation, skills preload, worktree agent run",
-      "freedomLevel": "high"
+      "activateOn": "hermes-agent-bridge",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

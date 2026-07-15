@@ -21,8 +21,8 @@
     {
       "file": "SKILL.md",
       "name": "Vue Gen",
-      "activateOn": "component-creation",
-      "freedomLevel": "high"
+      "activateOn": "vue-gen",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

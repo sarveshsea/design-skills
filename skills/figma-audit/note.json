@@ -17,8 +17,8 @@
     {
       "file": "SKILL.md",
       "name": "Figma Audit",
-      "activateOn": "Audit Figma file for design system consistency, accessibility, token adoption, Code Connect coverage",
-      "freedomLevel": "high"
+      "activateOn": "figma-audit",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

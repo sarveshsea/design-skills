@@ -1,0 +1,34 @@
+{
+  "name": "design-measurement-and-experimentation",
+  "version": "1.0.0",
+  "description": "Connect design decisions to measurable outcomes through metric trees, behavioral instrumentation, guardrails, experiment plans, and post-launch reviews. Use when a team must determine whether a design worked rather than whether it shipped.",
+  "author": "Sarvesh Chidambaram",
+  "category": "research",
+  "tags": [
+    "measurement",
+    "experimentation",
+    "metrics",
+    "instrumentation",
+    "guardrails",
+    "analysis"
+  ],
+  "sourceUrls": [
+    "https://github.com/sarveshsea/design-skills"
+  ],
+  "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+  "freshnessDays": 365,
+  "skills": [
+    {
+      "file": "SKILL.md",
+      "name": "Design Measurement and Experimentation",
+      "activateOn": "measure-design-outcomes",
+      "freedomLevel": "medium"
+    }
+  ],
+  "dependencies": [],
+  "engines": {
+    "memoire": ">=2.0.0"
+  },
+  "createdAt": "2026-07-15T00:00:00.000Z",
+  "updatedAt": "2026-07-15T00:00:00.000Z"
+}

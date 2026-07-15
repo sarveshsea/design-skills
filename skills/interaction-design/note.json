@@ -1,0 +1,34 @@
+{
+  "name": "interaction-design",
+  "version": "1.0.0",
+  "description": "Design complete product workflows across states, inputs, feedback, permissions, interruptions, errors, undo, and recovery. Use when a feature needs behavioral structure beyond static screens; use visual craft skills only after the interaction model is coherent.",
+  "author": "Sarvesh Chidambaram",
+  "category": "craft",
+  "tags": [
+    "interaction-design",
+    "state-models",
+    "flows",
+    "feedback",
+    "recovery",
+    "accessibility"
+  ],
+  "sourceUrls": [
+    "https://github.com/sarveshsea/design-skills"
+  ],
+  "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+  "freshnessDays": 365,
+  "skills": [
+    {
+      "file": "SKILL.md",
+      "name": "Interaction Design",
+      "activateOn": "design-product-interaction",
+      "freedomLevel": "medium"
+    }
+  ],
+  "dependencies": [],
+  "engines": {
+    "memoire": ">=2.0.0"
+  },
+  "createdAt": "2026-07-15T00:00:00.000Z",
+  "updatedAt": "2026-07-15T00:00:00.000Z"
+}

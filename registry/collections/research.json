@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "research",
+  "title": "Research",
+  "description": "Evidence collection, synthesis, and evaluative research workflows.",
+  "visibility": "public",
+  "defaultInstall": false,
+  "include": [
+    "competitive-intel",
+    "dashboard-from-research",
+    "data-synthesis",
+    "design-measurement-and-experimentation",
+    "interview-research",
+    "product-discovery-and-framing",
+    "survey-connect",
+    "usability-testing",
+    "web-research"
+  ],
+  "dependencyPolicy": "include-required"
+}

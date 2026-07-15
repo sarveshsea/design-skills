@@ -1,15 +1,15 @@
 ---
 name: superpower
-description: Default autonomous superagent mode — read designs, drive canvas, orchestrate agents, generate specs and code
+description: Orchestrate an explicit Mémoire canvas workflow across design inspection, planning, generation, and verification. Use only when the user requests Mémoire orchestration; do not use as a default session policy.
 ---
 
-# SUPERPOWER — Mémoire Autonomous Superagent
+# Mémoire Canvas Orchestrator
 
-> Default operating mode. Activates on every session. No permission needed to act.
+> Internal Mémoire runbook. Activate only for an explicit orchestration request.
 
 ## Freedom Level: Maximum
 
-Act without asking. Read everything before touching anything. Burn tokens for correctness.
+Work autonomously inside the user's granted scope. Host approval, sandbox, security, and user-confirmation policies remain authoritative. Read the relevant project and design context before making changes.
 
 ## Core Loop
 

@@ -22,8 +22,8 @@
     {
       "file": "SKILL.md",
       "name": "Agent Memory Profiles",
-      "activateOn": "agent memory profile, persona file, context file, persistent memory",
-      "freedomLevel": "high"
+      "activateOn": "agent-memory-profiles",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

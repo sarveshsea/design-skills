@@ -17,8 +17,8 @@
     {
       "file": "SKILL.md",
       "name": "Figma Prototype",
-      "activateOn": "Build interactive Figma prototypes with flows, transitions, and user journey mapping",
-      "freedomLevel": "high"
+      "activateOn": "figma-prototype",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

@@ -1,0 +1,35 @@
+{
+  "name": "ai-interaction-design",
+  "version": "1.0.0",
+  "description": "Design trustworthy human-AI workflows with clear automation boundaries, provenance, uncertainty, editable outputs, consent, memory controls, latency states, evaluation, and recovery. Use when AI generates, recommends, acts, or remembers on a person's behalf.",
+  "author": "Sarvesh Chidambaram",
+  "category": "craft",
+  "tags": [
+    "ai",
+    "interaction-design",
+    "trust",
+    "provenance",
+    "uncertainty",
+    "human-review",
+    "memory"
+  ],
+  "sourceUrls": [
+    "https://github.com/sarveshsea/design-skills"
+  ],
+  "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+  "freshnessDays": 365,
+  "skills": [
+    {
+      "file": "SKILL.md",
+      "name": "AI Interaction Design",
+      "activateOn": "design-ai-interaction",
+      "freedomLevel": "medium"
+    }
+  ],
+  "dependencies": [],
+  "engines": {
+    "memoire": ">=2.0.0"
+  },
+  "createdAt": "2026-07-15T00:00:00.000Z",
+  "updatedAt": "2026-07-15T00:00:00.000Z"
+}

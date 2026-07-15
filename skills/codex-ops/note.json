@@ -21,8 +21,8 @@
     {
       "file": "SKILL.md",
       "name": "Codex Ops",
-      "activateOn": "always",
-      "freedomLevel": "high"
+      "activateOn": "codex-ops",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

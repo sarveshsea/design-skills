@@ -21,8 +21,8 @@
     {
       "file": "SKILL.md",
       "name": "Motion Performance",
-      "activateOn": "motion-video",
-      "freedomLevel": "high"
+      "activateOn": "motion-performance",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

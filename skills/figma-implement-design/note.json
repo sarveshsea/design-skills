@@ -1,7 +1,7 @@
 {
   "name": "figma-implement-design",
   "version": "1.0.0",
-  "description": "Figma-to-code implementation — extract design context, map tokens, generate production-ready components with 1:1 visual parity",
+  "description": "Route Figma-to-code implementation to Figma's current official MCP workflow while preserving repository conventions and independent verification. Use when a supplied Figma selection must become production code.",
   "author": "Sarvesh Chidambaram",
   "category": "generate",
   "tags": [
@@ -12,7 +12,8 @@
     "visual-parity"
   ],
   "sourceUrls": [
-    "https://github.com/sarveshsea/memi"
+    "https://github.com/figma/mcp-server-guide",
+    "https://developers.figma.com/"
   ],
   "lastResearchedAt": "2026-07-15T00:00:00.000Z",
   "freshnessDays": 90,
@@ -20,8 +21,8 @@
     {
       "file": "SKILL.md",
       "name": "Figma Implement Design",
-      "activateOn": "component-creation",
-      "freedomLevel": "high"
+      "activateOn": "figma-implement-design",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

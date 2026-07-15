@@ -23,8 +23,8 @@
     {
       "file": "SKILL.md",
       "name": "Hyperframes Video",
-      "activateOn": "motion-video",
-      "freedomLevel": "high"
+      "activateOn": "hyperframes-video",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

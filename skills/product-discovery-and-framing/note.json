@@ -1,0 +1,33 @@
+{
+  "name": "product-discovery-and-framing",
+  "version": "1.0.0",
+  "description": "Frame product opportunities from user, business, technical, and market evidence into testable problem statements, priorities, risks, and success criteria. Use before solution design when the team is unsure what problem to solve or why it matters.",
+  "author": "Sarvesh Chidambaram",
+  "category": "research",
+  "tags": [
+    "product-discovery",
+    "problem-framing",
+    "opportunities",
+    "hypotheses",
+    "success-criteria"
+  ],
+  "sourceUrls": [
+    "https://github.com/sarveshsea/design-skills"
+  ],
+  "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+  "freshnessDays": 365,
+  "skills": [
+    {
+      "file": "SKILL.md",
+      "name": "Product Discovery and Framing",
+      "activateOn": "frame-product-opportunity",
+      "freedomLevel": "medium"
+    }
+  ],
+  "dependencies": [],
+  "engines": {
+    "memoire": ">=2.0.0"
+  },
+  "createdAt": "2026-07-15T00:00:00.000Z",
+  "updatedAt": "2026-07-15T00:00:00.000Z"
+}

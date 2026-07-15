@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "design-systems",
+  "title": "Design Systems",
+  "description": "Tokens, components, governance, and system architecture.",
+  "visibility": "public",
+  "defaultInstall": false,
+  "include": [
+    "atomic-design",
+    "component-catalog",
+    "design-system-reference",
+    "design-systems",
+    "token-architecture"
+  ],
+  "dependencyPolicy": "include-required"
+}

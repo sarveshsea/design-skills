@@ -22,8 +22,8 @@
     {
       "file": "SKILL.md",
       "name": "Secure Secrets For Agents",
-      "activateOn": "agent secret, env key, credential setup, redaction, api key handling",
-      "freedomLevel": "high"
+      "activateOn": "secure-secrets-for-agents",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

@@ -22,8 +22,8 @@
     {
       "file": "SKILL.md",
       "name": "Model Router Diagnostics",
-      "activateOn": "model router, provider auth, quota check, fallback model, reasoning setting",
-      "freedomLevel": "high"
+      "activateOn": "model-router-diagnostics",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

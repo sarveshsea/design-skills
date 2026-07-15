@@ -22,8 +22,8 @@
     {
       "file": "SKILL.md",
       "name": "MCP Server Studio",
-      "activateOn": "MCP server, expose Studio tools, connect external agent to Memoire",
-      "freedomLevel": "high"
+      "activateOn": "mcp-server-studio",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

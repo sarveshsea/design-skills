@@ -25,13 +25,11 @@
     {
       "file": "SKILL.md",
       "name": "Interface Craft Gate",
-      "activateOn": "interface craft, visual polish, design review, screenshot critique, UI polish, craft audit",
-      "freedomLevel": "high"
+      "activateOn": "interface-craft-gate",
+      "freedomLevel": "low"
     }
   ],
-  "dependencies": [
-    "memoire-v2-surface-map"
-  ],
+  "dependencies": [],
   "engines": {
     "memoire": ">=2.0.0"
   },

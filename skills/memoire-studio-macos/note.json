@@ -24,13 +24,13 @@
     {
       "file": "SKILL.md",
       "name": "Memoire Studio Macos",
-      "activateOn": "macOS app, memi studio, tauri app, rust app, supervised agent run, product design workbench",
-      "freedomLevel": "read-only"
+      "activateOn": "memoire-studio-macos",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [
     "memoire-v2-surface-map",
-    "memoire-mcp-agent-skills"
+    "memoire-design-tooling"
   ],
   "engines": {
     "memoire": ">=2.0.0"

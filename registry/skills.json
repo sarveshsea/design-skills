@@ -1,0 +1,5202 @@
+{
+  "schemaVersion": 2,
+  "skills": [
+    {
+      "name": "accessibility-audit",
+      "displayName": "Accessibility Audit",
+      "type": "workflow",
+      "domains": [
+        "product",
+        "interaction",
+        "accessibility"
+      ],
+      "lifecycle": [
+        "validate"
+      ],
+      "actions": [
+        "audit"
+      ],
+      "surfaces": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "accessibility-audit"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Audit supplied code and artifacts, and label runtime checks that could not be executed."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "core",
+        "product-design"
+      ],
+      "legacyCategory": "research",
+      "version": "2.0.0",
+      "tags": [
+        "accessibility",
+        "wcag",
+        "a11y",
+        "screen-reader",
+        "color-contrast",
+        "keyboard-nav",
+        "aria",
+        "cognitive",
+        "focus-management",
+        "touch-targets",
+        "reduced-motion",
+        "forms"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-03-26T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "agent-memory-profiles",
+      "displayName": "Agent Memory Profiles",
+      "type": "workflow",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "agent-memory-profiles"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "legacyCategory": "connect",
+      "version": "0.1.0",
+      "tags": [
+        "memory",
+        "profiles",
+        "persona",
+        "context",
+        "project"
+      ],
+      "sourceUrls": [
+        "https://github.com/nousresearch/hermes-agent",
+        "https://hermes-agent.nousresearch.com/docs/reference/skills-catalog/",
+        "https://docs.openclaw.ai/cli"
+      ],
+      "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+      "freshnessDays": 60,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "agent-messaging-gateway",
+      "displayName": "Agent Messaging Gateway",
+      "type": "workflow",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "agent-messaging-gateway"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "legacyCategory": "connect",
+      "version": "0.1.0",
+      "tags": [
+        "gateway",
+        "messaging",
+        "telegram",
+        "discord",
+        "slack"
+      ],
+      "sourceUrls": [
+        "https://github.com/nousresearch/hermes-agent",
+        "https://hermes-agent.nousresearch.com/docs/user-guide/cli",
+        "https://docs.openclaw.ai/cli"
+      ],
+      "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+      "freshnessDays": 30,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "agent-session-checkpoints",
+      "displayName": "Agent Session Checkpoints",
+      "type": "workflow",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "agent-session-checkpoints"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "legacyCategory": "connect",
+      "version": "0.1.0",
+      "tags": [
+        "sessions",
+        "checkpoints",
+        "rollback",
+        "resume",
+        "history"
+      ],
+      "sourceUrls": [
+        "https://hermes-agent.nousresearch.com/docs/user-guide/cli",
+        "https://github.com/nousresearch/hermes-agent",
+        "https://docs.openclaw.ai/cli"
+      ],
+      "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+      "freshnessDays": 60,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "agent-skill-migration",
+      "displayName": "Agent Skill Migration",
+      "type": "workflow",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "agent-skill-migration"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "legacyCategory": "connect",
+      "version": "0.1.0",
+      "tags": [
+        "skills",
+        "migration",
+        "memory",
+        "codex",
+        "claude"
+      ],
+      "sourceUrls": [
+        "https://github.com/nousresearch/hermes-agent",
+        "https://hermes-agent.nousresearch.com/docs/reference/skills-catalog/",
+        "https://docs.openclaw.ai/cli"
+      ],
+      "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+      "freshnessDays": 30,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "type": "workflow",
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use supplied artifacts and document unavailable evidence or validation."
+      },
+      "dependencies": [],
+      "version": "1.0.0",
+      "sourceUrls": [
+        "https://github.com/sarveshsea/design-skills"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 365,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "name": "ai-interaction-design",
+      "displayName": "AI Interaction Design",
+      "lifecycle": [
+        "design",
+        "validate"
+      ],
+      "domains": [
+        "product",
+        "interaction",
+        "content"
+      ],
+      "actions": [
+        "create",
+        "audit"
+      ],
+      "surfaces": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "routing": {
+        "intents": [
+          "design-ai-interaction"
+        ],
+        "role": "primary",
+        "excludes": [
+          "interaction-design"
+        ]
+      },
+      "related": [
+        "interaction-design",
+        "content-design",
+        "design-measurement-and-experimentation"
+      ],
+      "collectionIds": [
+        "core",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "tags": [
+        "ai",
+        "interaction-design",
+        "trust",
+        "provenance",
+        "uncertainty",
+        "human-review",
+        "memory"
+      ],
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "animation-craft",
+      "displayName": "Animation Craft",
+      "type": "workflow",
+      "domains": [
+        "motion"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "animation-craft"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [
+        "remotion-video",
+        "hyperframes-video",
+        "motion-performance"
+      ],
+      "related": [],
+      "collectionIds": [
+        "motion-video",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "animation",
+        "motion",
+        "framer-motion",
+        "micro-interactions",
+        "transitions",
+        "choreography"
+      ],
+      "sourceUrls": [
+        "https://www.remotion.dev/docs/studio",
+        "https://hyperframes.mintlify.app/packages/cli"
+      ],
+      "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-03-28T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "animation-vocabulary",
+      "displayName": "Animation Vocabulary",
+      "type": "reference",
+      "domains": [
+        "motion"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "reference"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "animation-vocabulary"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "motion-video",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "craft",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/emilkowalski/skills"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "high"
+    },
+    {
+      "name": "apple-design",
+      "displayName": "Apple Design",
+      "type": "workflow",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "apple-design"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "craft",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/emilkowalski/skills"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "apple-desktop-automation",
+      "displayName": "Apple Desktop Automation",
+      "type": "workflow",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "beta",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "apple-desktop-automation"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "product-design"
+      ],
+      "legacyCategory": "connect",
+      "version": "0.1.0",
+      "tags": [
+        "macos",
+        "apple",
+        "desktop",
+        "permissions",
+        "automation"
+      ],
+      "sourceUrls": [
+        "https://support.apple.com/guide/shortcuts/welcome/mac",
+        "https://support.apple.com/guide/terminal/welcome/mac",
+        "https://hermes-agent.nousresearch.com/docs/reference/skills-catalog/"
+      ],
+      "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+      "freshnessDays": 60,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "approval-sandbox-policies",
+      "displayName": "Approval Sandbox Policies",
+      "type": "workflow",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "approval-sandbox-policies"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "legacyCategory": "connect",
+      "version": "0.1.0",
+      "tags": [
+        "approvals",
+        "sandbox",
+        "allowlist",
+        "security",
+        "filesystem"
+      ],
+      "sourceUrls": [
+        "https://docs.openclaw.ai/cli",
+        "https://github.com/nousresearch/hermes-agent",
+        "https://developers.openai.com/codex/cli"
+      ],
+      "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+      "freshnessDays": 30,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "atomic-design",
+      "displayName": "Atomic Design",
+      "type": "workflow",
+      "domains": [
+        "systems"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "atomic-design"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "design-systems",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "craft",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "better-colors",
+      "displayName": "Better Colors",
+      "type": "workflow",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "better-colors"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "core",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "craft",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/jakubkrehel/skills"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "better-typography",
+      "displayName": "Better Typography",
+      "type": "workflow",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "better-typography"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "core",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "craft",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/jakubkrehel/skills"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "better-ui",
+      "displayName": "Better UI",
+      "type": "workflow",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "better-ui"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "core",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "craft",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/jakubkrehel/skills"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "browser-research-agent",
+      "displayName": "Browser Research Agent",
+      "type": "workflow",
+      "domains": [
+        "research",
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "discover",
+        "validate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "deprecated",
+      "visibility": "public",
+      "status": "deprecated",
+      "routing": {
+        "intents": [
+          "browser-research-agent"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [],
+      "legacyCategory": "research",
+      "version": "0.1.0",
+      "tags": [
+        "browser",
+        "research",
+        "citations",
+        "evidence",
+        "web"
+      ],
+      "sourceUrls": [
+        "https://developers.openai.com/codex/use-cases",
+        "https://github.com/nousresearch/hermes-agent",
+        "https://docs.openclaw.ai/cli"
+      ],
+      "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+      "freshnessDays": 30,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "replacement": "web-research",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "codex-ops",
+      "displayName": "Codex Ops",
+      "type": "workflow",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "codex-ops"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "legacyCategory": "connect",
+      "version": "1.0.0",
+      "tags": [
+        "codex",
+        "claude",
+        "json",
+        "git",
+        "review",
+        "memory"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-03-27T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "competitive-intel",
+      "displayName": "Competitive Intel",
+      "type": "workflow",
+      "domains": [
+        "research"
+      ],
+      "lifecycle": [
+        "discover",
+        "validate"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "competitive-intel"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "research",
+        "product-design"
+      ],
+      "legacyCategory": "research",
+      "version": "1.0.0",
+      "tags": [
+        "competitive-analysis",
+        "market-research",
+        "benchmarking",
+        "ux-audit",
+        "feature-matrix"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-03-26T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "component-catalog",
+      "displayName": "Component Catalog",
+      "type": "reference",
+      "domains": [
+        "systems"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "reference"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "component-catalog"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "design-systems",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "craft",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "high"
+    },
+    {
+      "type": "workflow",
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use supplied artifacts and document unavailable evidence or validation."
+      },
+      "dependencies": [],
+      "version": "1.0.0",
+      "sourceUrls": [
+        "https://github.com/sarveshsea/design-skills"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 365,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "name": "content-design",
+      "displayName": "Content Design",
+      "lifecycle": [
+        "define",
+        "design"
+      ],
+      "domains": [
+        "product",
+        "content"
+      ],
+      "actions": [
+        "create",
+        "review"
+      ],
+      "surfaces": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "routing": {
+        "intents": [
+          "design-product-content"
+        ],
+        "role": "primary",
+        "excludes": [
+          "information-architecture"
+        ]
+      },
+      "related": [
+        "information-architecture",
+        "interaction-design",
+        "ai-interaction-design"
+      ],
+      "collectionIds": [
+        "core",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "tags": [
+        "content-design",
+        "ux-writing",
+        "microcopy",
+        "errors",
+        "empty-states",
+        "localization"
+      ],
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "cron-agent-workflows",
+      "displayName": "Cron Agent Workflows",
+      "type": "workflow",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "cron-agent-workflows"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "legacyCategory": "connect",
+      "version": "0.1.0",
+      "tags": [
+        "cron",
+        "automation",
+        "scheduler",
+        "reports",
+        "monitoring"
+      ],
+      "sourceUrls": [
+        "https://github.com/nousresearch/hermes-agent",
+        "https://docs.openclaw.ai/cli",
+        "https://developers.openai.com/codex/use-cases"
+      ],
+      "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+      "freshnessDays": 60,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "dashboard-from-research",
+      "displayName": "Dashboard From Research",
+      "type": "workflow",
+      "domains": [
+        "research"
+      ],
+      "lifecycle": [
+        "discover",
+        "validate"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "dashboard-from-research"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "research",
+        "product-design"
+      ],
+      "legacyCategory": "research",
+      "version": "1.0.0",
+      "tags": [
+        "research",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "data-synthesis",
+      "displayName": "Data Synthesis",
+      "type": "workflow",
+      "domains": [
+        "research"
+      ],
+      "lifecycle": [
+        "discover",
+        "validate"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "data-synthesis"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "core",
+        "research",
+        "product-design"
+      ],
+      "legacyCategory": "research",
+      "version": "1.0.0",
+      "tags": [
+        "data-synthesis",
+        "qualitative",
+        "quantitative",
+        "thematic-analysis",
+        "affinity-mapping",
+        "insights"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-03-28T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "design-extract",
+      "displayName": "Design Extract",
+      "type": "workflow",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "design-extract"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "product-design"
+      ],
+      "legacyCategory": "research",
+      "version": "1.0.0",
+      "tags": [
+        "research",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "type": "workflow",
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use supplied artifacts and document unavailable evidence or validation."
+      },
+      "dependencies": [],
+      "version": "1.0.0",
+      "sourceUrls": [
+        "https://github.com/sarveshsea/design-skills"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 365,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "name": "design-measurement-and-experimentation",
+      "displayName": "Design Measurement and Experimentation",
+      "lifecycle": [
+        "validate",
+        "measure"
+      ],
+      "domains": [
+        "product",
+        "research"
+      ],
+      "actions": [
+        "analyze"
+      ],
+      "surfaces": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "routing": {
+        "intents": [
+          "measure-design-outcomes"
+        ],
+        "role": "primary",
+        "excludes": [
+          "usability-testing"
+        ]
+      },
+      "related": [
+        "product-discovery-and-framing",
+        "usability-testing",
+        "data-synthesis"
+      ],
+      "collectionIds": [
+        "core",
+        "product-design",
+        "research"
+      ],
+      "legacyCategory": "research",
+      "tags": [
+        "measurement",
+        "experimentation",
+        "metrics",
+        "instrumentation",
+        "guardrails",
+        "analysis"
+      ],
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "design-sandbox-proof",
+      "displayName": "Design Sandbox Proof",
+      "type": "internal-runbook",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "deprecated",
+      "visibility": "internal",
+      "status": "deprecated",
+      "routing": {
+        "intents": [
+          "design-sandbox-proof"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "memoire-only",
+        "requires": [
+          "memoire.engine"
+        ],
+        "optional": [
+          "memoire.mcp"
+        ],
+        "fallback": "Install Mémoire or use the nearest portable design skill."
+      },
+      "dependencies": [
+        "memoire-v2-surface-map",
+        "interface-craft-gate"
+      ],
+      "related": [],
+      "collectionIds": [],
+      "legacyCategory": "craft",
+      "version": "2.0.0",
+      "tags": [
+        "design-sandbox",
+        "proof-repo",
+        "nextjs",
+        "tailwind",
+        "shadcn",
+        "mcp",
+        "agent-skills",
+        "interface-craft"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/design-sandbox",
+        "https://github.com/sarveshsea/memi",
+        "https://www.npmjs.com/package/@memi-design/cli"
+      ],
+      "lastResearchedAt": "2026-07-04T00:00:00.000Z",
+      "freshnessDays": 30,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-04T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low",
+      "replacement": "memoire-design-tooling"
+    },
+    {
+      "name": "design-system-reference",
+      "displayName": "Design System Reference",
+      "type": "reference",
+      "domains": [
+        "systems"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "reference"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "design-system-reference"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "design-systems",
+        "product-design"
+      ],
+      "legacyCategory": "research",
+      "version": "1.0.0",
+      "tags": [
+        "research",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "high"
+    },
+    {
+      "name": "design-systems",
+      "displayName": "Design Systems",
+      "type": "workflow",
+      "domains": [
+        "systems"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "design-systems"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "core",
+        "design-systems",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "design-system",
+        "tokens",
+        "governance",
+        "theming",
+        "component-api",
+        "versioning"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-03-26T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "dialkit",
+      "displayName": "Dialkit",
+      "type": "workflow",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "dialkit"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "craft",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/joshpuckett/dialkit"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "docker-environments",
+      "displayName": "Docker Environments",
+      "type": "workflow",
+      "domains": [
+        "implementation"
+      ],
+      "lifecycle": [
+        "deliver"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "code"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "docker-environments"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "docker.runtime"
+        ],
+        "optional": [],
+        "fallback": "Provide a static environment specification without running containers.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "implementation"
+      ],
+      "legacyCategory": "connect",
+      "version": "1.0.0",
+      "tags": [
+        "docker",
+        "container",
+        "ci-cd",
+        "devcontainer",
+        "mcp",
+        "headless",
+        "multi-agent",
+        "compose"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-04-06T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "emil-design-eng",
+      "displayName": "Emil Design Eng",
+      "type": "reference",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "emil-design-eng"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "craft",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/emilkowalski/skills"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "high"
+    },
+    {
+      "name": "figma-audit",
+      "displayName": "Figma Audit",
+      "type": "workflow",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "audit",
+        "review"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-audit"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "craft",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "figma-code-connect",
+      "displayName": "Figma Code Connect",
+      "type": "router",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "integrate"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-code-connect"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma"
+      ],
+      "legacyCategory": "connect",
+      "version": "1.0.0",
+      "tags": [
+        "figma",
+        "code-connect",
+        "component-mapping",
+        "design-system"
+      ],
+      "sourceUrls": [
+        "https://github.com/figma/mcp-server-guide",
+        "https://developers.figma.com/"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=1.0.0"
+      },
+      "createdAt": "2026-03-28T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "figma-create-file",
+      "displayName": "Figma Create File",
+      "type": "router",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-create-file"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "figma",
+        "file-creation",
+        "figjam",
+        "scaffold"
+      ],
+      "sourceUrls": [
+        "https://github.com/figma/mcp-server-guide",
+        "https://developers.figma.com/"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=1.0.0"
+      },
+      "createdAt": "2026-03-28T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "figma-design-systems",
+      "displayName": "Figma Design Systems",
+      "type": "router",
+      "domains": [
+        "systems"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "reference"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-design-systems"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "figma",
+        "design-systems",
+        "variables",
+        "components",
+        "tokens",
+        "styles"
+      ],
+      "sourceUrls": [
+        "https://github.com/figma/mcp-server-guide",
+        "https://developers.figma.com/"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=1.0.0"
+      },
+      "createdAt": "2026-03-28T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "figma-ds-rules",
+      "displayName": "Figma Ds Rules",
+      "type": "router",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-ds-rules"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "figma",
+        "design-system",
+        "agent-rules",
+        "conventions",
+        "codegen"
+      ],
+      "sourceUrls": [
+        "https://github.com/figma/mcp-server-guide",
+        "https://developers.figma.com/"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=1.0.0"
+      },
+      "createdAt": "2026-03-28T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "figma-generate-design",
+      "displayName": "Figma Generate Design",
+      "type": "workflow",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "generate"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-generate-design"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma",
+        "product-design"
+      ],
+      "legacyCategory": "generate",
+      "version": "1.0.0",
+      "tags": [
+        "generate",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "figma-generate-library",
+      "displayName": "Figma Generate Library",
+      "type": "workflow",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "generate"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-generate-library"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma",
+        "product-design"
+      ],
+      "legacyCategory": "generate",
+      "version": "1.0.0",
+      "tags": [
+        "generate",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low",
+      "supersedes": [
+        "figma-library-builder"
+      ]
+    },
+    {
+      "name": "figma-implement-design",
+      "displayName": "Figma Implement Design",
+      "type": "router",
+      "domains": [
+        "implementation"
+      ],
+      "lifecycle": [
+        "deliver"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "figma",
+        "code"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-implement-design"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma"
+      ],
+      "legacyCategory": "generate",
+      "version": "1.0.0",
+      "tags": [
+        "figma",
+        "design-to-code",
+        "implementation",
+        "code-connect",
+        "visual-parity"
+      ],
+      "sourceUrls": [
+        "https://github.com/figma/mcp-server-guide",
+        "https://developers.figma.com/"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=1.0.0"
+      },
+      "createdAt": "2026-03-28T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "figma-library-builder",
+      "displayName": "Figma Library Builder",
+      "type": "router",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "generate"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "deprecated",
+      "visibility": "public",
+      "status": "deprecated",
+      "routing": {
+        "intents": [
+          "figma-library-builder"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "figma",
+        "library",
+        "design-system",
+        "tokens",
+        "components",
+        "scripts"
+      ],
+      "sourceUrls": [
+        "https://github.com/figma/mcp-server-guide",
+        "https://developers.figma.com/"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=1.0.0"
+      },
+      "createdAt": "2026-03-28T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low",
+      "replacement": "figma-generate-library"
+    },
+    {
+      "name": "figma-plugin-api",
+      "displayName": "Figma Plugin Api",
+      "type": "router",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "reference"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-plugin-api"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "figma",
+        "plugin-api",
+        "reference",
+        "patterns",
+        "gotchas"
+      ],
+      "sourceUrls": [
+        "https://github.com/figma/mcp-server-guide",
+        "https://developers.figma.com/"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=1.0.0"
+      },
+      "createdAt": "2026-03-28T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "figma-prototype",
+      "displayName": "Figma Prototype",
+      "type": "workflow",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-prototype"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma",
+        "product-design"
+      ],
+      "legacyCategory": "generate",
+      "version": "1.0.0",
+      "tags": [
+        "generate",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "figma-sync",
+      "displayName": "Figma Sync",
+      "type": "adapter",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "integrate"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-sync"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma",
+        "product-design"
+      ],
+      "legacyCategory": "connect",
+      "version": "1.0.0",
+      "tags": [
+        "figma",
+        "sync",
+        "design-system",
+        "bidirectional",
+        "incremental"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-03-26T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "figma-use",
+      "displayName": "Figma Use",
+      "type": "workflow",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-use"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "craft",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "figma-web-capture",
+      "displayName": "Figma Web Capture",
+      "type": "adapter",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-web-capture"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma",
+        "product-design"
+      ],
+      "legacyCategory": "connect",
+      "version": "1.0.0",
+      "tags": [
+        "figma",
+        "html-to-design",
+        "bookmarklet",
+        "web-capture",
+        "editable-layers"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-03-27T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "find-animation-opportunities",
+      "displayName": "Find Animation Opportunities",
+      "type": "workflow",
+      "domains": [
+        "motion"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "find-animation-opportunities"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "motion-video",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "craft",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/emilkowalski/skills"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "flutter-gen",
+      "displayName": "Flutter Gen",
+      "type": "adapter",
+      "domains": [
+        "implementation"
+      ],
+      "lifecycle": [
+        "deliver"
+      ],
+      "actions": [
+        "generate"
+      ],
+      "surfaces": [
+        "code"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "flutter-gen"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "implementation"
+      ],
+      "legacyCategory": "generate",
+      "version": "1.0.0",
+      "tags": [
+        "flutter",
+        "dart",
+        "material3",
+        "riverpod",
+        "widgets",
+        "codegen"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-03-28T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "gateway-ops-observability",
+      "displayName": "Gateway Ops Observability",
+      "type": "workflow",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "gateway-ops-observability"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "legacyCategory": "connect",
+      "version": "0.1.0",
+      "tags": [
+        "gateway",
+        "logs",
+        "health",
+        "observability",
+        "daemon"
+      ],
+      "sourceUrls": [
+        "https://docs.openclaw.ai/cli",
+        "https://github.com/nousresearch/hermes-agent",
+        "https://docs.openclaw.ai/cli/models"
+      ],
+      "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+      "freshnessDays": 30,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "hermes-agent-bridge",
+      "displayName": "Hermes Agent Bridge",
+      "type": "workflow",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "integrate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "hermes-agent-bridge"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "legacyCategory": "connect",
+      "version": "0.1.0",
+      "tags": [
+        "hermes",
+        "cli",
+        "skills",
+        "toolsets",
+        "worktrees"
+      ],
+      "sourceUrls": [
+        "https://hermes-agent.nousresearch.com/docs/user-guide/cli",
+        "https://github.com/nousresearch/hermes-agent",
+        "https://hermes-agent.nousresearch.com/docs/reference/skills-catalog/"
+      ],
+      "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+      "freshnessDays": 30,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "hyperframes-video",
+      "displayName": "Hyperframes Video",
+      "type": "adapter",
+      "domains": [
+        "motion"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "video",
+        "web"
+      ],
+      "maturity": "beta",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "hyperframes-video"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "hyperframes.render"
+        ],
+        "optional": [],
+        "fallback": "Produce a storyboard and timing specification.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "motion-video",
+        "product-design",
+        "implementation"
+      ],
+      "legacyCategory": "generate",
+      "version": "0.1.0",
+      "tags": [
+        "video",
+        "hyperframes",
+        "html",
+        "motion",
+        "rendering"
+      ],
+      "sourceUrls": [
+        "https://hyperframes.mintlify.app/packages/cli",
+        "https://hyperframes.mintlify.app/guides/rendering",
+        "https://hyperframes.mintlify.app/packages/producer",
+        "https://hyperframes.mintlify.app/packages/core"
+      ],
+      "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+      "freshnessDays": 60,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "improve-animations",
+      "displayName": "Improve Animations",
+      "type": "workflow",
+      "domains": [
+        "motion"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "audit",
+        "review"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "improve-animations"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "motion-video",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "craft",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/emilkowalski/skills"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "type": "workflow",
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use supplied artifacts and document unavailable evidence or validation."
+      },
+      "dependencies": [],
+      "version": "1.0.0",
+      "sourceUrls": [
+        "https://github.com/sarveshsea/design-skills"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 365,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "name": "information-architecture",
+      "displayName": "Information Architecture",
+      "lifecycle": [
+        "define",
+        "design"
+      ],
+      "domains": [
+        "product",
+        "interaction",
+        "content"
+      ],
+      "actions": [
+        "analyze",
+        "create"
+      ],
+      "surfaces": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "routing": {
+        "intents": [
+          "design-information-architecture"
+        ],
+        "role": "primary",
+        "excludes": [
+          "interaction-design",
+          "content-design"
+        ]
+      },
+      "related": [
+        "content-design",
+        "interaction-design",
+        "web-research"
+      ],
+      "collectionIds": [
+        "core",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "tags": [
+        "information-architecture",
+        "taxonomy",
+        "navigation",
+        "search",
+        "filters",
+        "labels"
+      ],
+      "freedomLevel": "medium"
+    },
+    {
+      "type": "workflow",
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use supplied artifacts and document unavailable evidence or validation."
+      },
+      "dependencies": [],
+      "version": "1.0.0",
+      "sourceUrls": [
+        "https://github.com/sarveshsea/design-skills"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 365,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "name": "interaction-design",
+      "displayName": "Interaction Design",
+      "lifecycle": [
+        "design",
+        "prototype"
+      ],
+      "domains": [
+        "product",
+        "interaction"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "routing": {
+        "intents": [
+          "design-product-interaction"
+        ],
+        "role": "primary",
+        "excludes": [
+          "information-architecture",
+          "content-design"
+        ]
+      },
+      "related": [
+        "information-architecture",
+        "content-design",
+        "ux-tenets-traps"
+      ],
+      "collectionIds": [
+        "core",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "tags": [
+        "interaction-design",
+        "state-models",
+        "flows",
+        "feedback",
+        "recovery",
+        "accessibility"
+      ],
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "interface-craft-gate",
+      "displayName": "Interface Craft Gate",
+      "type": "adapter",
+      "domains": [
+        "visual",
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "validate"
+      ],
+      "actions": [
+        "audit"
+      ],
+      "surfaces": [
+        "web",
+        "agent-runtime"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "interface-craft-gate"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "memoire-only",
+        "requires": [
+          "memoire.engine"
+        ],
+        "optional": [
+          "memoire.mcp"
+        ],
+        "fallback": "Use better-ui and ux-tenets-traps for a portable review."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "legacyCategory": "craft",
+      "version": "2.0.0",
+      "tags": [
+        "interface-craft",
+        "visual-design",
+        "ux-audit",
+        "hierarchy",
+        "spacing",
+        "tokens",
+        "screenshots",
+        "design-review"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi",
+        "https://www.npmjs.com/package/@memi-design/cli",
+        "https://github.com/sarveshsea/design-sandbox"
+      ],
+      "lastResearchedAt": "2026-07-04T00:00:00.000Z",
+      "freshnessDays": 30,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-04T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "interview-research",
+      "displayName": "Interview Research",
+      "type": "workflow",
+      "domains": [
+        "research"
+      ],
+      "lifecycle": [
+        "discover",
+        "validate"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "interview-research"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "research",
+        "product-design"
+      ],
+      "legacyCategory": "research",
+      "version": "1.0.0",
+      "tags": [
+        "interview",
+        "transcript",
+        "qualitative",
+        "user-research",
+        "sentiment",
+        "persona"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-03-28T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "linear-sync",
+      "displayName": "Linear Sync",
+      "type": "adapter",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "integrate"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "linear-sync"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "linear.api"
+        ],
+        "optional": [],
+        "fallback": "Produce a local handoff artifact without synchronizing it.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "product-design"
+      ],
+      "legacyCategory": "connect",
+      "version": "1.0.0",
+      "tags": [
+        "linear",
+        "integration",
+        "issues",
+        "tracking",
+        "project-management",
+        "sync"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-03-28T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "mcp-server-studio",
+      "displayName": "MCP Server Studio",
+      "type": "workflow",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "mcp-server-studio"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "memoire-only",
+        "requires": [
+          "memoire.engine"
+        ],
+        "optional": [
+          "memoire.mcp"
+        ],
+        "fallback": "Install Mémoire or use the nearest portable design skill."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "legacyCategory": "connect",
+      "version": "0.1.0",
+      "tags": [
+        "mcp",
+        "studio",
+        "tools",
+        "resources",
+        "agent"
+      ],
+      "sourceUrls": [
+        "https://docs.openclaw.ai/cli",
+        "https://github.com/nousresearch/hermes-agent",
+        "https://modelcontextprotocol.io/docs"
+      ],
+      "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+      "freshnessDays": 60,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "memoire-design-tooling",
+      "displayName": "Memoire Design Tooling",
+      "type": "workflow",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "memoire-design-tooling"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "memoire-only",
+        "requires": [
+          "memoire.engine"
+        ],
+        "optional": [
+          "memoire.mcp"
+        ],
+        "fallback": "Install Mémoire or use the nearest portable design skill."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "legacyCategory": "connect",
+      "version": "1.0.0",
+      "tags": [
+        "connect",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "supersedes": [
+        "memoire-mcp-agent-skills",
+        "design-sandbox-proof",
+        "memoire-studio-macos",
+        "memoire-v2-surface-map"
+      ],
+      "freedomLevel": "low"
+    },
+    {
+      "name": "memoire-mcp-agent-skills",
+      "displayName": "Memoire MCP Agent Skills",
+      "type": "workflow",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "deprecated",
+      "visibility": "public",
+      "status": "deprecated",
+      "routing": {
+        "intents": [
+          "memoire-mcp-agent-skills"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "memoire-only",
+        "requires": [
+          "memoire.engine"
+        ],
+        "optional": [
+          "memoire.mcp"
+        ],
+        "fallback": "Install Mémoire or use the nearest portable design skill."
+      },
+      "dependencies": [
+        "memoire-v2-surface-map"
+      ],
+      "related": [],
+      "collectionIds": [],
+      "legacyCategory": "connect",
+      "version": "2.0.0",
+      "tags": [
+        "mcp",
+        "agent-skills",
+        "codex",
+        "claude-code",
+        "cursor",
+        "opencode",
+        "design-agent"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi/blob/main/server.json",
+        "https://github.com/sarveshsea/memi/tree/main/skills/memoire-design-tooling",
+        "https://www.npmjs.com/package/@memi-design/cli"
+      ],
+      "lastResearchedAt": "2026-07-04T00:00:00.000Z",
+      "freshnessDays": 30,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-04T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "replacement": "memoire-design-tooling",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "memoire-studio-macos",
+      "displayName": "Memoire Studio Macos",
+      "type": "internal-runbook",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "deprecated",
+      "visibility": "internal",
+      "status": "deprecated",
+      "routing": {
+        "intents": [
+          "memoire-studio-macos"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "memoire-only",
+        "requires": [
+          "memoire.engine"
+        ],
+        "optional": [
+          "memoire.mcp"
+        ],
+        "fallback": "Install Mémoire or use the nearest portable design skill."
+      },
+      "dependencies": [
+        "memoire-v2-surface-map",
+        "memoire-design-tooling"
+      ],
+      "related": [],
+      "collectionIds": [],
+      "legacyCategory": "connect",
+      "version": "2.0.0",
+      "tags": [
+        "macos",
+        "tauri",
+        "rust",
+        "studio",
+        "codex",
+        "claude-code",
+        "receipts"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi-studio",
+        "https://github.com/sarveshsea/memi",
+        "https://www.npmjs.com/package/@memi-design/cli"
+      ],
+      "lastResearchedAt": "2026-07-04T00:00:00.000Z",
+      "freshnessDays": 30,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-04T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low",
+      "replacement": "memoire-design-tooling"
+    },
+    {
+      "name": "memoire-v2-surface-map",
+      "displayName": "Memoire V2 Surface Map",
+      "type": "internal-runbook",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "deprecated",
+      "visibility": "internal",
+      "status": "deprecated",
+      "routing": {
+        "intents": [
+          "memoire-v2-surface-map"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "memoire-only",
+        "requires": [
+          "memoire.engine"
+        ],
+        "optional": [
+          "memoire.mcp"
+        ],
+        "fallback": "Install Mémoire or use the nearest portable design skill."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [],
+      "legacyCategory": "connect",
+      "version": "2.0.0",
+      "tags": [
+        "memi",
+        "surface-map",
+        "npm",
+        "mcp",
+        "agent-skills",
+        "macos",
+        "sandbox",
+        "community-notes"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi",
+        "https://www.npmjs.com/package/@memi-design/cli",
+        "https://github.com/sarveshsea/memi-studio",
+        "https://github.com/sarveshsea/design-sandbox",
+        "https://github.com/sarveshsea/design-skills"
+      ],
+      "lastResearchedAt": "2026-07-04T00:00:00.000Z",
+      "freshnessDays": 30,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-04T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low",
+      "replacement": "memoire-design-tooling"
+    },
+    {
+      "name": "mermaid-jam",
+      "displayName": "Mermaid Jam",
+      "type": "workflow",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "mermaid-jam"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma",
+        "product-design"
+      ],
+      "legacyCategory": "connect",
+      "version": "1.0.0",
+      "tags": [
+        "figjam",
+        "mermaid",
+        "markdown",
+        "diagram",
+        "user-flow"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=0.15.0"
+      },
+      "createdAt": "2026-05-06T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "mobile-craft",
+      "displayName": "Mobile Craft",
+      "type": "workflow",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "mobile-craft"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "mobile",
+        "responsive",
+        "touch",
+        "ios",
+        "android",
+        "gestures",
+        "progressive-enhancement"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-03-26T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "model-router-diagnostics",
+      "displayName": "Model Router Diagnostics",
+      "type": "workflow",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "model-router-diagnostics"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "legacyCategory": "connect",
+      "version": "0.1.0",
+      "tags": [
+        "models",
+        "providers",
+        "auth",
+        "routing",
+        "diagnostics"
+      ],
+      "sourceUrls": [
+        "https://docs.openclaw.ai/cli/models",
+        "https://hermes-agent.nousresearch.com/docs/user-guide/cli",
+        "https://developers.openai.com/codex/cli"
+      ],
+      "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+      "freshnessDays": 30,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "motion-performance",
+      "displayName": "Motion Performance",
+      "type": "workflow",
+      "domains": [
+        "motion"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "beta",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "motion-performance"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "motion-video",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "0.1.0",
+      "tags": [
+        "motion",
+        "performance",
+        "accessibility",
+        "video",
+        "qa"
+      ],
+      "sourceUrls": [
+        "https://www.remotion.dev/docs/renderer",
+        "https://hyperframes.mintlify.app/packages/core"
+      ],
+      "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+      "freshnessDays": 60,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "motion-video",
+      "displayName": "Motion Video",
+      "type": "workflow",
+      "domains": [
+        "motion"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "video",
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "motion-video"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "motion-video",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "craft",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "multi-agent",
+      "displayName": "Multi Agent",
+      "type": "workflow",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "figma",
+        "agent-runtime"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "multi-agent"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma",
+        "memoire-operations"
+      ],
+      "legacyCategory": "connect",
+      "version": "1.0.0",
+      "tags": [
+        "connect",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "multi-agent-kanban",
+      "displayName": "Multi Agent Kanban",
+      "type": "workflow",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "multi-agent-kanban"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "legacyCategory": "connect",
+      "version": "0.1.0",
+      "tags": [
+        "multi-agent",
+        "kanban",
+        "coordination",
+        "sessions",
+        "handoff"
+      ],
+      "sourceUrls": [
+        "https://github.com/nousresearch/hermes-agent",
+        "https://hermes-agent.nousresearch.com/docs/user-guide/cli",
+        "https://docs.openclaw.ai/cli"
+      ],
+      "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+      "freshnessDays": 60,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "notion-sync",
+      "displayName": "Notion Sync",
+      "type": "adapter",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "integrate"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "notion-sync"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "notion.api"
+        ],
+        "optional": [],
+        "fallback": "Produce a local handoff artifact without synchronizing it.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "product-design"
+      ],
+      "legacyCategory": "connect",
+      "version": "1.0.0",
+      "tags": [
+        "notion",
+        "integration",
+        "sync",
+        "research",
+        "specs",
+        "database"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-03-28T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "openclaw-agent-bridge",
+      "displayName": "Openclaw Agent Bridge",
+      "type": "workflow",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "integrate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "openclaw-agent-bridge"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "legacyCategory": "connect",
+      "version": "0.1.0",
+      "tags": [
+        "openclaw",
+        "gateway",
+        "agents",
+        "mcp",
+        "approvals"
+      ],
+      "sourceUrls": [
+        "https://docs.openclaw.ai/cli",
+        "https://docs.openclaw.ai/start/wizard",
+        "https://docs.openclaw.ai/cli/models"
+      ],
+      "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+      "freshnessDays": 30,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "type": "workflow",
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use supplied artifacts and document unavailable evidence or validation."
+      },
+      "dependencies": [],
+      "version": "1.0.0",
+      "sourceUrls": [
+        "https://github.com/sarveshsea/design-skills"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 365,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "name": "product-discovery-and-framing",
+      "displayName": "Product Discovery and Framing",
+      "lifecycle": [
+        "discover",
+        "define"
+      ],
+      "domains": [
+        "product",
+        "research"
+      ],
+      "actions": [
+        "analyze"
+      ],
+      "surfaces": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "routing": {
+        "intents": [
+          "frame-product-opportunity"
+        ],
+        "role": "primary",
+        "excludes": [
+          "interaction-design"
+        ]
+      },
+      "related": [
+        "interaction-design",
+        "design-measurement-and-experimentation"
+      ],
+      "collectionIds": [
+        "core",
+        "product-design",
+        "research"
+      ],
+      "legacyCategory": "research",
+      "tags": [
+        "product-discovery",
+        "problem-framing",
+        "opportunities",
+        "hypotheses",
+        "success-criteria"
+      ],
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "react-native-gen",
+      "displayName": "React Native Gen",
+      "type": "adapter",
+      "domains": [
+        "implementation"
+      ],
+      "lifecycle": [
+        "deliver"
+      ],
+      "actions": [
+        "generate"
+      ],
+      "surfaces": [
+        "code"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "react-native-gen"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "implementation"
+      ],
+      "legacyCategory": "generate",
+      "version": "1.0.0",
+      "tags": [
+        "react-native",
+        "nativewind",
+        "expo",
+        "mobile",
+        "ios",
+        "android"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-03-26T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "remotion-video",
+      "displayName": "Remotion Video",
+      "type": "adapter",
+      "domains": [
+        "motion"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "video",
+        "web"
+      ],
+      "maturity": "beta",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "remotion-video"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "remotion.render"
+        ],
+        "optional": [],
+        "fallback": "Produce a storyboard and timing specification.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "motion-video",
+        "product-design",
+        "implementation"
+      ],
+      "legacyCategory": "generate",
+      "version": "0.1.0",
+      "tags": [
+        "video",
+        "remotion",
+        "react",
+        "motion",
+        "renderer"
+      ],
+      "sourceUrls": [
+        "https://www.remotion.dev/docs/studio",
+        "https://www.remotion.dev/docs/renderer"
+      ],
+      "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+      "freshnessDays": 60,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "review-animations",
+      "displayName": "Review Animations",
+      "type": "workflow",
+      "domains": [
+        "motion"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "audit",
+        "review"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "review-animations"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "motion-video",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "craft",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/emilkowalski/skills"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "secure-secrets-for-agents",
+      "displayName": "Secure Secrets For Agents",
+      "type": "workflow",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "secure-secrets-for-agents"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "legacyCategory": "connect",
+      "version": "0.1.0",
+      "tags": [
+        "secrets",
+        "redaction",
+        "env",
+        "security",
+        "credentials"
+      ],
+      "sourceUrls": [
+        "https://docs.openclaw.ai/cli",
+        "https://github.com/nousresearch/hermes-agent",
+        "https://developers.openai.com/codex/cli"
+      ],
+      "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+      "freshnessDays": 30,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "self-improving-agent",
+      "displayName": "Self Improving Agent",
+      "type": "workflow",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "self-improving-agent"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "legacyCategory": "connect",
+      "version": "3.0.6",
+      "tags": [
+        "learning",
+        "self-improvement",
+        "error-tracking",
+        "knowledge-management"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-03-26T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "superpower",
+      "displayName": "Superpower",
+      "type": "internal-runbook",
+      "domains": [
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "operate"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "stable",
+      "visibility": "internal",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "superpower"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "memoire-only",
+        "requires": [
+          "memoire.engine"
+        ],
+        "optional": [
+          "memoire.mcp"
+        ],
+        "fallback": "Use the nearest portable design skill without autonomous orchestration."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "legacyCategory": "connect",
+      "version": "1.0.0",
+      "tags": [
+        "connect",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "survey-connect",
+      "displayName": "Survey Connect",
+      "type": "adapter",
+      "domains": [
+        "research"
+      ],
+      "lifecycle": [
+        "discover",
+        "validate"
+      ],
+      "actions": [
+        "integrate"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "survey-connect"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "research",
+        "product-design"
+      ],
+      "legacyCategory": "connect",
+      "version": "1.0.0",
+      "tags": [
+        "survey",
+        "typeform",
+        "google-forms",
+        "airtable",
+        "csv",
+        "import"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-03-28T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "token-architecture",
+      "displayName": "Token Architecture",
+      "type": "workflow",
+      "domains": [
+        "systems"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "token-architecture"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "design-systems",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "design-tokens",
+        "theming",
+        "css-variables",
+        "tailwind",
+        "figma-variables",
+        "semantic-tokens"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-03-28T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "usability-testing",
+      "displayName": "Usability Testing",
+      "type": "workflow",
+      "domains": [
+        "research"
+      ],
+      "lifecycle": [
+        "discover",
+        "validate"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "usability-testing"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "core",
+        "research",
+        "product-design"
+      ],
+      "legacyCategory": "research",
+      "version": "1.0.0",
+      "tags": [
+        "usability",
+        "testing",
+        "ux-research",
+        "task-analysis",
+        "think-aloud",
+        "insights"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-03-28T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "ux-tenets-traps",
+      "displayName": "UX Tenets Traps",
+      "type": "workflow",
+      "domains": [
+        "visual"
+      ],
+      "lifecycle": [
+        "design"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "ux-tenets-traps"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "core",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "1.0.0",
+      "tags": [
+        "craft",
+        "design-skills"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "vue-gen",
+      "displayName": "Vue Gen",
+      "type": "adapter",
+      "domains": [
+        "implementation"
+      ],
+      "lifecycle": [
+        "deliver"
+      ],
+      "actions": [
+        "generate"
+      ],
+      "surfaces": [
+        "code"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "vue-gen"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "implementation"
+      ],
+      "legacyCategory": "generate",
+      "version": "1.0.0",
+      "tags": [
+        "vue",
+        "vue3",
+        "composition-api",
+        "sfc",
+        "tailwind",
+        "codegen"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-03-28T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    },
+    {
+      "name": "web-research",
+      "displayName": "Web Research",
+      "type": "workflow",
+      "domains": [
+        "research"
+      ],
+      "lifecycle": [
+        "discover",
+        "validate"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "web-research"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "core",
+        "research",
+        "product-design"
+      ],
+      "legacyCategory": "research",
+      "version": "1.0.0",
+      "tags": [
+        "web-research",
+        "content-analysis",
+        "competitive",
+        "market-research",
+        "trends"
+      ],
+      "sourceUrls": [
+        "https://github.com/sarveshsea/memi"
+      ],
+      "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+      "freshnessDays": 90,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-03-28T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "supersedes": [
+        "browser-research-agent"
+      ],
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "website-to-video",
+      "displayName": "Website To Video",
+      "type": "adapter",
+      "domains": [
+        "motion",
+        "implementation"
+      ],
+      "lifecycle": [
+        "deliver"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "code",
+        "video"
+      ],
+      "maturity": "beta",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "website-to-video"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [
+        "remotion-video",
+        "hyperframes-video"
+      ],
+      "related": [],
+      "collectionIds": [
+        "motion-video",
+        "implementation",
+        "product-design"
+      ],
+      "legacyCategory": "generate",
+      "version": "0.1.0",
+      "tags": [
+        "video",
+        "website-capture",
+        "browser",
+        "product-demo"
+      ],
+      "sourceUrls": [
+        "https://www.remotion.dev/docs/studio",
+        "https://hyperframes.mintlify.app/guides/rendering"
+      ],
+      "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+      "freshnessDays": 60,
+      "engines": {
+        "memoire": ">=2.0.0"
+      },
+      "createdAt": "2026-05-07T00:00:00.000Z",
+      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "freedomLevel": "low"
+    }
+  ]
+}

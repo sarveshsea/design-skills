@@ -22,8 +22,8 @@
     {
       "file": "SKILL.md",
       "name": "Gateway Ops Observability",
-      "activateOn": "gateway logs, agent health, daemon status, usage cost, ops troubleshooting",
-      "freedomLevel": "high"
+      "activateOn": "gateway-ops-observability",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

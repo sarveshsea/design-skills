@@ -22,8 +22,8 @@
     {
       "file": "SKILL.md",
       "name": "Cron Agent Workflows",
-      "activateOn": "scheduled agent, cron workflow, recurring report, automated run",
-      "freedomLevel": "high"
+      "activateOn": "cron-agent-workflows",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

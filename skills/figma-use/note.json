@@ -17,8 +17,8 @@
     {
       "file": "SKILL.md",
       "name": "Figma Use",
-      "activateOn": "Foundational Figma canvas skill — structure, Auto Layout, variables, MCP tools, self-healing loop",
-      "freedomLevel": "high"
+      "activateOn": "figma-use",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

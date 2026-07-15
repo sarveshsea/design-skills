@@ -1,7 +1,7 @@
 {
   "name": "web-research",
   "version": "1.0.0",
-  "description": "Structured web research — topic exploration, content fetching, finding extraction, cross-source validation, and gap analysis for design research",
+  "description": "Conduct primary-source web research with claim-level evidence, citations, freshness checks, cross-source validation, and gap analysis. Use when design or product decisions depend on current external evidence.",
   "author": "Sarvesh Chidambaram",
   "category": "research",
   "tags": [
@@ -20,8 +20,8 @@
     {
       "file": "SKILL.md",
       "name": "Web Research",
-      "activateOn": "research-to-dashboard",
-      "freedomLevel": "high"
+      "activateOn": "web-research",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

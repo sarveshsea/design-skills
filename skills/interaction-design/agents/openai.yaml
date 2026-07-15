@@ -1,0 +1,4 @@
+interface:
+  display_name: "Interaction Design"
+  short_description: "Design complete, recoverable interactions"
+  default_prompt: "Use $interaction-design to model this workflow, its states, and recovery paths."

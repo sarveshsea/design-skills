@@ -5,6 +5,8 @@ description: Use design-sandbox as the public proof repo for memi, MCP, Agent Sk
 
 # Design Sandbox Proof
 
+> Deprecated compatibility slug. Use `memoire-design-tooling` for current setup and release-surface verification.
+
 Use this Note when a user asks for a real repo that proves memi works with app code, MCP, Agent Skills, Tailwind, shadcn, UX audit, and interface craft.
 
 ## Clone and verify

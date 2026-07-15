@@ -17,8 +17,8 @@
     {
       "file": "SKILL.md",
       "name": "UX Tenets Traps",
-      "activateOn": "Audit UX tenets and traps across code, screenshots, Figma, and Studio review packets",
-      "freedomLevel": "high"
+      "activateOn": "ux-tenets-traps",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

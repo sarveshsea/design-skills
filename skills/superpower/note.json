@@ -1,7 +1,7 @@
 {
   "name": "superpower",
   "version": "1.0.0",
-  "description": "Default autonomous superagent mode — read designs, drive canvas, orchestrate agents, generate specs and code",
+  "description": "Orchestrate an explicit Mémoire canvas workflow across design inspection, planning, generation, and verification. Use only when the user requests Mémoire orchestration; do not use as a default session policy.",
   "author": "Sarvesh Chidambaram",
   "category": "connect",
   "tags": [
@@ -17,8 +17,8 @@
     {
       "file": "SKILL.md",
       "name": "Superpower",
-      "activateOn": "Default autonomous superagent mode — read designs, drive canvas, orchestrate agents, generate specs and code",
-      "freedomLevel": "high"
+      "activateOn": "superpower",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

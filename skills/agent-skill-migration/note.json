@@ -22,8 +22,8 @@
     {
       "file": "SKILL.md",
       "name": "Agent Skill Migration",
-      "activateOn": "migrate skills, convert agent memory, import OpenClaw, export Hermes skill",
-      "freedomLevel": "high"
+      "activateOn": "agent-skill-migration",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

@@ -22,8 +22,8 @@
     {
       "file": "SKILL.md",
       "name": "Agent Session Checkpoints",
-      "activateOn": "checkpoint agent run, rollback session, resume session, session cleanup",
-      "freedomLevel": "high"
+      "activateOn": "agent-session-checkpoints",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

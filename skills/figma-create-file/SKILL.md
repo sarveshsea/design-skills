@@ -1,108 +1,21 @@
 ---
 name: figma-create-file
-description: Create new Figma design or FigJam files via MCP — resolve plans, scaffold files, prepare for canvas operations
+description: Route creation of a new Figma Design or FigJam file to Figma's current official MCP workflow without reproducing upstream instructions. Use when an authorized Figma integration must create a new file before another workflow begins.
 ---
 
-# Figma Create File
+# Figma Create File Router
 
-> Based on Figma's MCP Server Guide `figma-create-new-file` skill.
-> Original by Figma. Adapted for Memoire workflows.
-> Source: github.com/figma/mcp-server-guide
+This repository does not redistribute Figma's workflow text. Use this router to locate and invoke the official resource.
 
-Creates new blank Figma design or FigJam files. Use this when the user wants
-a fresh canvas before running `/figma-generate-design`, `/figma-generate-library`,
-or any canvas operation that needs an empty file.
+## Procedure
 
----
+1. Confirm that a new file is required and that an existing target cannot be used.
+2. Confirm the requested editor type, destination workspace or plan, name, and access expectations.
+3. Load Figma's current file-creation skill from the official MCP guide distribution.
+4. Follow the official authorization and file-creation workflow.
+5. Return the created file identifier and URL without exposing credentials or unrelated workspace data.
+6. If the official skill or creation capability is unavailable, provide the source link and stop. Do not simulate a successful file creation.
 
-## When to Use
+Official source: [Figma MCP Server Guide](https://github.com/figma/mcp-server-guide)
 
-- User says "create a new Figma file" or "start a new design"
-- Agent needs a blank canvas for library generation
-- FigJam board needed for research synthesis or diagramming
-- No existing file provided and the workflow requires one
-
----
-
-## Workflow
-
-### 1. RESOLVE — Get Plan Key
-
-```
-whoami()
-  -> Returns available plans with plan keys
-  -> If user has multiple plans, ask which to use
-  -> If only one plan, use it automatically
-```
-
-### 2. CREATE — Call MCP Tool
-
-```
-create_new_file(
-  planKey: "<resolved-plan-key>",
-  fileName: "<descriptive-name>",
-  editorType: "design" | "figJam"
-)
-  -> Returns: { file_key, file_url }
-```
-
-**Naming conventions:**
-- Design files: `[Project] — [Purpose]` (e.g., "Memoire — Component Library")
-- FigJam boards: `[Project] — [Activity]` (e.g., "Memoire — Research Synthesis")
-
-### 3. PREPARE — Set Up for Next Steps
-
-After creation:
-
-**For design files:**
-```
-Load figma-use skill
-  -> Create page structure (e.g., "Components", "Tokens", "Templates")
-  -> Set up a base frame with proper dimensions
-  -> Apply design system variables if available
-```
-
-**For FigJam boards:**
-```
-Load figma-use skill
-  -> Create section frames for organization
-  -> Add connector-friendly layout
-```
-
-### 4. HAND OFF — Continue Pipeline
-
-```
-New file created
-  -> Store file_key for subsequent operations
-  -> If building library: hand off to /figma-generate-library
-  -> If building screens: hand off to /figma-generate-design
-  -> If capturing research: hand off to research pipeline
-```
-
----
-
-## Parameters
-
-| Parameter | Required | Default | Options |
-|-----------|----------|---------|---------|
-| `planKey` | Yes | — | From `whoami()` |
-| `fileName` | No | "Untitled" | Any string |
-| `editorType` | No | "design" | "design", "figJam" |
-
----
-
-## Important Notes
-
-- Files are created in the user's **drafts folder** for the selected plan
-- Only "design" and "figJam" editor types are supported
-- Always load the `figma-use` skill before making canvas operations on the new file
-- The returned `file_key` is needed for all subsequent MCP calls
-
----
-
-## Anti-Patterns
-
-- Creating files without checking if user already has one open
-- Using generic names like "Untitled" — always give descriptive names
-- Making canvas operations before the file creation completes
-- Forgetting to pass the `file_key` to subsequent tool calls
+After creation, route the user to the bounded workflow they requested. Creating a blank file is a prerequisite, not a substitute for design work.

@@ -17,8 +17,8 @@
     {
       "file": "SKILL.md",
       "name": "Motion Video",
-      "activateOn": "Product animation, UI motion, portfolio videos — Apple-grade reveals, motion tokens, full production pipelines",
-      "freedomLevel": "high"
+      "activateOn": "motion-video",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

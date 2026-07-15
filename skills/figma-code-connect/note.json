@@ -1,7 +1,7 @@
 {
   "name": "figma-code-connect",
   "version": "1.0.0",
-  "description": "Code Connect workflow — map Figma components to codebase implementations, batch mappings, keep design-code parity",
+  "description": "Route a Figma Code Connect request to Figma's current official workflow and documentation without reproducing upstream instructions. Use when mapping published Figma components to code implementations requires the official Figma MCP integration.",
   "author": "Sarvesh Chidambaram",
   "category": "connect",
   "tags": [
@@ -11,7 +11,8 @@
     "design-system"
   ],
   "sourceUrls": [
-    "https://github.com/sarveshsea/memi"
+    "https://github.com/figma/mcp-server-guide",
+    "https://developers.figma.com/"
   ],
   "lastResearchedAt": "2026-07-15T00:00:00.000Z",
   "freshnessDays": 90,
@@ -19,8 +20,8 @@
     {
       "file": "SKILL.md",
       "name": "Figma Code Connect",
-      "activateOn": "figma-canvas-operation",
-      "freedomLevel": "high"
+      "activateOn": "figma-code-connect",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

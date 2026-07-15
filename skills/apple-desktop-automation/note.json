@@ -22,8 +22,8 @@
     {
       "file": "SKILL.md",
       "name": "Apple Desktop Automation",
-      "activateOn": "macOS automation, Apple Notes, Reminders, iMessage, desktop app control",
-      "freedomLevel": "high"
+      "activateOn": "apple-desktop-automation",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

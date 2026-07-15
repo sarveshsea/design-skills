@@ -1,9 +1,11 @@
 ---
 name: browser-research-agent
-description: Run browser-backed research agents that capture evidence, citations, and source freshness.
+description: "Compatibility workflow for browser-backed evidence capture. Deprecated: use web-research for primary-source research, citations, freshness, and gap analysis."
 ---
 
 # Browser Research Agent
+
+> Deprecated compatibility slug. Use `web-research` for new work. This payload remains self-contained for clients that installed the historical name.
 
 Run browser-backed research agents that capture evidence, citations, and source freshness.
 

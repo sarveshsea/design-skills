@@ -17,7 +17,7 @@
     {
       "file": "SKILL.md",
       "name": "Emil Design Eng",
-      "activateOn": "Apply Emil Kowalski's design-engineering guidance when polishing interface details, choosing motion, or reviewing whether a product feels responsive and intentional.",
+      "activateOn": "emil-design-eng",
       "freedomLevel": "high"
     }
   ],

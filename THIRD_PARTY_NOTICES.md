@@ -2,6 +2,12 @@
 
 This repository includes attributed adaptations from public MIT-licensed sources.
 
+## Figma MCP guide boundary
+
+`figma-code-connect`, `figma-create-file`, `figma-design-systems`, `figma-ds-rules`, `figma-implement-design`, `figma-library-builder`, and `figma-plugin-api` are original link-only routers to [`figma/mcp-server-guide`](https://github.com/figma/mcp-server-guide), reviewed at commit `07316dd2920d61303ca0e52812b31f5f341e7b15`.
+
+The upstream repository points users to the Figma Developer Terms and does not include a standalone redistribution license. Design Skills does not redistribute its workflow prose, reference bundle, scripts, or other payloads. The local routers identify the requested job, direct the agent to the official current resource, and define safe fallback behavior when that resource is unavailable.
+
 ## Jakub Krehel
 
 `better-colors`, `better-typography`, and `better-ui` are adapted from [`jakubkrehel/skills`](https://github.com/jakubkrehel/skills) at commit `f8a1574b08319685705a82e3c28139d1c935af9e`.

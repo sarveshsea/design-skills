@@ -21,8 +21,8 @@
     {
       "file": "SKILL.md",
       "name": "Data Synthesis",
-      "activateOn": "research-to-dashboard",
-      "freedomLevel": "high"
+      "activateOn": "data-synthesis",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

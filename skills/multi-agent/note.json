@@ -17,8 +17,8 @@
     {
       "file": "SKILL.md",
       "name": "Multi Agent",
-      "activateOn": "Orchestrate multiple Claude instances on Figma canvas with box widgets, coordinated handoffs, error recovery",
-      "freedomLevel": "high"
+      "activateOn": "multi-agent",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

@@ -27,8 +27,8 @@
     {
       "file": "SKILL.md",
       "name": "Accessibility Audit",
-      "activateOn": "design-review",
-      "freedomLevel": "read-only"
+      "activateOn": "accessibility-audit",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

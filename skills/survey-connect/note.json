@@ -21,8 +21,8 @@
     {
       "file": "SKILL.md",
       "name": "Survey Connect",
-      "activateOn": "research-to-dashboard",
-      "freedomLevel": "high"
+      "activateOn": "survey-connect",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

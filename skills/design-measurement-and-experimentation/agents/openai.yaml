@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Measurement and Experimentation"
+  short_description: "Connect design decisions to outcomes"
+  default_prompt: "Use $design-measurement-and-experimentation to define metrics, instrumentation, and an experiment plan."

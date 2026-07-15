@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "core",
+  "title": "Core",
+  "description": "Recommended portable, stable design judgment for most product work.",
+  "visibility": "public",
+  "defaultInstall": true,
+  "include": [
+    "accessibility-audit",
+    "ai-interaction-design",
+    "better-colors",
+    "better-typography",
+    "better-ui",
+    "content-design",
+    "data-synthesis",
+    "design-measurement-and-experimentation",
+    "design-systems",
+    "information-architecture",
+    "interaction-design",
+    "product-discovery-and-framing",
+    "usability-testing",
+    "ux-tenets-traps",
+    "web-research"
+  ],
+  "dependencyPolicy": "include-required"
+}

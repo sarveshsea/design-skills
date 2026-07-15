@@ -21,8 +21,8 @@
     {
       "file": "SKILL.md",
       "name": "Flutter Gen",
-      "activateOn": "component-creation",
-      "freedomLevel": "high"
+      "activateOn": "flutter-gen",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

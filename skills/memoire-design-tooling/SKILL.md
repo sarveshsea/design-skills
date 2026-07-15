@@ -1,6 +1,6 @@
 ---
 name: memoire-design-tooling
-description: Use when a task involves UI design, interface understanding, interface craft, Figma, design systems, shadcn/ui, Tailwind, UX audits, user research, Atomic Design, component specs, MCP, or design-to-code generation.
+description: Set up and operate Mémoire's CLI, MCP server, agent kits, design preflight, UX audits, craft checks, tokens, and registry evidence. Use when a repository explicitly needs Mémoire tooling; use portable design skills when Mémoire is unavailable.
 ---
 
 # memi Design Tooling
@@ -72,6 +72,21 @@ npx skills add sarveshsea/memi --skill memoire-design-tooling
 ```
 
 Use `memi agent install --dry-run --json` before writing kit files in shared repositories.
+
+## Public Surface and Release Proof
+
+When the task is onboarding, publishing, or release alignment, verify the connected surfaces instead of describing them from memory:
+
+| Surface | Verification |
+| --- | --- |
+| npm engine | Confirm the current `@memi-design/cli` package and install command. |
+| MCP | Check the committed server entrypoint and run `memi mcp start --no-figma` as the safe local proof. |
+| Agent Skills | Verify the current `memoire-design-tooling` installation path and run a local discovery smoke. |
+| Studio | Confirm the current macOS Studio repository, its relationship to the CLI, and the receipt or artifact contract. |
+| Sandbox | Run the committed design-sandbox proof commands rather than relying on positioning copy. |
+| Design Skills | Verify the catalog, provenance, selected-skill install, and generated-file checks. |
+
+Keep product boundaries explicit: the CLI is the engine, MCP exposes local tools, Agent Skills provide workflow context, Studio supervises runs, and the sandbox is a runnable proof surface. End with exact links, commands run, artifacts produced, and any surface that could not be verified.
 
 ## Output Artifacts To Cite
 

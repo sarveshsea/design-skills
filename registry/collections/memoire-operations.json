@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "memoire-operations",
+  "title": "Mémoire Operations",
+  "description": "Mémoire-specific and agent-runtime operations.",
+  "visibility": "internal",
+  "defaultInstall": false,
+  "include": [
+    "agent-memory-profiles",
+    "agent-messaging-gateway",
+    "agent-session-checkpoints",
+    "agent-skill-migration",
+    "approval-sandbox-policies",
+    "codex-ops",
+    "cron-agent-workflows",
+    "gateway-ops-observability",
+    "hermes-agent-bridge",
+    "interface-craft-gate",
+    "mcp-server-studio",
+    "memoire-design-tooling",
+    "model-router-diagnostics",
+    "multi-agent",
+    "multi-agent-kanban",
+    "openclaw-agent-bridge",
+    "secure-secrets-for-agents",
+    "self-improving-agent",
+    "superpower"
+  ],
+  "dependencyPolicy": "include-required"
+}

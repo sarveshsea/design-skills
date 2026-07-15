@@ -5,6 +5,8 @@ description: Connect the memi v2 public surfaces before publishing, onboarding a
 
 # Memoire v2 Surface Map
 
+> Deprecated compatibility slug. Use `memoire-design-tooling` for current public-surface and release verification.
+
 Use this Note when a task needs the memi ecosystem linked consistently across npm, MCP, Agent Skills, Codex plugin, Studio, sandbox, and community Notes.
 
 ## Canonical surfaces

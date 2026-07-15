@@ -22,8 +22,8 @@
     {
       "file": "SKILL.md",
       "name": "Animation Craft",
-      "activateOn": "component-creation",
-      "freedomLevel": "high"
+      "activateOn": "animation-craft",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [

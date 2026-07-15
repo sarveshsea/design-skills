@@ -21,8 +21,8 @@
     {
       "file": "SKILL.md",
       "name": "Usability Testing",
-      "activateOn": "research-to-dashboard",
-      "freedomLevel": "high"
+      "activateOn": "usability-testing",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

@@ -1,7 +1,7 @@
 {
   "name": "figma-library-builder",
   "version": "1.0.0",
-  "description": "Figma design system library builder — phased workflow for tokens, components, documentation, with ready-to-use Plugin API scripts",
+  "description": "Route a Figma library build to Figma's current official MCP workflow and this repository's portable design-system skills without reproducing upstream instructions. Use when creating tokens, components, documentation, and code mappings in Figma.",
   "author": "Sarvesh Chidambaram",
   "category": "craft",
   "tags": [
@@ -13,7 +13,8 @@
     "scripts"
   ],
   "sourceUrls": [
-    "https://github.com/sarveshsea/memi"
+    "https://github.com/figma/mcp-server-guide",
+    "https://developers.figma.com/"
   ],
   "lastResearchedAt": "2026-07-15T00:00:00.000Z",
   "freshnessDays": 90,
@@ -21,8 +22,8 @@
     {
       "file": "SKILL.md",
       "name": "Figma Library Builder",
-      "activateOn": "library-creation",
-      "freedomLevel": "high"
+      "activateOn": "figma-library-builder",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

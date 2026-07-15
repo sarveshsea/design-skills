@@ -1,0 +1,4 @@
+interface:
+  display_name: "Content Design"
+  short_description: "Design clear product language and states"
+  default_prompt: "Use $content-design to improve this interface language and its state-specific copy."

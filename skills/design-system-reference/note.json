@@ -17,7 +17,7 @@
     {
       "file": "SKILL.md",
       "name": "Design System Reference",
-      "activateOn": "Compare real-world design-system patterns when specifying, auditing, or naming a component and current external references would improve the decision.",
+      "activateOn": "design-system-reference",
       "freedomLevel": "high"
     }
   ],

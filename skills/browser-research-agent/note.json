@@ -1,7 +1,7 @@
 {
   "name": "browser-research-agent",
   "version": "0.1.0",
-  "description": "Run browser-backed research agents that capture evidence, citations, and source freshness.",
+  "description": "Compatibility workflow for browser-backed evidence capture. Deprecated: use web-research for primary-source research, citations, freshness, and gap analysis.",
   "author": "Sarvesh Chidambaram",
   "category": "research",
   "tags": [
@@ -22,8 +22,8 @@
     {
       "file": "SKILL.md",
       "name": "Browser Research Agent",
-      "activateOn": "browser research, web evidence, citation capture, source comparison",
-      "freedomLevel": "high"
+      "activateOn": "browser-research-agent",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

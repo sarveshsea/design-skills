@@ -1,9 +1,11 @@
 ---
 name: memoire-mcp-agent-skills
-description: Set up memi MCP and Agent Skills before broad frontend changes.
+description: "Compatibility setup workflow for memi MCP and Agent Skills. Deprecated: use memoire-design-tooling for installation, preflight, audits, and agent-client configuration."
 ---
 
 # Memoire MCP And Agent Skills
+
+> Deprecated compatibility slug. Use `memoire-design-tooling` for new work. This payload remains self-contained for clients that installed the historical name.
 
 Use this Note when an agent needs local memi design tools through MCP or an installed skill package.
 

@@ -17,7 +17,7 @@
     {
       "file": "SKILL.md",
       "name": "Component Catalog",
-      "activateOn": "Select and classify interface components when planning a design system, mapping Figma to code, or checking component-library coverage.",
+      "activateOn": "component-catalog",
       "freedomLevel": "high"
     }
   ],

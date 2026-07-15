@@ -17,8 +17,8 @@
     {
       "file": "SKILL.md",
       "name": "Design Extract",
-      "activateOn": "Extract a public website's design system when a task needs evidence about its colors, typography, spacing, radii, shadows, components, or Tailwind tokens.",
-      "freedomLevel": "high"
+      "activateOn": "design-extract",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

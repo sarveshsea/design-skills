@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "figma",
+  "title": "Figma",
+  "description": "Capability-gated Figma workflows.",
+  "visibility": "public",
+  "defaultInstall": false,
+  "include": [
+    "figma-audit",
+    "figma-code-connect",
+    "figma-create-file",
+    "figma-design-systems",
+    "figma-ds-rules",
+    "figma-generate-design",
+    "figma-generate-library",
+    "figma-implement-design",
+    "figma-plugin-api",
+    "figma-prototype",
+    "figma-sync",
+    "figma-use",
+    "figma-web-capture",
+    "mermaid-jam",
+    "multi-agent"
+  ],
+  "dependencyPolicy": "include-required"
+}

@@ -1,7 +1,7 @@
 {
   "name": "memoire-mcp-agent-skills",
   "version": "2.0.0",
-  "description": "Set up memi MCP and Agent Skills before broad frontend changes.",
+  "description": "Compatibility setup workflow for memi MCP and Agent Skills. Deprecated: use memoire-design-tooling for installation, preflight, audits, and agent-client configuration.",
   "author": "Sarvesh Chidambaram",
   "category": "connect",
   "tags": [
@@ -24,8 +24,8 @@
     {
       "file": "SKILL.md",
       "name": "Memoire MCP Agent Skills",
-      "activateOn": "mcp setup, agent skills install, codex plugin, claude code mcp, cursor mcp, design agent setup",
-      "freedomLevel": "high"
+      "activateOn": "memoire-mcp-agent-skills",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [

@@ -1,7 +1,7 @@
 {
   "name": "figma-create-file",
   "version": "1.0.0",
-  "description": "Create new Figma design or FigJam files via MCP — resolve plans, scaffold files, prepare for canvas operations",
+  "description": "Route creation of a new Figma Design or FigJam file to Figma's current official MCP workflow without reproducing upstream instructions. Use when an authorized Figma integration must create a new file before another workflow begins.",
   "author": "Sarvesh Chidambaram",
   "category": "craft",
   "tags": [
@@ -11,7 +11,8 @@
     "scaffold"
   ],
   "sourceUrls": [
-    "https://github.com/sarveshsea/memi"
+    "https://github.com/figma/mcp-server-guide",
+    "https://developers.figma.com/"
   ],
   "lastResearchedAt": "2026-07-15T00:00:00.000Z",
   "freshnessDays": 90,
@@ -19,8 +20,8 @@
     {
       "file": "SKILL.md",
       "name": "Figma Create File",
-      "activateOn": "figma-canvas-operation",
-      "freedomLevel": "high"
+      "activateOn": "figma-create-file",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

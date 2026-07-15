@@ -21,8 +21,8 @@
     {
       "file": "SKILL.md",
       "name": "Interview Research",
-      "activateOn": "research-to-dashboard",
-      "freedomLevel": "high"
+      "activateOn": "interview-research",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

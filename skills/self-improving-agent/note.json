@@ -19,8 +19,8 @@
     {
       "file": "SKILL.md",
       "name": "Self Improving Agent",
-      "activateOn": "always",
-      "freedomLevel": "high"
+      "activateOn": "self-improving-agent",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

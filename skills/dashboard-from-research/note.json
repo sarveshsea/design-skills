@@ -17,8 +17,8 @@
     {
       "file": "SKILL.md",
       "name": "Dashboard From Research",
-      "activateOn": "Transform research data (Excel, CSV, stickies) into structured insights and interactive dashboards",
-      "freedomLevel": "high"
+      "activateOn": "dashboard-from-research",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

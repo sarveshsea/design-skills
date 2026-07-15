@@ -22,8 +22,8 @@
     {
       "file": "SKILL.md",
       "name": "Mobile Craft",
-      "activateOn": "design-creation",
-      "freedomLevel": "high"
+      "activateOn": "mobile-craft",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

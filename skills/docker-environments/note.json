@@ -23,8 +23,8 @@
     {
       "file": "SKILL.md",
       "name": "Docker Environments",
-      "activateOn": "docker-environment",
-      "freedomLevel": "high"
+      "activateOn": "docker-environments",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

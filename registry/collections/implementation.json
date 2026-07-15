@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "implementation",
+  "title": "Implementation",
+  "description": "Framework and design-to-code generation workflows.",
+  "visibility": "public",
+  "defaultInstall": false,
+  "include": [
+    "docker-environments",
+    "flutter-gen",
+    "hyperframes-video",
+    "react-native-gen",
+    "remotion-video",
+    "vue-gen",
+    "website-to-video"
+  ],
+  "dependencyPolicy": "include-required"
+}

@@ -20,8 +20,8 @@
     {
       "file": "SKILL.md",
       "name": "Website To Video",
-      "activateOn": "motion-video",
-      "freedomLevel": "high"
+      "activateOn": "website-to-video",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [

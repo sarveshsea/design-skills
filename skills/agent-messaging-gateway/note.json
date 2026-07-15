@@ -22,8 +22,8 @@
     {
       "file": "SKILL.md",
       "name": "Agent Messaging Gateway",
-      "activateOn": "agent messaging, gateway setup, platform channel, delivery routing",
-      "freedomLevel": "high"
+      "activateOn": "agent-messaging-gateway",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

@@ -21,8 +21,8 @@
     {
       "file": "SKILL.md",
       "name": "Token Architecture",
-      "activateOn": "component-creation",
-      "freedomLevel": "high"
+      "activateOn": "token-architecture",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

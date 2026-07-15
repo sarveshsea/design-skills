@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "sources": {
     "memoire": {
       "author": "Sarvesh Chidambaram",
@@ -31,15 +31,8 @@
         "design-systems",
         "docker-environments",
         "figma-audit",
-        "figma-code-connect",
-        "figma-create-file",
-        "figma-design-systems",
-        "figma-ds-rules",
         "figma-generate-design",
         "figma-generate-library",
-        "figma-implement-design",
-        "figma-library-builder",
-        "figma-plugin-api",
         "figma-prototype",
         "figma-sync",
         "figma-use",
@@ -119,6 +112,30 @@
         "dialkit"
       ],
       "upstreamAuthor": "Josh Puckett"
+    },
+    "design-skills-first-party": {
+      "author": "Sarvesh Chidambaram",
+      "repository": "https://github.com/sarveshsea/design-skills",
+      "revision": "repository-local",
+      "license": "MIT",
+      "licenseFile": "LICENSE",
+      "relationship": "first-party-in-repository",
+      "retrievedAt": "2026-07-15T00:00:00.000Z",
+      "skills": [
+        "ai-interaction-design",
+        "content-design",
+        "design-measurement-and-experimentation",
+        "figma-code-connect",
+        "figma-create-file",
+        "figma-design-systems",
+        "figma-ds-rules",
+        "figma-implement-design",
+        "figma-library-builder",
+        "figma-plugin-api",
+        "information-architecture",
+        "interaction-design",
+        "product-discovery-and-framing"
+      ]
     }
   },
   "excludedSources": [
@@ -126,6 +143,32 @@
       "name": "Interface Craft",
       "url": "https://interfacecraft.dev/",
       "reason": "Paid copyrighted curriculum with no public redistribution license. Link only; do not copy or closely paraphrase member content."
+    }
+  ],
+  "referenceSources": {
+    "figma-mcp-guide": {
+      "organization": "Figma, Inc.",
+      "repository": "https://github.com/figma/mcp-server-guide",
+      "commit": "07316dd2920d61303ca0e52812b31f5f341e7b15",
+      "terms": "Figma Developer Terms",
+      "relationship": "official-resource-link-only",
+      "retrievedAt": "2026-07-15T00:00:00.000Z"
+    }
+  },
+  "referenceClaims": [
+    {
+      "sourceId": "figma-mcp-guide",
+      "skills": [
+        "figma-code-connect",
+        "figma-create-file",
+        "figma-design-systems",
+        "figma-ds-rules",
+        "figma-implement-design",
+        "figma-library-builder",
+        "figma-plugin-api"
+      ],
+      "relationship": "link-only-router",
+      "contentScope": "Official URLs and current integration routing only. No upstream workflow prose, references, or scripts are redistributed."
     }
   ]
 }

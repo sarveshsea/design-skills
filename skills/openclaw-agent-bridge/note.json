@@ -22,8 +22,8 @@
     {
       "file": "SKILL.md",
       "name": "Openclaw Agent Bridge",
-      "activateOn": "OpenClaw setup, gateway agent route, openclaw health, openclaw mcp",
-      "freedomLevel": "high"
+      "activateOn": "openclaw-agent-bridge",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

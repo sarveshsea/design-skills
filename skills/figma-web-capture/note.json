@@ -20,8 +20,8 @@
     {
       "file": "SKILL.md",
       "name": "Figma Web Capture",
-      "activateOn": "figma-canvas-operation",
-      "freedomLevel": "high"
+      "activateOn": "figma-web-capture",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

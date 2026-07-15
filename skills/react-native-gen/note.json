@@ -21,8 +21,8 @@
     {
       "file": "SKILL.md",
       "name": "React Native Gen",
-      "activateOn": "component-creation",
-      "freedomLevel": "high"
+      "activateOn": "react-native-gen",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

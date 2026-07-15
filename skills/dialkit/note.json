@@ -17,8 +17,8 @@
     {
       "file": "SKILL.md",
       "name": "Dialkit",
-      "activateOn": "Add or review DialKit controls when a React, Solid, Svelte, or Vue interface needs live tuning of animation, layout, color, typography, or component parameters.",
-      "freedomLevel": "high"
+      "activateOn": "dialkit",
+      "freedomLevel": "medium"
     }
   ],
   "dependencies": [],

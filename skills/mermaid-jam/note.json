@@ -20,8 +20,8 @@
     {
       "file": "SKILL.md",
       "name": "Mermaid Jam",
-      "activateOn": "figma-canvas-operation",
-      "freedomLevel": "high"
+      "activateOn": "mermaid-jam",
+      "freedomLevel": "low"
     }
   ],
   "dependencies": [],

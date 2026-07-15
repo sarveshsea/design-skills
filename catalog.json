@@ -1,11 +1,52 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "generatedAt": "2026-07-15T00:00:00.000Z",
   "skills": [
     {
       "name": "accessibility-audit",
       "displayName": "Accessibility Audit",
       "description": "WCAG 2.2 compliance auditing — color contrast, keyboard nav, screen reader, focus management, touch targets, cognitive accessibility, motion sensitivity, forms, automated testing integration",
+      "type": "workflow",
+      "lifecycle": [
+        "validate"
+      ],
+      "domains": [
+        "product",
+        "interaction",
+        "accessibility"
+      ],
+      "actions": [
+        "audit"
+      ],
+      "surfaces": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "accessibility-audit"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Audit supplied code and artifacts, and label runtime checks that could not be executed."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "core",
+        "product-design"
+      ],
+      "version": "2.0.0",
       "category": "research",
       "tags": [
         "accessibility",
@@ -25,6 +66,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/accessibility-audit"
@@ -33,6 +75,42 @@
       "name": "agent-memory-profiles",
       "displayName": "Agent Memory Profiles",
       "description": "Design durable user, project, persona, and task memory profiles for local agents.",
+      "type": "workflow",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "agent-memory-profiles"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "version": "0.1.0",
       "category": "connect",
       "tags": [
         "memory",
@@ -45,6 +123,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/agent-memory-profiles"
@@ -53,6 +132,42 @@
       "name": "agent-messaging-gateway",
       "displayName": "Agent Messaging Gateway",
       "description": "Design gateway-backed agent delivery through chat, email, and team messaging channels.",
+      "type": "workflow",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "agent-messaging-gateway"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "version": "0.1.0",
       "category": "connect",
       "tags": [
         "gateway",
@@ -65,6 +180,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/agent-messaging-gateway"
@@ -73,6 +189,42 @@
       "name": "agent-session-checkpoints",
       "displayName": "Agent Session Checkpoints",
       "description": "Capture restartable agent sessions with checkpoints, rollback notes, and resume metadata.",
+      "type": "workflow",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "agent-session-checkpoints"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "version": "0.1.0",
       "category": "connect",
       "tags": [
         "sessions",
@@ -85,6 +237,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/agent-session-checkpoints"
@@ -93,6 +246,42 @@
       "name": "agent-skill-migration",
       "displayName": "Agent Skill Migration",
       "description": "Move skills, memories, context files, and agent rules between Memoire and peer agent ecosystems.",
+      "type": "workflow",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "agent-skill-migration"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "version": "0.1.0",
       "category": "connect",
       "tags": [
         "skills",
@@ -105,14 +294,128 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/agent-skill-migration"
     },
     {
+      "name": "ai-interaction-design",
+      "displayName": "AI Interaction Design",
+      "description": "Design trustworthy human-AI workflows with clear automation boundaries, provenance, uncertainty, editable outputs, consent, memory controls, latency states, evaluation, and recovery. Use when AI generates, recommends, acts, or remembers on a person's behalf.",
+      "type": "workflow",
+      "lifecycle": [
+        "design",
+        "validate"
+      ],
+      "domains": [
+        "product",
+        "interaction",
+        "content"
+      ],
+      "actions": [
+        "create",
+        "audit"
+      ],
+      "surfaces": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "design-ai-interaction"
+        ],
+        "role": "primary",
+        "excludes": [
+          "interaction-design"
+        ]
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use supplied artifacts and document unavailable evidence or validation."
+      },
+      "dependencies": [],
+      "related": [
+        "interaction-design",
+        "content-design",
+        "design-measurement-and-experimentation"
+      ],
+      "collectionIds": [
+        "core",
+        "product-design"
+      ],
+      "version": "1.0.0",
+      "category": "craft",
+      "tags": [
+        "ai",
+        "interaction-design",
+        "trust",
+        "provenance",
+        "uncertainty",
+        "human-review",
+        "memory"
+      ],
+      "origin": "design-skills-first-party",
+      "author": "Sarvesh Chidambaram",
+      "license": "MIT",
+      "source": "https://github.com/sarveshsea/design-skills",
+      "sourceRevision": "repository-local",
+      "upstreamCommit": null,
+      "relationship": "first-party-in-repository",
+      "path": "skills/ai-interaction-design"
+    },
+    {
       "name": "animation-craft",
       "displayName": "Animation Craft",
       "description": "Motion design and micro-interaction craft — timing, easing, UI choreography, and links into the current Remotion/Hyperframes production packs.",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "motion"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "animation-craft"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [
+        "remotion-video",
+        "hyperframes-video",
+        "motion-performance"
+      ],
+      "related": [],
+      "collectionIds": [
+        "motion-video",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "animation",
@@ -126,6 +429,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/animation-craft"
@@ -134,6 +438,43 @@
       "name": "animation-vocabulary",
       "displayName": "Animation Vocabulary",
       "description": "Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term (\"the bouncy thing when a popover opens\" → Pop in; \"the iOS rubber-band scroll\" → Rubber-banding). Use when the user asks \"what's it called when…\", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one.",
+      "type": "reference",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "motion"
+      ],
+      "actions": [
+        "reference"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "high",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "animation-vocabulary"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "motion-video",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "craft",
@@ -143,6 +484,7 @@
       "author": "Emil Kowalski",
       "license": "MIT",
       "source": "https://github.com/emilkowalski/skills",
+      "sourceRevision": "6bf24434f7730ad169077756cf9c7cd7bd675fc6",
       "upstreamCommit": "6bf24434f7730ad169077756cf9c7cd7bd675fc6",
       "relationship": "adapted",
       "path": "skills/animation-vocabulary"
@@ -151,6 +493,42 @@
       "name": "apple-design",
       "displayName": "Apple Design",
       "description": "Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, leading), reduced-motion, or the design foundations (feedback, spatial consistency, restraint) behind Apple-style interfaces.",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "apple-design"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "craft",
@@ -160,6 +538,7 @@
       "author": "Emil Kowalski",
       "license": "MIT",
       "source": "https://github.com/emilkowalski/skills",
+      "sourceRevision": "6bf24434f7730ad169077756cf9c7cd7bd675fc6",
       "upstreamCommit": "6bf24434f7730ad169077756cf9c7cd7bd675fc6",
       "relationship": "adapted",
       "path": "skills/apple-design"
@@ -168,6 +547,42 @@
       "name": "apple-desktop-automation",
       "displayName": "Apple Desktop Automation",
       "description": "Prepare macOS agents to work with Apple apps, local files, permissions, and desktop automation.",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "beta",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "apple-desktop-automation"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "product-design"
+      ],
+      "version": "0.1.0",
       "category": "connect",
       "tags": [
         "macos",
@@ -180,6 +595,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/apple-desktop-automation"
@@ -188,6 +604,42 @@
       "name": "approval-sandbox-policies",
       "displayName": "Approval Sandbox Policies",
       "description": "Define approval, sandbox, filesystem, and command policy for local autonomous agents.",
+      "type": "workflow",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "approval-sandbox-policies"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "version": "0.1.0",
       "category": "connect",
       "tags": [
         "approvals",
@@ -200,6 +652,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/approval-sandbox-policies"
@@ -208,6 +661,43 @@
       "name": "atomic-design",
       "displayName": "Atomic Design",
       "description": "Atomic Design quick reference — levels, composition rules, tokens, naming",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "systems"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "atomic-design"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "design-systems",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "craft",
@@ -217,6 +707,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/atomic-design"
@@ -225,6 +716,43 @@
       "name": "better-colors",
       "displayName": "Better Colors",
       "description": "OKLCH color space for web projects. Convert hex/rgb/hsl to oklch, generate palettes, check contrast, handle gamut boundaries, and theme with Tailwind v4. Triggers on oklch, color conversion, palette generation, contrast ratio, gamut, display p3, design tokens, hue drift, chroma, dark mode colors.",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "better-colors"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "core",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "craft",
@@ -234,6 +762,7 @@
       "author": "Jakub Krehel",
       "license": "MIT",
       "source": "https://github.com/jakubkrehel/skills",
+      "sourceRevision": "f8a1574b08319685705a82e3c28139d1c935af9e",
       "upstreamCommit": "f8a1574b08319685705a82e3c28139d1c935af9e",
       "relationship": "adapted",
       "path": "skills/better-colors"
@@ -242,6 +771,43 @@
       "name": "better-typography",
       "displayName": "Better Typography",
       "description": "Web typography from choosing fonts to spacing, wrapping and accessibility. Use when picking or pairing typefaces, configuring variable fonts or OpenType features, setting up a type scale, checking heading hierarchy, styling text in components, truncating text, styling underlines, selection, placeholders or carets, or reviewing frontend code for typography. Triggers on typography, fonts, font formats, woff2, variable fonts, font-weight, opentype, font-feature-settings, letter-spacing, line-height, type scale, heading hierarchy, heading levels, tabular numbers, text-wrap, truncation, line clamp, underlines, text-decoration, text selection, iOS input zoom, font smoothing, text contrast, measure, line length, text-box, smart punctuation, drop cap.",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "better-typography"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "core",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "craft",
@@ -251,6 +817,7 @@
       "author": "Jakub Krehel",
       "license": "MIT",
       "source": "https://github.com/jakubkrehel/skills",
+      "sourceRevision": "f8a1574b08319685705a82e3c28139d1c935af9e",
       "upstreamCommit": "f8a1574b08319685705a82e3c28139d1c935af9e",
       "relationship": "adapted",
       "path": "skills/better-typography"
@@ -259,6 +826,43 @@
       "name": "better-ui",
       "displayName": "Better UI",
       "description": "Design engineering principles for making interfaces feel polished. Use when building UI components, reviewing frontend code, implementing animations, hover states, shadows, borders, micro-interactions, enter/exit animations, or any visual detail work. Triggers on UI polish, design details, \"make it feel better\", \"feels off\", stagger animations, border radius, optical alignment, image outlines, box shadows.",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "better-ui"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "core",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "craft",
@@ -268,6 +872,7 @@
       "author": "Jakub Krehel",
       "license": "MIT",
       "source": "https://github.com/jakubkrehel/skills",
+      "sourceRevision": "f8a1574b08319685705a82e3c28139d1c935af9e",
       "upstreamCommit": "f8a1574b08319685705a82e3c28139d1c935af9e",
       "relationship": "adapted",
       "path": "skills/better-ui"
@@ -275,7 +880,44 @@
     {
       "name": "browser-research-agent",
       "displayName": "Browser Research Agent",
-      "description": "Run browser-backed research agents that capture evidence, citations, and source freshness.",
+      "description": "Compatibility workflow for browser-backed evidence capture. Deprecated: use web-research for primary-source research, citations, freshness, and gap analysis.",
+      "type": "workflow",
+      "lifecycle": [
+        "discover",
+        "validate"
+      ],
+      "domains": [
+        "research",
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "deprecated",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "deprecated",
+      "routing": {
+        "intents": [
+          "browser-research-agent"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "replacement": "web-research",
+      "collectionIds": [],
+      "version": "0.1.0",
       "category": "research",
       "tags": [
         "browser",
@@ -288,6 +930,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/browser-research-agent"
@@ -296,6 +939,42 @@
       "name": "codex-ops",
       "displayName": "Codex Ops",
       "description": "Codex and Claude operating workflow for Memoire - JSON-first commands, commit hygiene, review loops, memory capture, and safe autonomous repo operation",
+      "type": "workflow",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "codex-ops"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "version": "1.0.0",
       "category": "connect",
       "tags": [
         "codex",
@@ -309,6 +988,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/codex-ops"
@@ -317,6 +997,44 @@
       "name": "competitive-intel",
       "displayName": "Competitive Intel",
       "description": "Competitive intelligence and market analysis — systematic frameworks for analyzing competitor products, design patterns, feature matrices, positioning maps, and UX benchmarking",
+      "type": "workflow",
+      "lifecycle": [
+        "discover",
+        "validate"
+      ],
+      "domains": [
+        "research"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "competitive-intel"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "research",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "research",
       "tags": [
         "competitive-analysis",
@@ -329,6 +1047,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/competitive-intel"
@@ -337,6 +1056,43 @@
       "name": "component-catalog",
       "displayName": "Component Catalog",
       "description": "Select and classify interface components when planning a design system, mapping Figma to code, or checking component-library coverage.",
+      "type": "reference",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "systems"
+      ],
+      "actions": [
+        "reference"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "high",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "component-catalog"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "design-systems",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "craft",
@@ -346,14 +1102,121 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/component-catalog"
     },
     {
+      "name": "content-design",
+      "displayName": "Content Design",
+      "description": "Design clear, consistent product language for navigation, actions, forms, onboarding, empty states, errors, confirmations, permissions, and trust-sensitive moments. Use when words affect comprehension, action, recovery, or confidence.",
+      "type": "workflow",
+      "lifecycle": [
+        "define",
+        "design"
+      ],
+      "domains": [
+        "product",
+        "content"
+      ],
+      "actions": [
+        "create",
+        "review"
+      ],
+      "surfaces": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "design-product-content"
+        ],
+        "role": "primary",
+        "excludes": [
+          "information-architecture"
+        ]
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use supplied artifacts and document unavailable evidence or validation."
+      },
+      "dependencies": [],
+      "related": [
+        "information-architecture",
+        "interaction-design",
+        "ai-interaction-design"
+      ],
+      "collectionIds": [
+        "core",
+        "product-design"
+      ],
+      "version": "1.0.0",
+      "category": "craft",
+      "tags": [
+        "content-design",
+        "ux-writing",
+        "microcopy",
+        "errors",
+        "empty-states",
+        "localization"
+      ],
+      "origin": "design-skills-first-party",
+      "author": "Sarvesh Chidambaram",
+      "license": "MIT",
+      "source": "https://github.com/sarveshsea/design-skills",
+      "sourceRevision": "repository-local",
+      "upstreamCommit": null,
+      "relationship": "first-party-in-repository",
+      "path": "skills/content-design"
+    },
+    {
       "name": "cron-agent-workflows",
       "displayName": "Cron Agent Workflows",
       "description": "Turn repeatable agent work into scheduled jobs with explicit outputs and safe permissions.",
+      "type": "workflow",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "cron-agent-workflows"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "version": "0.1.0",
       "category": "connect",
       "tags": [
         "cron",
@@ -366,6 +1229,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/cron-agent-workflows"
@@ -374,6 +1238,44 @@
       "name": "dashboard-from-research",
       "displayName": "Dashboard From Research",
       "description": "Transform research data (Excel, CSV, stickies) into structured insights and interactive dashboards",
+      "type": "workflow",
+      "lifecycle": [
+        "discover",
+        "validate"
+      ],
+      "domains": [
+        "research"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "dashboard-from-research"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "research",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "research",
       "tags": [
         "research",
@@ -383,6 +1285,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/dashboard-from-research"
@@ -391,6 +1294,45 @@
       "name": "data-synthesis",
       "displayName": "Data Synthesis",
       "description": "Qualitative and quantitative data synthesis — affinity mapping, thematic analysis, statistical frameworks, insight triangulation, and research-to-spec pipelines",
+      "type": "workflow",
+      "lifecycle": [
+        "discover",
+        "validate"
+      ],
+      "domains": [
+        "research"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "data-synthesis"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "core",
+        "research",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "research",
       "tags": [
         "data-synthesis",
@@ -404,6 +1346,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/data-synthesis"
@@ -412,6 +1355,42 @@
       "name": "design-extract",
       "displayName": "Design Extract",
       "description": "Extract a public website's design system when a task needs evidence about its colors, typography, spacing, radii, shadows, components, or Tailwind tokens.",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "design-extract"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "research",
       "tags": [
         "research",
@@ -421,14 +1400,127 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/design-extract"
     },
     {
+      "name": "design-measurement-and-experimentation",
+      "displayName": "Design Measurement and Experimentation",
+      "description": "Connect design decisions to measurable outcomes through metric trees, behavioral instrumentation, guardrails, experiment plans, and post-launch reviews. Use when a team must determine whether a design worked rather than whether it shipped.",
+      "type": "workflow",
+      "lifecycle": [
+        "validate",
+        "measure"
+      ],
+      "domains": [
+        "product",
+        "research"
+      ],
+      "actions": [
+        "analyze"
+      ],
+      "surfaces": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "measure-design-outcomes"
+        ],
+        "role": "primary",
+        "excludes": [
+          "usability-testing"
+        ]
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use supplied artifacts and document unavailable evidence or validation."
+      },
+      "dependencies": [],
+      "related": [
+        "product-discovery-and-framing",
+        "usability-testing",
+        "data-synthesis"
+      ],
+      "collectionIds": [
+        "core",
+        "product-design",
+        "research"
+      ],
+      "version": "1.0.0",
+      "category": "research",
+      "tags": [
+        "measurement",
+        "experimentation",
+        "metrics",
+        "instrumentation",
+        "guardrails",
+        "analysis"
+      ],
+      "origin": "design-skills-first-party",
+      "author": "Sarvesh Chidambaram",
+      "license": "MIT",
+      "source": "https://github.com/sarveshsea/design-skills",
+      "sourceRevision": "repository-local",
+      "upstreamCommit": null,
+      "relationship": "first-party-in-repository",
+      "path": "skills/design-measurement-and-experimentation"
+    },
+    {
       "name": "design-sandbox-proof",
       "displayName": "Design Sandbox Proof",
       "description": "Use design-sandbox as the public proof repo for memi, MCP, Agent Skills, and interface craft.",
+      "type": "internal-runbook",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "deprecated",
+      "freedomLevel": "low",
+      "visibility": "internal",
+      "status": "deprecated",
+      "routing": {
+        "intents": [
+          "design-sandbox-proof"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "memoire-only",
+        "requires": [
+          "memoire.engine"
+        ],
+        "optional": [
+          "memoire.mcp"
+        ],
+        "fallback": "Install Mémoire or use the nearest portable design skill."
+      },
+      "dependencies": [
+        "memoire-v2-surface-map",
+        "interface-craft-gate"
+      ],
+      "related": [],
+      "replacement": "memoire-design-tooling",
+      "collectionIds": [],
+      "version": "2.0.0",
       "category": "craft",
       "tags": [
         "design-sandbox",
@@ -444,6 +1536,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/design-sandbox-proof"
@@ -452,6 +1545,43 @@
       "name": "design-system-reference",
       "displayName": "Design System Reference",
       "description": "Compare real-world design-system patterns when specifying, auditing, or naming a component and current external references would improve the decision.",
+      "type": "reference",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "systems"
+      ],
+      "actions": [
+        "reference"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "high",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "design-system-reference"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "design-systems",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "research",
       "tags": [
         "research",
@@ -461,6 +1591,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/design-system-reference"
@@ -469,6 +1600,44 @@
       "name": "design-systems",
       "displayName": "Design Systems",
       "description": "Design system architecture and governance — token taxonomy, component APIs, versioning strategy, adoption metrics, multi-brand theming, and cross-platform consistency",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "systems"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "design-systems"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "core",
+        "design-systems",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "design-system",
@@ -482,6 +1651,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/design-systems"
@@ -490,6 +1660,42 @@
       "name": "dialkit",
       "displayName": "Dialkit",
       "description": "Add or review DialKit controls when a React, Solid, Svelte, or Vue interface needs live tuning of animation, layout, color, typography, or component parameters.",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "dialkit"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "craft",
@@ -499,6 +1705,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/joshpuckett/dialkit",
+      "sourceRevision": "533404b1c3e436c6a29bc8ec95b4003e3f256292",
       "upstreamCommit": "533404b1c3e436c6a29bc8ec95b4003e3f256292",
       "relationship": "original-workflow-from-upstream-docs",
       "path": "skills/dialkit"
@@ -507,6 +1714,45 @@
       "name": "docker-environments",
       "displayName": "Docker Environments",
       "description": "Docker-aware Mémoire operation — CI/CD headless pipelines, shared MCP server, agent worker containers, and Figma bridge port-forwarding for containerized setups",
+      "type": "workflow",
+      "lifecycle": [
+        "deliver"
+      ],
+      "domains": [
+        "implementation"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "code"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "docker-environments"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "docker.runtime"
+        ],
+        "optional": [],
+        "fallback": "Provide a static environment specification without running containers.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "implementation"
+      ],
+      "version": "1.0.0",
       "category": "connect",
       "tags": [
         "docker",
@@ -522,6 +1768,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/docker-environments"
@@ -530,6 +1777,42 @@
       "name": "emil-design-eng",
       "displayName": "Emil Design Eng",
       "description": "Apply Emil Kowalski's design-engineering guidance when polishing interface details, choosing motion, or reviewing whether a product feels responsive and intentional.",
+      "type": "reference",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "high",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "emil-design-eng"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "craft",
@@ -539,6 +1822,7 @@
       "author": "Emil Kowalski",
       "license": "MIT",
       "source": "https://github.com/emilkowalski/skills",
+      "sourceRevision": "6bf24434f7730ad169077756cf9c7cd7bd675fc6",
       "upstreamCommit": "6bf24434f7730ad169077756cf9c7cd7bd675fc6",
       "relationship": "adapted",
       "path": "skills/emil-design-eng"
@@ -547,6 +1831,50 @@
       "name": "figma-audit",
       "displayName": "Figma Audit",
       "description": "Audit Figma file for design system consistency, accessibility, token adoption, Code Connect coverage",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "audit",
+        "review"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-audit"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "craft",
@@ -556,6 +1884,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/figma-audit"
@@ -563,7 +1892,49 @@
     {
       "name": "figma-code-connect",
       "displayName": "Figma Code Connect",
-      "description": "Code Connect workflow — map Figma components to codebase implementations, batch mappings, keep design-code parity",
+      "description": "Route a Figma Code Connect request to Figma's current official workflow and documentation without reproducing upstream instructions. Use when mapping published Figma components to code implementations requires the official Figma MCP integration.",
+      "type": "router",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "integrate"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-code-connect"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma"
+      ],
+      "version": "1.0.0",
       "category": "connect",
       "tags": [
         "figma",
@@ -571,18 +1942,70 @@
         "component-mapping",
         "design-system"
       ],
-      "origin": "memoire",
+      "origin": "design-skills-first-party",
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
-      "source": "https://github.com/sarveshsea/memi",
-      "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
-      "relationship": "first-party",
+      "source": "https://github.com/sarveshsea/design-skills",
+      "sourceRevision": "repository-local",
+      "upstreamCommit": null,
+      "relationship": "first-party-in-repository",
+      "officialReferences": [
+        {
+          "sourceId": "figma-mcp-guide",
+          "organization": "Figma, Inc.",
+          "repository": "https://github.com/figma/mcp-server-guide",
+          "commit": "07316dd2920d61303ca0e52812b31f5f341e7b15",
+          "relationship": "link-only-router"
+        }
+      ],
       "path": "skills/figma-code-connect"
     },
     {
       "name": "figma-create-file",
       "displayName": "Figma Create File",
-      "description": "Create new Figma design or FigJam files via MCP — resolve plans, scaffold files, prepare for canvas operations",
+      "description": "Route creation of a new Figma Design or FigJam file to Figma's current official MCP workflow without reproducing upstream instructions. Use when an authorized Figma integration must create a new file before another workflow begins.",
+      "type": "router",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-create-file"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "figma",
@@ -590,18 +2013,68 @@
         "figjam",
         "scaffold"
       ],
-      "origin": "memoire",
+      "origin": "design-skills-first-party",
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
-      "source": "https://github.com/sarveshsea/memi",
-      "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
-      "relationship": "first-party",
+      "source": "https://github.com/sarveshsea/design-skills",
+      "sourceRevision": "repository-local",
+      "upstreamCommit": null,
+      "relationship": "first-party-in-repository",
+      "officialReferences": [
+        {
+          "sourceId": "figma-mcp-guide",
+          "organization": "Figma, Inc.",
+          "repository": "https://github.com/figma/mcp-server-guide",
+          "commit": "07316dd2920d61303ca0e52812b31f5f341e7b15",
+          "relationship": "link-only-router"
+        }
+      ],
       "path": "skills/figma-create-file"
     },
     {
       "name": "figma-design-systems",
       "displayName": "Figma Design Systems",
-      "description": "Working with Design Systems in Figma — components, variables, text styles, effect styles, creation and usage patterns",
+      "description": "Route Figma-specific component, variable, style, and library questions to Figma's current official design-system guidance without reproducing upstream material. Use as a reference when exact Figma behavior matters.",
+      "type": "router",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "systems"
+      ],
+      "actions": [
+        "reference"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-design-systems"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "figma",
@@ -611,18 +2084,70 @@
         "tokens",
         "styles"
       ],
-      "origin": "memoire",
+      "origin": "design-skills-first-party",
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
-      "source": "https://github.com/sarveshsea/memi",
-      "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
-      "relationship": "first-party",
+      "source": "https://github.com/sarveshsea/design-skills",
+      "sourceRevision": "repository-local",
+      "upstreamCommit": null,
+      "relationship": "first-party-in-repository",
+      "officialReferences": [
+        {
+          "sourceId": "figma-mcp-guide",
+          "organization": "Figma, Inc.",
+          "repository": "https://github.com/figma/mcp-server-guide",
+          "commit": "07316dd2920d61303ca0e52812b31f5f341e7b15",
+          "relationship": "link-only-router"
+        }
+      ],
       "path": "skills/figma-design-systems"
     },
     {
       "name": "figma-ds-rules",
       "displayName": "Figma Ds Rules",
-      "description": "Generate design system rules for AI agents — encode codebase conventions, token usage, component patterns into CLAUDE.md/AGENTS.md/.cursor rules",
+      "description": "Route generation of Figma-aware repository rules to Figma's current official MCP workflow without reproducing upstream instructions. Use when AGENTS.md, CLAUDE.md, or client rules must reflect verified Figma and codebase conventions.",
+      "type": "router",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-ds-rules"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "figma",
@@ -631,18 +2156,71 @@
         "conventions",
         "codegen"
       ],
-      "origin": "memoire",
+      "origin": "design-skills-first-party",
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
-      "source": "https://github.com/sarveshsea/memi",
-      "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
-      "relationship": "first-party",
+      "source": "https://github.com/sarveshsea/design-skills",
+      "sourceRevision": "repository-local",
+      "upstreamCommit": null,
+      "relationship": "first-party-in-repository",
+      "officialReferences": [
+        {
+          "sourceId": "figma-mcp-guide",
+          "organization": "Figma, Inc.",
+          "repository": "https://github.com/figma/mcp-server-guide",
+          "commit": "07316dd2920d61303ca0e52812b31f5f341e7b15",
+          "relationship": "link-only-router"
+        }
+      ],
       "path": "skills/figma-ds-rules"
     },
     {
       "name": "figma-generate-design",
       "displayName": "Figma Generate Design",
       "description": "Create new Figma screens and pages using existing components, variables, and design system",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "generate"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-generate-design"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "generate",
       "tags": [
         "generate",
@@ -652,6 +2230,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/figma-generate-design"
@@ -660,6 +2239,52 @@
       "name": "figma-generate-library",
       "displayName": "Figma Generate Library",
       "description": "Generate Figma component library from React/shadcn codebase with Code Connect parity",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "generate"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-generate-library"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "supersedes": [
+        "figma-library-builder"
+      ],
+      "collectionIds": [
+        "figma",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "generate",
       "tags": [
         "generate",
@@ -669,6 +2294,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/figma-generate-library"
@@ -676,7 +2302,50 @@
     {
       "name": "figma-implement-design",
       "displayName": "Figma Implement Design",
-      "description": "Figma-to-code implementation — extract design context, map tokens, generate production-ready components with 1:1 visual parity",
+      "description": "Route Figma-to-code implementation to Figma's current official MCP workflow while preserving repository conventions and independent verification. Use when a supplied Figma selection must become production code.",
+      "type": "router",
+      "lifecycle": [
+        "deliver"
+      ],
+      "domains": [
+        "implementation"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "figma",
+        "code"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-implement-design"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma"
+      ],
+      "version": "1.0.0",
       "category": "generate",
       "tags": [
         "figma",
@@ -685,18 +2354,69 @@
         "code-connect",
         "visual-parity"
       ],
-      "origin": "memoire",
+      "origin": "design-skills-first-party",
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
-      "source": "https://github.com/sarveshsea/memi",
-      "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
-      "relationship": "first-party",
+      "source": "https://github.com/sarveshsea/design-skills",
+      "sourceRevision": "repository-local",
+      "upstreamCommit": null,
+      "relationship": "first-party-in-repository",
+      "officialReferences": [
+        {
+          "sourceId": "figma-mcp-guide",
+          "organization": "Figma, Inc.",
+          "repository": "https://github.com/figma/mcp-server-guide",
+          "commit": "07316dd2920d61303ca0e52812b31f5f341e7b15",
+          "relationship": "link-only-router"
+        }
+      ],
       "path": "skills/figma-implement-design"
     },
     {
       "name": "figma-library-builder",
       "displayName": "Figma Library Builder",
-      "description": "Figma design system library builder — phased workflow for tokens, components, documentation, with ready-to-use Plugin API scripts",
+      "description": "Route a Figma library build to Figma's current official MCP workflow and this repository's portable design-system skills without reproducing upstream instructions. Use when creating tokens, components, documentation, and code mappings in Figma.",
+      "type": "router",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "generate"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "deprecated",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "deprecated",
+      "routing": {
+        "intents": [
+          "figma-library-builder"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "replacement": "figma-generate-library",
+      "collectionIds": [],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "figma",
@@ -706,18 +2426,68 @@
         "components",
         "scripts"
       ],
-      "origin": "memoire",
+      "origin": "design-skills-first-party",
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
-      "source": "https://github.com/sarveshsea/memi",
-      "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
-      "relationship": "first-party",
+      "source": "https://github.com/sarveshsea/design-skills",
+      "sourceRevision": "repository-local",
+      "upstreamCommit": null,
+      "relationship": "first-party-in-repository",
+      "officialReferences": [
+        {
+          "sourceId": "figma-mcp-guide",
+          "organization": "Figma, Inc.",
+          "repository": "https://github.com/figma/mcp-server-guide",
+          "commit": "07316dd2920d61303ca0e52812b31f5f341e7b15",
+          "relationship": "link-only-router"
+        }
+      ],
       "path": "skills/figma-library-builder"
     },
     {
       "name": "figma-plugin-api",
       "displayName": "Figma Plugin Api",
-      "description": "Figma Plugin API reference — gotchas, patterns, variables, components, text/effect styles, validation and error recovery",
+      "description": "Route exact Figma Plugin API questions to current official typings and developer documentation without redistributing upstream reference material. Use when an implementation depends on verified node, variable, component, style, or editor API behavior.",
+      "type": "router",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "reference"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-plugin-api"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "figma",
@@ -726,18 +2496,71 @@
         "patterns",
         "gotchas"
       ],
-      "origin": "memoire",
+      "origin": "design-skills-first-party",
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
-      "source": "https://github.com/sarveshsea/memi",
-      "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
-      "relationship": "first-party",
+      "source": "https://github.com/sarveshsea/design-skills",
+      "sourceRevision": "repository-local",
+      "upstreamCommit": null,
+      "relationship": "first-party-in-repository",
+      "officialReferences": [
+        {
+          "sourceId": "figma-mcp-guide",
+          "organization": "Figma, Inc.",
+          "repository": "https://github.com/figma/mcp-server-guide",
+          "commit": "07316dd2920d61303ca0e52812b31f5f341e7b15",
+          "relationship": "link-only-router"
+        }
+      ],
       "path": "skills/figma-plugin-api"
     },
     {
       "name": "figma-prototype",
       "displayName": "Figma Prototype",
       "description": "Build interactive Figma prototypes with flows, transitions, and user journey mapping",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-prototype"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "generate",
       "tags": [
         "generate",
@@ -747,6 +2570,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/figma-prototype"
@@ -755,6 +2579,49 @@
       "name": "figma-sync",
       "displayName": "Figma Sync",
       "description": "Figma sync workflow patterns — bidirectional design-code sync, conflict resolution, incremental updates, multi-file orchestration",
+      "type": "adapter",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "integrate"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-sync"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "connect",
       "tags": [
         "figma",
@@ -767,6 +2634,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/figma-sync"
@@ -775,6 +2643,49 @@
       "name": "figma-use",
       "displayName": "Figma Use",
       "description": "Foundational Figma canvas skill — structure, Auto Layout, variables, MCP tools, self-healing loop",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-use"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "craft",
@@ -784,6 +2695,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/figma-use"
@@ -792,6 +2704,49 @@
       "name": "figma-web-capture",
       "displayName": "Figma Web Capture",
       "description": "Figma web capture workflow - import live webpages or DOM elements into editable Figma layers with the public html-to-design capture.js bookmarklet",
+      "type": "adapter",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "figma"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "figma-web-capture"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "connect",
       "tags": [
         "figma",
@@ -804,6 +2759,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/figma-web-capture"
@@ -812,6 +2768,43 @@
       "name": "find-animation-opportunities",
       "displayName": "Find Animation Opportunities",
       "description": "Search a codebase or UI for places that don't animate but should, and reject everything that shouldn't. Read-only; it proposes motion with exact values, it does not implement it. Use when the user asks \"what could be animated here?\" or wants to \"make this feel more alive\". For fixing existing animations, use improve-animations or review-animations instead.",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "motion"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "find-animation-opportunities"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "motion-video",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "craft",
@@ -821,6 +2814,7 @@
       "author": "Emil Kowalski",
       "license": "MIT",
       "source": "https://github.com/emilkowalski/skills",
+      "sourceRevision": "6bf24434f7730ad169077756cf9c7cd7bd675fc6",
       "upstreamCommit": "6bf24434f7730ad169077756cf9c7cd7bd675fc6",
       "relationship": "adapted",
       "path": "skills/find-animation-opportunities"
@@ -829,6 +2823,42 @@
       "name": "flutter-gen",
       "displayName": "Flutter Gen",
       "description": "Flutter and Dart widget generation — transforms Mémoire component specs into Flutter widgets with Material 3, Riverpod state management, and responsive layouts",
+      "type": "adapter",
+      "lifecycle": [
+        "deliver"
+      ],
+      "domains": [
+        "implementation"
+      ],
+      "actions": [
+        "generate"
+      ],
+      "surfaces": [
+        "code"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "flutter-gen"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "implementation"
+      ],
+      "version": "1.0.0",
       "category": "generate",
       "tags": [
         "flutter",
@@ -842,6 +2872,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/flutter-gen"
@@ -850,6 +2881,42 @@
       "name": "gateway-ops-observability",
       "displayName": "Gateway Ops Observability",
       "description": "Observe and debug local agent gateways, daemons, health probes, logs, and usage costs.",
+      "type": "workflow",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "gateway-ops-observability"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "version": "0.1.0",
       "category": "connect",
       "tags": [
         "gateway",
@@ -862,6 +2929,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/gateway-ops-observability"
@@ -870,6 +2938,42 @@
       "name": "hermes-agent-bridge",
       "displayName": "Hermes Agent Bridge",
       "description": "Run Hermes Agent from Memoire with CLI, skills, toolsets, worktree, and session recipes.",
+      "type": "workflow",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "integrate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "hermes-agent-bridge"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "version": "0.1.0",
       "category": "connect",
       "tags": [
         "hermes",
@@ -882,6 +2986,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/hermes-agent-bridge"
@@ -890,6 +2995,48 @@
       "name": "hyperframes-video",
       "displayName": "Hyperframes Video",
       "description": "Current Hyperframes pack for HTML-first motion videos, lintable frames, previews, and render command prep.",
+      "type": "adapter",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "motion"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "video",
+        "web"
+      ],
+      "maturity": "beta",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "hyperframes-video"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "hyperframes.render"
+        ],
+        "optional": [],
+        "fallback": "Produce a storyboard and timing specification.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "motion-video",
+        "product-design",
+        "implementation"
+      ],
+      "version": "0.1.0",
       "category": "generate",
       "tags": [
         "video",
@@ -902,6 +3049,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/hyperframes-video"
@@ -910,6 +3058,44 @@
       "name": "improve-animations",
       "displayName": "Improve Animations",
       "description": "Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code — it plans improvements, it does not apply them. Use when the user asks to \"improve the animations\", \"audit the motion\", \"make this app feel better\", or wants a roadmap of animation fixes rather than a review of a single diff.",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "motion"
+      ],
+      "actions": [
+        "audit",
+        "review"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "improve-animations"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "motion-video",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "craft",
@@ -919,14 +3105,199 @@
       "author": "Emil Kowalski",
       "license": "MIT",
       "source": "https://github.com/emilkowalski/skills",
+      "sourceRevision": "6bf24434f7730ad169077756cf9c7cd7bd675fc6",
       "upstreamCommit": "6bf24434f7730ad169077756cf9c7cd7bd675fc6",
       "relationship": "adapted",
       "path": "skills/improve-animations"
     },
     {
+      "name": "information-architecture",
+      "displayName": "Information Architecture",
+      "description": "Organize product content, objects, navigation, search, filters, labels, and hierarchy around user mental models and retrieval tasks. Use when people cannot find, understand, or predict where information and actions belong.",
+      "type": "workflow",
+      "lifecycle": [
+        "define",
+        "design"
+      ],
+      "domains": [
+        "product",
+        "interaction",
+        "content"
+      ],
+      "actions": [
+        "analyze",
+        "create"
+      ],
+      "surfaces": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "design-information-architecture"
+        ],
+        "role": "primary",
+        "excludes": [
+          "interaction-design",
+          "content-design"
+        ]
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use supplied artifacts and document unavailable evidence or validation."
+      },
+      "dependencies": [],
+      "related": [
+        "content-design",
+        "interaction-design",
+        "web-research"
+      ],
+      "collectionIds": [
+        "core",
+        "product-design"
+      ],
+      "version": "1.0.0",
+      "category": "craft",
+      "tags": [
+        "information-architecture",
+        "taxonomy",
+        "navigation",
+        "search",
+        "filters",
+        "labels"
+      ],
+      "origin": "design-skills-first-party",
+      "author": "Sarvesh Chidambaram",
+      "license": "MIT",
+      "source": "https://github.com/sarveshsea/design-skills",
+      "sourceRevision": "repository-local",
+      "upstreamCommit": null,
+      "relationship": "first-party-in-repository",
+      "path": "skills/information-architecture"
+    },
+    {
+      "name": "interaction-design",
+      "displayName": "Interaction Design",
+      "description": "Design complete product workflows across states, inputs, feedback, permissions, interruptions, errors, undo, and recovery. Use when a feature needs behavioral structure beyond static screens; use visual craft skills only after the interaction model is coherent.",
+      "type": "workflow",
+      "lifecycle": [
+        "design",
+        "prototype"
+      ],
+      "domains": [
+        "product",
+        "interaction"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "design-product-interaction"
+        ],
+        "role": "primary",
+        "excludes": [
+          "information-architecture",
+          "content-design"
+        ]
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use supplied artifacts and document unavailable evidence or validation."
+      },
+      "dependencies": [],
+      "related": [
+        "information-architecture",
+        "content-design",
+        "ux-tenets-traps"
+      ],
+      "collectionIds": [
+        "core",
+        "product-design"
+      ],
+      "version": "1.0.0",
+      "category": "craft",
+      "tags": [
+        "interaction-design",
+        "state-models",
+        "flows",
+        "feedback",
+        "recovery",
+        "accessibility"
+      ],
+      "origin": "design-skills-first-party",
+      "author": "Sarvesh Chidambaram",
+      "license": "MIT",
+      "source": "https://github.com/sarveshsea/design-skills",
+      "sourceRevision": "repository-local",
+      "upstreamCommit": null,
+      "relationship": "first-party-in-repository",
+      "path": "skills/interaction-design"
+    },
+    {
       "name": "interface-craft-gate",
       "displayName": "Interface Craft Gate",
       "description": "Make interface craft a required design-agent gate before and after UI changes.",
+      "type": "adapter",
+      "lifecycle": [
+        "validate"
+      ],
+      "domains": [
+        "visual",
+        "agent-ops"
+      ],
+      "actions": [
+        "audit"
+      ],
+      "surfaces": [
+        "web",
+        "agent-runtime"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "interface-craft-gate"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "memoire-only",
+        "requires": [
+          "memoire.engine"
+        ],
+        "optional": [
+          "memoire.mcp"
+        ],
+        "fallback": "Use better-ui and ux-tenets-traps for a portable review."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "version": "2.0.0",
       "category": "craft",
       "tags": [
         "interface-craft",
@@ -942,6 +3313,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/interface-craft-gate"
@@ -950,6 +3322,44 @@
       "name": "interview-research",
       "displayName": "Interview Research",
       "description": "User interview and transcript analysis — parsing speaker-labeled transcripts, extracting pain points/goals/behaviors, sentiment analysis, and persona generation from qualitative data",
+      "type": "workflow",
+      "lifecycle": [
+        "discover",
+        "validate"
+      ],
+      "domains": [
+        "research"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "interview-research"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "research",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "research",
       "tags": [
         "interview",
@@ -963,6 +3373,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/interview-research"
@@ -971,6 +3382,45 @@
       "name": "linear-sync",
       "displayName": "Linear Sync",
       "description": "Linear integration for Mémoire — sync design issues, component specs, and project tracking between Linear and the Mémoire registry",
+      "type": "adapter",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "integrate"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "linear-sync"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "linear.api"
+        ],
+        "optional": [],
+        "fallback": "Produce a local handoff artifact without synchronizing it.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "connect",
       "tags": [
         "linear",
@@ -984,6 +3434,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/linear-sync"
@@ -992,6 +3443,46 @@
       "name": "mcp-server-studio",
       "displayName": "MCP Server Studio",
       "description": "Expose Memoire Studio context, tools, and artifacts to other agents through MCP.",
+      "type": "workflow",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "mcp-server-studio"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "memoire-only",
+        "requires": [
+          "memoire.engine"
+        ],
+        "optional": [
+          "memoire.mcp"
+        ],
+        "fallback": "Install Mémoire or use the nearest portable design skill."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "version": "0.1.0",
       "category": "connect",
       "tags": [
         "mcp",
@@ -1004,6 +3495,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/mcp-server-studio"
@@ -1011,7 +3503,53 @@
     {
       "name": "memoire-design-tooling",
       "displayName": "Memoire Design Tooling",
-      "description": "Use when a task involves UI design, interface understanding, interface craft, Figma, design systems, shadcn/ui, Tailwind, UX audits, user research, Atomic Design, component specs, MCP, or design-to-code generation.",
+      "description": "Set up and operate Mémoire's CLI, MCP server, agent kits, design preflight, UX audits, craft checks, tokens, and registry evidence. Use when a repository explicitly needs Mémoire tooling; use portable design skills when Mémoire is unavailable.",
+      "type": "workflow",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "memoire-design-tooling"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "memoire-only",
+        "requires": [
+          "memoire.engine"
+        ],
+        "optional": [
+          "memoire.mcp"
+        ],
+        "fallback": "Install Mémoire or use the nearest portable design skill."
+      },
+      "dependencies": [],
+      "related": [],
+      "supersedes": [
+        "memoire-mcp-agent-skills",
+        "design-sandbox-proof",
+        "memoire-studio-macos",
+        "memoire-v2-surface-map"
+      ],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "version": "1.0.0",
       "category": "connect",
       "tags": [
         "connect",
@@ -1021,6 +3559,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/memoire-design-tooling"
@@ -1028,7 +3567,48 @@
     {
       "name": "memoire-mcp-agent-skills",
       "displayName": "Memoire MCP Agent Skills",
-      "description": "Set up memi MCP and Agent Skills before broad frontend changes.",
+      "description": "Compatibility setup workflow for memi MCP and Agent Skills. Deprecated: use memoire-design-tooling for installation, preflight, audits, and agent-client configuration.",
+      "type": "workflow",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "deprecated",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "deprecated",
+      "routing": {
+        "intents": [
+          "memoire-mcp-agent-skills"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "memoire-only",
+        "requires": [
+          "memoire.engine"
+        ],
+        "optional": [
+          "memoire.mcp"
+        ],
+        "fallback": "Install Mémoire or use the nearest portable design skill."
+      },
+      "dependencies": [
+        "memoire-v2-surface-map"
+      ],
+      "related": [],
+      "replacement": "memoire-design-tooling",
+      "collectionIds": [],
+      "version": "2.0.0",
       "category": "connect",
       "tags": [
         "mcp",
@@ -1043,6 +3623,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/memoire-mcp-agent-skills"
@@ -1051,6 +3632,48 @@
       "name": "memoire-studio-macos",
       "displayName": "Memoire Studio Macos",
       "description": "Connect the Tauri/Rust macOS Studio app to the CLI, MCP, receipts, and project artifacts.",
+      "type": "internal-runbook",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "deprecated",
+      "freedomLevel": "low",
+      "visibility": "internal",
+      "status": "deprecated",
+      "routing": {
+        "intents": [
+          "memoire-studio-macos"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "memoire-only",
+        "requires": [
+          "memoire.engine"
+        ],
+        "optional": [
+          "memoire.mcp"
+        ],
+        "fallback": "Install Mémoire or use the nearest portable design skill."
+      },
+      "dependencies": [
+        "memoire-v2-surface-map",
+        "memoire-design-tooling"
+      ],
+      "related": [],
+      "replacement": "memoire-design-tooling",
+      "collectionIds": [],
+      "version": "2.0.0",
       "category": "connect",
       "tags": [
         "macos",
@@ -1065,6 +3688,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/memoire-studio-macos"
@@ -1073,6 +3697,45 @@
       "name": "memoire-v2-surface-map",
       "displayName": "Memoire V2 Surface Map",
       "description": "Connect the memi v2 public surfaces before publishing, onboarding agents, or writing docs.",
+      "type": "internal-runbook",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "deprecated",
+      "freedomLevel": "low",
+      "visibility": "internal",
+      "status": "deprecated",
+      "routing": {
+        "intents": [
+          "memoire-v2-surface-map"
+        ],
+        "role": "reference",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "memoire-only",
+        "requires": [
+          "memoire.engine"
+        ],
+        "optional": [
+          "memoire.mcp"
+        ],
+        "fallback": "Install Mémoire or use the nearest portable design skill."
+      },
+      "dependencies": [],
+      "related": [],
+      "replacement": "memoire-design-tooling",
+      "collectionIds": [],
+      "version": "2.0.0",
       "category": "connect",
       "tags": [
         "memi",
@@ -1088,6 +3751,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/memoire-v2-surface-map"
@@ -1096,6 +3760,49 @@
       "name": "mermaid-jam",
       "displayName": "Mermaid Jam",
       "description": "Route Mermaid and markdown diagram source into the Mermaid Jam FigJam plugin for editable native FigJam output",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "mermaid-jam"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "connect",
       "tags": [
         "figjam",
@@ -1108,6 +3815,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/mermaid-jam"
@@ -1116,6 +3824,42 @@
       "name": "mobile-craft",
       "displayName": "Mobile Craft",
       "description": "Mobile-first design mastery — touch targets, gesture patterns, responsive breakpoints, native-feel animations, thumb zones, platform conventions (iOS/Android), and progressive enhancement strategies",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "mobile-craft"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "mobile",
@@ -1130,6 +3874,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/mobile-craft"
@@ -1138,6 +3883,42 @@
       "name": "model-router-diagnostics",
       "displayName": "Model Router Diagnostics",
       "description": "Diagnose provider auth, model routing, quota windows, and fallback behavior before agent runs.",
+      "type": "workflow",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "model-router-diagnostics"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "version": "0.1.0",
       "category": "connect",
       "tags": [
         "models",
@@ -1150,6 +3931,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/model-router-diagnostics"
@@ -1158,6 +3940,43 @@
       "name": "motion-performance",
       "displayName": "Motion Performance",
       "description": "Motion performance pack for 60fps UI animation, reduced-motion fallbacks, render budget checks, and video export QA.",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "motion"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "beta",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "motion-performance"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "motion-video",
+        "product-design"
+      ],
+      "version": "0.1.0",
       "category": "craft",
       "tags": [
         "motion",
@@ -1170,6 +3989,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/motion-performance"
@@ -1178,6 +3998,44 @@
       "name": "motion-video",
       "displayName": "Motion Video",
       "description": "Product animation, UI motion, portfolio videos — Apple-grade reveals, motion tokens, full production pipelines",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "motion"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "video",
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "motion-video"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "motion-video",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "craft",
@@ -1187,6 +4045,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/motion-video"
@@ -1195,6 +4054,50 @@
       "name": "multi-agent",
       "displayName": "Multi Agent",
       "description": "Orchestrate multiple Claude instances on Figma canvas with box widgets, coordinated handoffs, error recovery",
+      "type": "workflow",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "figma",
+        "agent-runtime"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "multi-agent"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "figma.read",
+          "figma.write"
+        ],
+        "optional": [
+          "figma.code-connect"
+        ],
+        "fallback": "Use supplied screenshots and exported design artifacts for a read-only workflow.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "figma",
+        "memoire-operations"
+      ],
+      "version": "1.0.0",
       "category": "connect",
       "tags": [
         "connect",
@@ -1204,6 +4107,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/multi-agent"
@@ -1212,6 +4116,42 @@
       "name": "multi-agent-kanban",
       "displayName": "Multi Agent Kanban",
       "description": "Coordinate multiple local agents through a durable board with owner, state, and evidence fields.",
+      "type": "workflow",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "multi-agent-kanban"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "version": "0.1.0",
       "category": "connect",
       "tags": [
         "multi-agent",
@@ -1224,6 +4164,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/multi-agent-kanban"
@@ -1232,6 +4173,45 @@
       "name": "notion-sync",
       "displayName": "Notion Sync",
       "description": "Notion integration for Mémoire — sync research insights, specs, and project context between Notion databases and the Mémoire registry",
+      "type": "adapter",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "integrate"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "notion-sync"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "notion.api"
+        ],
+        "optional": [],
+        "fallback": "Produce a local handoff artifact without synchronizing it.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "connect",
       "tags": [
         "notion",
@@ -1245,6 +4225,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/notion-sync"
@@ -1253,6 +4234,42 @@
       "name": "openclaw-agent-bridge",
       "displayName": "Openclaw Agent Bridge",
       "description": "Connect Memoire to OpenClaw onboarding, agents, gateway health, MCP, and approval flows.",
+      "type": "workflow",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "integrate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "openclaw-agent-bridge"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "version": "0.1.0",
       "category": "connect",
       "tags": [
         "openclaw",
@@ -1265,14 +4282,119 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/openclaw-agent-bridge"
     },
     {
+      "name": "product-discovery-and-framing",
+      "displayName": "Product Discovery and Framing",
+      "description": "Frame product opportunities from user, business, technical, and market evidence into testable problem statements, priorities, risks, and success criteria. Use before solution design when the team is unsure what problem to solve or why it matters.",
+      "type": "workflow",
+      "lifecycle": [
+        "discover",
+        "define"
+      ],
+      "domains": [
+        "product",
+        "research"
+      ],
+      "actions": [
+        "analyze"
+      ],
+      "surfaces": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "frame-product-opportunity"
+        ],
+        "role": "primary",
+        "excludes": [
+          "interaction-design"
+        ]
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use supplied artifacts and document unavailable evidence or validation."
+      },
+      "dependencies": [],
+      "related": [
+        "interaction-design",
+        "design-measurement-and-experimentation"
+      ],
+      "collectionIds": [
+        "core",
+        "product-design",
+        "research"
+      ],
+      "version": "1.0.0",
+      "category": "research",
+      "tags": [
+        "product-discovery",
+        "problem-framing",
+        "opportunities",
+        "hypotheses",
+        "success-criteria"
+      ],
+      "origin": "design-skills-first-party",
+      "author": "Sarvesh Chidambaram",
+      "license": "MIT",
+      "source": "https://github.com/sarveshsea/design-skills",
+      "sourceRevision": "repository-local",
+      "upstreamCommit": null,
+      "relationship": "first-party-in-repository",
+      "path": "skills/product-discovery-and-framing"
+    },
+    {
       "name": "react-native-gen",
       "displayName": "React Native Gen",
       "description": "React Native code generation from Memoire specs — NativeWind styling, Expo-compatible, platform-specific patterns",
+      "type": "adapter",
+      "lifecycle": [
+        "deliver"
+      ],
+      "domains": [
+        "implementation"
+      ],
+      "actions": [
+        "generate"
+      ],
+      "surfaces": [
+        "code"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "react-native-gen"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "implementation"
+      ],
+      "version": "1.0.0",
       "category": "generate",
       "tags": [
         "react-native",
@@ -1286,6 +4408,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/react-native-gen"
@@ -1294,6 +4417,48 @@
       "name": "remotion-video",
       "displayName": "Remotion Video",
       "description": "Current Remotion video production pack for React-based product videos, previews, and renderer handoff.",
+      "type": "adapter",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "motion"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "video",
+        "web"
+      ],
+      "maturity": "beta",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "remotion-video"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "capability-gated",
+        "requires": [
+          "remotion.render"
+        ],
+        "optional": [],
+        "fallback": "Produce a storyboard and timing specification.",
+        "approval": "Confirm the target, scope, authorization, and material side effects before performing external writes."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "motion-video",
+        "product-design",
+        "implementation"
+      ],
+      "version": "0.1.0",
       "category": "generate",
       "tags": [
         "video",
@@ -1306,6 +4471,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/remotion-video"
@@ -1314,6 +4480,44 @@
       "name": "review-animations",
       "displayName": "Review Animations",
       "description": "Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. Default to flagging; approval is earned.",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "motion"
+      ],
+      "actions": [
+        "audit",
+        "review"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "review-animations"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "motion-video",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "craft",
@@ -1323,6 +4527,7 @@
       "author": "Emil Kowalski",
       "license": "MIT",
       "source": "https://github.com/emilkowalski/skills",
+      "sourceRevision": "6bf24434f7730ad169077756cf9c7cd7bd675fc6",
       "upstreamCommit": "6bf24434f7730ad169077756cf9c7cd7bd675fc6",
       "relationship": "adapted",
       "path": "skills/review-animations"
@@ -1331,6 +4536,42 @@
       "name": "secure-secrets-for-agents",
       "displayName": "Secure Secrets For Agents",
       "description": "Handle agent credentials with env refs, redaction, least privilege, and non-leaking prompts.",
+      "type": "workflow",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "beta",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "secure-secrets-for-agents"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "version": "0.1.0",
       "category": "connect",
       "tags": [
         "secrets",
@@ -1343,6 +4584,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/secure-secrets-for-agents"
@@ -1351,6 +4593,42 @@
       "name": "self-improving-agent",
       "displayName": "Self Improving Agent",
       "description": "Closed-loop learning system — captures errors, corrections, and discoveries into structured logs, promotes recurring patterns to project memory, and extracts reusable skills",
+      "type": "workflow",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "self-improving-agent"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "version": "3.0.6",
       "category": "connect",
       "tags": [
         "learning",
@@ -1362,6 +4640,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/self-improving-agent"
@@ -1369,7 +4648,47 @@
     {
       "name": "superpower",
       "displayName": "Superpower",
-      "description": "Default autonomous superagent mode — read designs, drive canvas, orchestrate agents, generate specs and code",
+      "description": "Orchestrate an explicit Mémoire canvas workflow across design inspection, planning, generation, and verification. Use only when the user requests Mémoire orchestration; do not use as a default session policy.",
+      "type": "internal-runbook",
+      "lifecycle": [
+        "operate"
+      ],
+      "domains": [
+        "agent-ops"
+      ],
+      "actions": [
+        "operate"
+      ],
+      "surfaces": [
+        "agent-runtime"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "internal",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "superpower"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "memoire-only",
+        "requires": [
+          "memoire.engine"
+        ],
+        "optional": [
+          "memoire.mcp"
+        ],
+        "fallback": "Use the nearest portable design skill without autonomous orchestration."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "memoire-operations"
+      ],
+      "version": "1.0.0",
       "category": "connect",
       "tags": [
         "connect",
@@ -1379,6 +4698,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/superpower"
@@ -1387,6 +4707,44 @@
       "name": "survey-connect",
       "displayName": "Survey Connect",
       "description": "Survey platform integration — import responses from Typeform, Google Forms, SurveyMonkey, Airtable, and CSV exports into Mémoire's research pipeline",
+      "type": "adapter",
+      "lifecycle": [
+        "discover",
+        "validate"
+      ],
+      "domains": [
+        "research"
+      ],
+      "actions": [
+        "integrate"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "survey-connect"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "research",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "connect",
       "tags": [
         "survey",
@@ -1400,6 +4758,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/survey-connect"
@@ -1408,6 +4767,43 @@
       "name": "token-architecture",
       "displayName": "Token Architecture",
       "description": "Design token architecture — multi-tier token systems, semantic naming, theme switching, CSS custom properties, Tailwind mapping, and Figma variable sync",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "systems"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "token-architecture"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "design-systems",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "design-tokens",
@@ -1421,6 +4817,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/token-architecture"
@@ -1429,6 +4826,45 @@
       "name": "usability-testing",
       "displayName": "Usability Testing",
       "description": "Usability testing frameworks — test planning, task scenarios, moderated and unmoderated protocols, analysis frameworks, and insight synthesis for Mémoire research pipeline",
+      "type": "workflow",
+      "lifecycle": [
+        "discover",
+        "validate"
+      ],
+      "domains": [
+        "research"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "usability-testing"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "core",
+        "research",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "research",
       "tags": [
         "usability",
@@ -1442,6 +4878,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/usability-testing"
@@ -1450,6 +4887,43 @@
       "name": "ux-tenets-traps",
       "displayName": "UX Tenets Traps",
       "description": "UX tenets and traps framework for code, Figma, screenshot, and Studio critique workflows.",
+      "type": "workflow",
+      "lifecycle": [
+        "design"
+      ],
+      "domains": [
+        "visual"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "ux-tenets-traps"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "core",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "craft",
       "tags": [
         "craft",
@@ -1459,6 +4933,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/ux-tenets-traps"
@@ -1467,6 +4942,42 @@
       "name": "vue-gen",
       "displayName": "Vue Gen",
       "description": "Vue 3 Composition API code generation — transforms Mémoire component specs into Vue SFCs with script setup, Tailwind styling, and composable patterns",
+      "type": "adapter",
+      "lifecycle": [
+        "deliver"
+      ],
+      "domains": [
+        "implementation"
+      ],
+      "actions": [
+        "generate"
+      ],
+      "surfaces": [
+        "code"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "vue-gen"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "collectionIds": [
+        "implementation"
+      ],
+      "version": "1.0.0",
       "category": "generate",
       "tags": [
         "vue",
@@ -1480,6 +4991,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/vue-gen"
@@ -1487,7 +4999,49 @@
     {
       "name": "web-research",
       "displayName": "Web Research",
-      "description": "Structured web research — topic exploration, content fetching, finding extraction, cross-source validation, and gap analysis for design research",
+      "description": "Conduct primary-source web research with claim-level evidence, citations, freshness checks, cross-source validation, and gap analysis. Use when design or product decisions depend on current external evidence.",
+      "type": "workflow",
+      "lifecycle": [
+        "discover",
+        "validate"
+      ],
+      "domains": [
+        "research"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "web"
+      ],
+      "maturity": "stable",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "web-research"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [],
+      "related": [],
+      "supersedes": [
+        "browser-research-agent"
+      ],
+      "collectionIds": [
+        "core",
+        "research",
+        "product-design"
+      ],
+      "version": "1.0.0",
       "category": "research",
       "tags": [
         "web-research",
@@ -1500,6 +5054,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/web-research"
@@ -1508,6 +5063,49 @@
       "name": "website-to-video",
       "displayName": "Website To Video",
       "description": "Website-to-video capture pack for turning product pages, flows, and browser states into structured video scenes.",
+      "type": "adapter",
+      "lifecycle": [
+        "deliver"
+      ],
+      "domains": [
+        "motion",
+        "implementation"
+      ],
+      "actions": [
+        "create"
+      ],
+      "surfaces": [
+        "code",
+        "video"
+      ],
+      "maturity": "beta",
+      "freedomLevel": "low",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "website-to-video"
+        ],
+        "role": "primary",
+        "excludes": []
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [],
+        "fallback": "Use user-supplied artifacts and document any unavailable verification."
+      },
+      "dependencies": [
+        "remotion-video",
+        "hyperframes-video"
+      ],
+      "related": [],
+      "collectionIds": [
+        "motion-video",
+        "implementation",
+        "product-design"
+      ],
+      "version": "0.1.0",
       "category": "generate",
       "tags": [
         "video",
@@ -1519,6 +5117,7 @@
       "author": "Sarvesh Chidambaram",
       "license": "MIT",
       "source": "https://github.com/sarveshsea/memi",
+      "sourceRevision": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/website-to-video"
