@@ -12,7 +12,7 @@
     {
       "id": "shader-seeded-glsl",
       "category": "shader-dither",
-      "prompt": "Implement deterministic seeded noise dithering in GLSL.",
+      "prompt": "Implement deterministic seeded noise dithering in a GLSL shader.",
       "expected": "shader-design-engineering"
     },
     {
@@ -30,19 +30,19 @@
     {
       "id": "shader-debug-coordinates",
       "category": "shader-dither",
-      "prompt": "Debug a fragment shader coordinate-space sampling bug.",
+      "prompt": "Debug a WebGL2 fragment shader coordinate-space sampling bug.",
       "expected": "shader-design-engineering"
     },
     {
       "id": "shader-blue-noise-color",
       "category": "shader-dither",
-      "prompt": "Implement blue-noise dithering with correct linear and sRGB color handling.",
+      "prompt": "Implement blue-noise dithering in a shader with correct linear and sRGB color handling.",
       "expected": "shader-design-engineering"
     },
     {
       "id": "shader-uniform-controls",
       "category": "shader-dither",
-      "prompt": "Integrate uniform controls into a canvas distortion shader.",
+      "prompt": "Integrate uniform controls into a WebGL2 canvas distortion shader.",
       "expected": "shader-design-engineering"
     },
     {
@@ -66,7 +66,7 @@
     {
       "id": "render-audit-metal-sampling",
       "category": "creative-rendering",
-      "prompt": "Audit a Metal effect's texture access, sample radius, and GPU cost.",
+      "prompt": "Audit a Metal particle effect's texture access, sample radius, and GPU cost.",
       "expected": "creative-rendering-audit"
     },
     {
@@ -180,13 +180,13 @@
     {
       "id": "component-classification",
       "category": "design-catalog",
-      "prompt": "Classify our interface components and check component-library coverage.",
-      "expected": "component-catalog"
+      "prompt": "Plan a design system component catalog and check component-library coverage.",
+      "expected": "design-systems"
     },
     {
       "id": "atomic-levels",
       "category": "design-catalog",
-      "prompt": "Classify these UI pieces as atoms, molecules, organisms, templates, and pages.",
+      "prompt": "Use Atomic Design to classify these UI pieces as atoms, molecules, organisms, templates, and pages.",
       "expected": "atomic-design"
     },
     {

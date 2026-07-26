@@ -6,10 +6,11 @@
   "type": "module",
   "scripts": {
     "audit:skills": "node scripts/audit-skills.mjs --as-of 2026-07-26",
+    "check:routing": "node scripts/evaluate-routing.mjs",
     "sync": "node scripts/sync-catalog.mjs",
     "test": "node --test",
     "validate": "node scripts/validate.mjs",
-    "check": "npm run validate && npm run sync && npm run test && npm run validate"
+    "check": "npm run validate && npm run sync && npm run test && npm run check:routing && npm run validate"
   },
   "engines": {
     "node": ">=20"

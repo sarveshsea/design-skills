@@ -47,6 +47,15 @@ test("representative routing fixture is bounded and covers required categories",
 test("deterministic catalog QA routing meets its declared accuracy gate", async () => {
   const fixture = await readFixture();
   const catalog = await loadRoutingCatalog(root);
+  const routeOwners = new Set(catalog.map((entry) => entry.name));
+  for (const entry of fixture.cases) {
+    if (entry.expected !== null) {
+      assert.ok(
+        routeOwners.has(entry.expected),
+        `${entry.id}: ${entry.expected} must be a public canonical primary route`,
+      );
+    }
+  }
   const report = evaluateRoutingBenchmark(catalog, fixture);
 
   assert.equal(report.schemaVersion, 1);

@@ -107,6 +107,22 @@ Explicit installation of a historical slug continues to work during the compatib
 | Fix Swift 6 concurrency | [`swift-concurrency-safety`](skills/swift-concurrency-safety/SKILL.md) |
 | Stabilize Xcode builds | [`xcode-build-reliability`](skills/xcode-build-reliability/SKILL.md) |
 
+### Catalog routing QA
+
+The checked-in routing benchmark measures whether representative prompts are
+lexically discoverable from canonical registry metadata and `SKILL.md`
+descriptions:
+
+```bash
+npm run check:routing
+node scripts/evaluate-routing.mjs --json
+```
+
+This is a deterministic catalog-quality gate, not an evaluation of Mémoire's
+runtime intent classifier. The fixture, scoring method, abstention rules,
+confusions, and limitations are documented in
+[`docs/routing-benchmark.md`](docs/routing-benchmark.md).
+
 ## Provenance and trust
 
 Adapted material records its author, source repository, exact commit, license, and relationship in [`provenance.json`](provenance.json). The current attributed sources are:
