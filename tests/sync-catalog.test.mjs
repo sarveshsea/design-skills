@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { execFile } from "node:child_process";
-import { readFile, readdir } from "node:fs/promises";
+import { cp, mkdtemp, readFile, readdir, writeFile } from "node:fs/promises";
+import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { promisify } from "node:util";
@@ -8,14 +9,34 @@ import { promisify } from "node:util";
 const execFileAsync = promisify(execFile);
 const root = path.resolve(import.meta.dirname, "..");
 
-async function generatedSnapshot() {
-  const folders = (await readdir(path.join(root, "skills"), { withFileTypes: true }))
+async function isolatedWorkspace() {
+  const target = await mkdtemp(path.join(os.tmpdir(), "design-skills-sync-"));
+  await Promise.all([
+    cp(path.join(root, "skills"), path.join(target, "skills"), { recursive: true }),
+    cp(path.join(root, "registry"), path.join(target, "registry"), { recursive: true }),
+    cp(path.join(root, "README.md"), path.join(target, "README.md")),
+    cp(path.join(root, "provenance.json"), path.join(target, "provenance.json")),
+  ]);
+  await writeFile(path.join(target, "catalog.json"), '{"schemaVersion":0,"skills":[]}\n');
+  return target;
+}
+
+async function generatedSnapshot(workspace = root) {
+  const folders = (await readdir(path.join(workspace, "skills"), { withFileTypes: true }))
     .filter((entry) => entry.isDirectory())
     .map((entry) => entry.name)
     .sort();
   const files = ["catalog.json", ...folders.map((folder) => `skills/${folder}/note.json`)];
-  return Promise.all(files.map(async (file) => [file, await readFile(path.join(root, file), "utf8")]));
+  return Promise.all(files.map(async (file) => [file, await readFile(path.join(workspace, file), "utf8")]));
 }
+
+test("catalog synchronization can target an isolated workspace", async () => {
+  const workspace = await isolatedWorkspace();
+  await execFileAsync(process.execPath, ["scripts/sync-catalog.mjs", "--root", workspace], { cwd: root });
+  const catalog = JSON.parse(await readFile(path.join(workspace, "catalog.json"), "utf8"));
+  assert.equal(catalog.schemaVersion, 2);
+  assert.equal(catalog.skills.length, 94);
+});
 
 test("catalog synchronization is deterministic and idempotent", async () => {
   await execFileAsync(process.execPath, ["scripts/sync-catalog.mjs"], { cwd: root });
