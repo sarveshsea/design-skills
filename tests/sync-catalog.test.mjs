@@ -24,3 +24,12 @@ test("catalog synchronization is deterministic and idempotent", async () => {
   const second = await generatedSnapshot();
   assert.deepEqual(second, first);
 });
+
+test("catalog synchronization keeps the public skill count current", async () => {
+  await execFileAsync(process.execPath, ["scripts/sync-catalog.mjs"], { cwd: root });
+  const catalog = JSON.parse(await readFile(path.join(root, "catalog.json"), "utf8"));
+  const readme = await readFile(path.join(root, "README.md"), "utf8");
+  const canonical = catalog.skills.filter((entry) => entry.status === "canonical").length;
+  const deprecated = catalog.skills.filter((entry) => entry.status === "deprecated").length;
+  assert.match(readme, new RegExp(`${catalog.skills.length} installable skills: ${canonical} canonical workflows and ${deprecated} deprecated compatibility entries`));
+});

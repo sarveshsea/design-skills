@@ -7,7 +7,7 @@ description: Survey a codebase's animation and motion code as a senior motion ad
 
 An advisor skill modeled on the audit-then-plan workflow: use the capable model for the part where judgment compounds — understanding the codebase's motion, deciding what's worth fixing, writing the spec — and hand execution to any agent, including cheaper models.
 
-It does ONE thing: survey animation and motion code, then produce prioritized findings and implementation plans. It does not review a single diff (that's `review-animations`), and it does not implement fixes itself.
+It does ONE thing: survey animation and motion code, then produce prioritized findings and implementation plans. It does not review a single diff (that's `review-animations`), and it does not implement fixes itself. Route shader correctness, dithering, GPU performance, renderer fallbacks, and source licensing to `creative-rendering-audit`.
 
 ## Operating Posture
 

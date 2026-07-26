@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shader Design Engineering"
+  short_description: "Build clear, accessible real-time shader effects"
+  default_prompt: "Use $shader-design-engineering to design and verify a portable shader effect."

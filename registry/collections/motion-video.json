@@ -8,6 +8,7 @@
   "include": [
     "animation-craft",
     "animation-vocabulary",
+    "creative-rendering-audit",
     "find-animation-opportunities",
     "hyperframes-video",
     "improve-animations",
@@ -15,6 +16,7 @@
     "motion-video",
     "remotion-video",
     "review-animations",
+    "shader-design-engineering",
     "website-to-video"
   ],
   "dependencyPolicy": "include-required"

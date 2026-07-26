@@ -30,4 +30,6 @@ Use this workflow when the deliverable is SwiftUI source, an iOS screen specific
 
 Read [references/verification.md](references/verification.md) for the state matrix, source organization, and verification receipt.
 
+Route custom `Shader`, `colorEffect`, `distortionEffect`, `layerEffect`, Metal, dithering, or GPU-effect work through `shader-design-engineering`. Use `creative-rendering-audit` when the outcome is a scored, evidence-backed rendering review.
+
 For implementation details, use Apple's current documentation. In Codex, also use OpenAI's `build-ios-apps` skills when installed.

@@ -1,6 +1,6 @@
 {
   "name": "motion-performance",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Motion performance pack for 60fps UI animation, reduced-motion fallbacks, render budget checks, and video export QA.",
   "author": "Sarvesh Chidambaram",
   "category": "craft",
@@ -30,5 +30,5 @@
     "memoire": ">=2.0.0"
   },
   "createdAt": "2026-05-07T00:00:00.000Z",
-  "updatedAt": "2026-07-15T00:00:00.000Z"
+  "updatedAt": "2026-07-26T00:00:00.000Z"
 }

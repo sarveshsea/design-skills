@@ -124,6 +124,7 @@
       "skills": [
         "ai-interaction-design",
         "content-design",
+        "creative-rendering-audit",
         "design-measurement-and-experimentation",
         "figma-code-connect",
         "figma-create-file",
@@ -137,6 +138,7 @@
         "ios-app-intents",
         "ios-performance-debugging",
         "product-discovery-and-framing",
+        "shader-design-engineering",
         "swift-concurrency-safety",
         "swift-testing",
         "swiftdata-persistence",
@@ -169,6 +171,33 @@
       "terms": "Repository license and terms",
       "relationship": "official-resource-link-only",
       "retrievedAt": "2026-07-17T00:00:00.000Z"
+    },
+    "book-of-shaders": {
+      "organization": "Patricio Gonzalez Vivo",
+      "repository": "https://github.com/patriciogonzalezvivo/thebookofshaders",
+      "commit": "5a537e76d7367dbbcda537723394b5dc03114449",
+      "terms": "All rights reserved; link-only educational reference",
+      "relationship": "restricted-resource-link-only",
+      "verifiedAt": "2026-07-26T00:00:00.000Z",
+      "freshnessDays": 180
+    },
+    "lygia": {
+      "organization": "Patricio Gonzalez Vivo and contributors",
+      "repository": "https://github.com/patriciogonzalezvivo/lygia",
+      "commit": "7ad33a0484d985cf8f3bfb2c6c13e88c3ddad1d1",
+      "terms": "Prosperity Public License 3.0 with separate Patron commercial terms; link-only here",
+      "relationship": "license-limited-resource-link-only",
+      "verifiedAt": "2026-07-26T00:00:00.000Z",
+      "freshnessDays": 180
+    },
+    "senior-engineering-partner": {
+      "organization": "Ben Greenberg",
+      "repository": "https://github.com/bjgreenberg/senior-engineering-partner",
+      "commit": "a25e9e741e797fffaa0ecc6598f1c261e8bcaa15",
+      "terms": "Apache-2.0; architecture referenced without redistributing upstream prose",
+      "relationship": "architecture-reference-link-only",
+      "verifiedAt": "2026-07-26T00:00:00.000Z",
+      "freshnessDays": 180
     }
   },
   "referenceClaims": [
@@ -196,6 +225,31 @@
       ],
       "relationship": "link-only-router",
       "contentScope": "Memi supplies design-CI routing and points Codex users to OpenAI's first-party implementation and debugger skills when installed."
+    },
+    {
+      "sourceId": "book-of-shaders",
+      "skills": [
+        "shader-design-engineering"
+      ],
+      "relationship": "link-only-router",
+      "contentScope": "Learning link only. No shader source, diagrams, assets, or prose are redistributed."
+    },
+    {
+      "sourceId": "lygia",
+      "skills": [
+        "shader-design-engineering"
+      ],
+      "relationship": "link-only-router",
+      "contentScope": "License-aware learning link only. No LYGIA shader source or assets are redistributed."
+    },
+    {
+      "sourceId": "senior-engineering-partner",
+      "skills": [
+        "creative-rendering-audit",
+        "shader-design-engineering"
+      ],
+      "relationship": "link-only-router",
+      "contentScope": "References progressive disclosure and evaluation discipline without adapting or redistributing upstream prose."
     }
   ]
 }

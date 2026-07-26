@@ -89,3 +89,5 @@ This keeps feedback scannable and diff-friendly. Each row is a self-contained ch
 - [palette-generation.md](palette-generation.md): Scale convention, generation algorithm, multi-hue palettes, dark mode, why not HSL
 - [accessibility-contrast.md](accessibility-contrast.md): APCA and WCAG 2 thresholds, fixing contrast with L, lightness gap guide, hue drift detection
 - [gamut-and-tailwind.md](gamut-and-tailwind.md): sRGB vs P3, gamut clamping, CSS fallback patterns, Tailwind v4 @theme and migration
+
+Route shader working-space, transfer-function, premultiplied-alpha, output quantization, and dither decisions to `shader-design-engineering`. Use this skill for product palette and contrast work rather than GPU pipeline design.

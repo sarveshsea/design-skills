@@ -5,6 +5,7 @@
   "description": "Curated, installable design skills for AI coding agents.",
   "type": "module",
   "scripts": {
+    "audit:skills": "node scripts/audit-skills.mjs --as-of 2026-07-26",
     "sync": "node scripts/sync-catalog.mjs",
     "test": "node --test",
     "validate": "node scripts/validate.mjs",

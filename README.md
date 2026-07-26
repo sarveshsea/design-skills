@@ -6,6 +6,10 @@
 
 Design Skills is a curated library of product-design workflows for AI coding agents. It combines portable design judgment with clearly labeled integration workflows for Figma, Mémoire, research tools, code generation, motion, and agent operations.
 
+<!-- GENERATED:CATALOG-SUMMARY:START -->
+The current catalog contains **94 installable skills: 88 canonical workflows and 6 deprecated compatibility entries**.
+<!-- GENERATED:CATALOG-SUMMARY:END -->
+
 The repository keeps three sources of truth:
 
 - `skills/<name>/SKILL.md` contains the workflow an agent reads.
@@ -28,6 +32,8 @@ Install only the workflow you need:
 npx skills@1.5.17 add sarveshsea/design-skills --skill better-ui
 npx skills@1.5.17 add sarveshsea/design-skills --skill accessibility-audit
 npx skills@1.5.17 add sarveshsea/design-skills --skill swiftui-design-engineering
+npx skills@1.5.17 add sarveshsea/design-skills --skill shader-design-engineering
+npx skills@1.5.17 add sarveshsea/design-skills --skill creative-rendering-audit
 ```
 
 Installing the repository without `--skill` may offer or install the entire discoverable corpus, including integration-specific and internal compatibility payloads. Review [`catalog.json`](catalog.json) first. The upstream Skills CLI does not currently implement this repository's collection manifests as an installation primitive.
@@ -57,11 +63,11 @@ Collections are curated navigation and policy manifests under `registry/collecti
 | `core` | 15 | Recommended core | Recommended portable, stable design judgment for most product work. |
 | `design-systems` | 5 | Optional | Tokens, components, governance, and system architecture. |
 | `figma` | 15 | Optional | Capability-gated Figma workflows. |
-| `implementation` | 7 | Optional | Framework and design-to-code generation workflows. |
-| `ios-swift` | 8 | Optional | Design, build, test, profile, and ship current SwiftUI applications with agent-verifiable workflows. |
+| `implementation` | 9 | Optional | Framework and design-to-code generation workflows. |
+| `ios-swift` | 10 | Optional | Design, build, test, profile, and ship current SwiftUI applications with agent-verifiable workflows. |
 | `memoire-operations` | 19 | Internal/optional | Mémoire-specific and agent-runtime operations. |
-| `motion-video` | 10 | Optional | Interaction motion, animation review, and product video workflows. |
-| `product-design` | 49 | Optional | Interface craft, product thinking, and design validation workflows. |
+| `motion-video` | 12 | Optional | Interaction motion, animation review, and product video workflows. |
+| `product-design` | 51 | Optional | Interface craft, product thinking, and design validation workflows. |
 | `research` | 9 | Optional | Evidence collection, synthesis, and evaluative research workflows. |
 <!-- GENERATED:COLLECTIONS:END -->
 
@@ -92,6 +98,8 @@ Explicit installation of a historical slug continues to work during the compatib
 | Audit accessibility | [`accessibility-audit`](skills/accessibility-audit/SKILL.md) |
 | Review a bounded animation change | [`review-animations`](skills/review-animations/SKILL.md) |
 | Plan motion improvements | [`improve-animations`](skills/improve-animations/SKILL.md) |
+| Build a shader or dither effect | [`shader-design-engineering`](skills/shader-design-engineering/SKILL.md) |
+| Audit shaders, particles, or GPU effects | [`creative-rendering-audit`](skills/creative-rendering-audit/SKILL.md) |
 | Synthesize research | [`data-synthesis`](skills/data-synthesis/SKILL.md) |
 | Work through Mémoire | [`memoire-design-tooling`](skills/memoire-design-tooling/SKILL.md) |
 | Build or review SwiftUI | [`swiftui-design-engineering`](skills/swiftui-design-engineering/SKILL.md) |
@@ -111,6 +119,8 @@ Adapted material records its author, source repository, exact commit, license, a
 Seven Figma integration entries are original link-only routers because the official MCP guide points to Figma Developer Terms without a standalone redistribution license. This repository does not include the upstream workflow prose, reference bundle, or scripts. See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
 
 Interface Craft is a paid Josh Puckett product without a public redistribution license. This repository does not copy its member curriculum.
+
+The Book of Shaders and LYGIA are link-only learning references for the shader skills. Their source, diagrams, prose, and assets are not redistributed. The skill structure also cites the Apache-2.0 senior-engineering-partner repository as an architecture reference without copying its prose.
 
 Stars and install counts are discovery signals, not security guarantees. Review a skill before granting an agent access to sensitive files, external services, or write-capable tools.
 

@@ -149,9 +149,16 @@ const collectionBlock = [
   "<!-- GENERATED:COLLECTIONS:END -->",
 ].join("\n");
 const readmePath = path.join(root, "README.md");
+const catalogSummaryBlock = [
+  "<!-- GENERATED:CATALOG-SUMMARY:START -->",
+  `The current catalog contains **${catalog.length} installable skills: ${catalog.filter((entry) => entry.status === "canonical").length} canonical workflows and ${catalog.filter((entry) => entry.status === "deprecated").length} deprecated compatibility entries**.`,
+  "<!-- GENERATED:CATALOG-SUMMARY:END -->",
+].join("\n");
 const readme = await readFile(readmePath, "utf8");
 const collectionPattern = /<!-- GENERATED:COLLECTIONS:START -->[\s\S]*?<!-- GENERATED:COLLECTIONS:END -->/;
 if (!collectionPattern.test(readme)) throw new Error("README.md is missing generated collection markers");
-await writeFile(readmePath, readme.replace(collectionPattern, collectionBlock), "utf8");
+const catalogSummaryPattern = /<!-- GENERATED:CATALOG-SUMMARY:START -->[\s\S]*?<!-- GENERATED:CATALOG-SUMMARY:END -->/;
+if (!catalogSummaryPattern.test(readme)) throw new Error("README.md is missing generated catalog summary markers");
+await writeFile(readmePath, readme.replace(collectionPattern, collectionBlock).replace(catalogSummaryPattern, catalogSummaryBlock), "utf8");
 
 console.log(`Synchronized ${catalog.length} skill manifests, ${collections.length} collections, and catalog schema v2.`);

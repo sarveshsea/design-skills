@@ -9,6 +9,8 @@ Great interfaces rarely come from a single thing. It's usually a collection of s
 
 Typography (text wrapping, font smoothing, tabular numbers, spacing) is covered by the `better-typography` skill; use that for anything text-related.
 
+Custom shaders, dithering, particles, and GPU-driven distortions are outside this broad polish workflow. Route their implementation to `shader-design-engineering` and their evidence-backed review to `creative-rendering-audit`.
+
 ## Quick Reference
 
 | Category | When to Use |

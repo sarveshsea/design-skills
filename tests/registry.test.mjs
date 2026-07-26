@@ -48,8 +48,10 @@ test("iOS and Swift collection exposes the complete agent build loop", async () 
   const collection = await readJson("registry/collections/ios-swift.json");
   const byName = new Map(registry.skills.map((entry) => [entry.name, entry]));
   const expected = [
+    "creative-rendering-audit",
     "ios-app-intents",
     "ios-performance-debugging",
+    "shader-design-engineering",
     "swift-concurrency-safety",
     "swift-testing",
     "swiftdata-persistence",

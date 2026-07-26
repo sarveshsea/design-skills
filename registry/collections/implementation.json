@@ -6,11 +6,13 @@
   "visibility": "public",
   "defaultInstall": false,
   "include": [
+    "creative-rendering-audit",
     "docker-environments",
     "flutter-gen",
     "hyperframes-video",
     "react-native-gen",
     "remotion-video",
+    "shader-design-engineering",
     "vue-gen",
     "website-to-video"
   ],

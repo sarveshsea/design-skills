@@ -1,6 +1,6 @@
 {
   "name": "emil-design-eng",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Apply Emil Kowalski's design-engineering guidance when polishing interface details, choosing motion, or reviewing whether a product feels responsive and intentional.",
   "author": "Emil Kowalski",
   "category": "craft",
@@ -26,5 +26,5 @@
     "memoire": ">=2.0.0"
   },
   "createdAt": "2026-07-15T00:00:00.000Z",
-  "updatedAt": "2026-07-15T00:00:00.000Z"
+  "updatedAt": "2026-07-26T00:00:00.000Z"
 }

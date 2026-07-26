@@ -1,0 +1,4 @@
+interface:
+  display_name: "Creative Rendering Audit"
+  short_description: "Audit shader quality, performance, and fallbacks"
+  default_prompt: "Use $creative-rendering-audit to audit this visual effect with evidence."
