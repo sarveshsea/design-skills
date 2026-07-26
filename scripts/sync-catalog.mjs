@@ -2,7 +2,19 @@ import { lstat, readFile, readdir, realpath, writeFile } from "node:fs/promises"
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const defaultRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+
+function resolveRoot(argv) {
+  const rootIndex = argv.indexOf("--root");
+  if (rootIndex === -1) return defaultRoot;
+  const requestedRoot = argv[rootIndex + 1];
+  if (!requestedRoot || requestedRoot.startsWith("--")) {
+    throw new Error("--root requires a workspace path");
+  }
+  return path.resolve(requestedRoot);
+}
+
+const root = resolveRoot(process.argv.slice(2));
 const skillsRoot = path.join(root, "skills");
 const realSkillsRoot = await realpath(skillsRoot);
 const NAME_PATTERN = /^[a-z][a-z0-9-]{0,62}[a-z0-9]$/;

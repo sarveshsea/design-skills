@@ -39,17 +39,19 @@ test("catalog synchronization can target an isolated workspace", async () => {
 });
 
 test("catalog synchronization is deterministic and idempotent", async () => {
-  await execFileAsync(process.execPath, ["scripts/sync-catalog.mjs"], { cwd: root });
-  const first = await generatedSnapshot();
-  await execFileAsync(process.execPath, ["scripts/sync-catalog.mjs"], { cwd: root });
-  const second = await generatedSnapshot();
+  const workspace = await isolatedWorkspace();
+  await execFileAsync(process.execPath, ["scripts/sync-catalog.mjs", "--root", workspace], { cwd: root });
+  const first = await generatedSnapshot(workspace);
+  await execFileAsync(process.execPath, ["scripts/sync-catalog.mjs", "--root", workspace], { cwd: root });
+  const second = await generatedSnapshot(workspace);
   assert.deepEqual(second, first);
 });
 
 test("catalog synchronization keeps the public skill count current", async () => {
-  await execFileAsync(process.execPath, ["scripts/sync-catalog.mjs"], { cwd: root });
-  const catalog = JSON.parse(await readFile(path.join(root, "catalog.json"), "utf8"));
-  const readme = await readFile(path.join(root, "README.md"), "utf8");
+  const workspace = await isolatedWorkspace();
+  await execFileAsync(process.execPath, ["scripts/sync-catalog.mjs", "--root", workspace], { cwd: root });
+  const catalog = JSON.parse(await readFile(path.join(workspace, "catalog.json"), "utf8"));
+  const readme = await readFile(path.join(workspace, "README.md"), "utf8");
   const canonical = catalog.skills.filter((entry) => entry.status === "canonical").length;
   const deprecated = catalog.skills.filter((entry) => entry.status === "deprecated").length;
   assert.match(readme, new RegExp(`${catalog.skills.length} installable skills: ${canonical} canonical workflows and ${deprecated} deprecated compatibility entries`));
