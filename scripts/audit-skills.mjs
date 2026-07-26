@@ -97,7 +97,8 @@ function markdownFor(audit) {
   return [
     "# Canonical Design Skill Stocktake",
     "",
-    `Evidence date: ${audit.auditedAt.slice(0, 10)}`,
+    `Evidence date: ${audit.evidenceAsOf.slice(0, 10)}`,
+    `Completed at: ${audit.auditedAt}`,
     "",
     "## Summary",
     "",
@@ -131,7 +132,7 @@ function markdownFor(audit) {
   ].join("\n");
 }
 
-export async function auditSkills(root, asOf = new Date()) {
+export async function auditSkills(root, asOf = new Date(), auditedAt = asOf) {
   const registry = JSON.parse(await readFile(path.join(root, "registry", "skills.json"), "utf8"));
   const provenance = JSON.parse(await readFile(path.join(root, "provenance.json"), "utf8"));
   const collections = await Promise.all(
@@ -249,7 +250,8 @@ export async function auditSkills(root, asOf = new Date()) {
     .sort((left, right) => left.intent.localeCompare(right.intent));
   return {
     schemaVersion: 1,
-    auditedAt: asOf.toISOString(),
+    auditedAt: auditedAt.toISOString(),
+    evidenceAsOf: asOf.toISOString(),
     methodology: {
       maximumScore: 100,
       missingEvidenceScoresZero: true,
@@ -273,8 +275,8 @@ async function main() {
   const asOfIndex = process.argv.indexOf("--as-of");
   const asOfValue = asOfIndex === -1 ? new Date() : new Date(`${process.argv[asOfIndex + 1]}T00:00:00.000Z`);
   if (Number.isNaN(asOfValue.getTime())) throw new Error("--as-of must be YYYY-MM-DD");
-  const audit = await auditSkills(root, asOfValue);
-  const date = audit.auditedAt.slice(0, 10);
+  const audit = await auditSkills(root, asOfValue, new Date());
+  const date = audit.evidenceAsOf.slice(0, 10);
   const auditDir = path.join(root, "docs", "audits");
   await mkdir(auditDir, { recursive: true });
   await writeFile(path.join(auditDir, `skill-stocktake-${date}.json`), `${JSON.stringify(audit, null, 2)}\n`);

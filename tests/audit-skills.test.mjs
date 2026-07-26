@@ -29,3 +29,11 @@ test("stocktake is deterministic for a fixed evidence date", async () => {
   const asOf = new Date("2026-07-26T00:00:00.000Z");
   assert.deepEqual(await auditSkills(root, asOf), await auditSkills(root, asOf));
 });
+
+test("stocktake distinguishes evidence cutoff from completion time", async () => {
+  const evidenceAsOf = new Date("2026-07-26T00:00:00.000Z");
+  const auditedAt = new Date("2026-07-26T22:14:37.000Z");
+  const audit = await auditSkills(root, evidenceAsOf, auditedAt);
+  assert.equal(audit.evidenceAsOf, evidenceAsOf.toISOString());
+  assert.equal(audit.auditedAt, auditedAt.toISOString());
+});
