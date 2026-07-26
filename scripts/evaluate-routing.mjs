@@ -125,6 +125,11 @@ const FEATURE_WEIGHTS = Object.freeze({
 
 const DEFAULT_MINIMUM_SCORE = 8;
 const DEFAULT_MINIMUM_MATCHED_FEATURES = 2;
+const PLATFORM_TERM_ALIASES = [
+  [/\bwebgpu\b/gi, "webgpu"],
+  [/\bwebgl2\b/gi, "webgl2"],
+  [/\bswiftui\b/gi, "swiftui"],
+];
 
 function normalizeToken(rawToken) {
   const lower = rawToken.toLowerCase();
@@ -137,7 +142,11 @@ function normalizeToken(rawToken) {
 }
 
 function splitTokens(value) {
-  return String(value ?? "")
+  const normalizedPlatforms = PLATFORM_TERM_ALIASES.reduce(
+    (source, [pattern, replacement]) => source.replace(pattern, replacement),
+    String(value ?? ""),
+  );
+  return normalizedPlatforms
     .replace(/([a-z0-9])([A-Z])/g, "$1 $2")
     .toLowerCase()
     .match(/[a-z0-9]+/g)

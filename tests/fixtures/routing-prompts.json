@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "description": "Representative catalog-routing prompts. This fixture evaluates deterministic metadata discoverability, not Memi runtime routing.",
-  "minimumAccuracy": 0.9,
+  "minimumAccuracy": 1,
   "cases": [
     {
       "id": "shader-bayer-webgl",

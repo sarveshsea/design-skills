@@ -25,7 +25,7 @@ test("representative routing fixture is bounded and covers required categories",
   const categories = new Set(fixture.cases.map((entry) => entry.category));
 
   assert.equal(fixture.schemaVersion, 1);
-  assert.equal(fixture.minimumAccuracy, 0.9);
+  assert.equal(fixture.minimumAccuracy, 1);
   assert.ok(fixture.cases.length >= 40);
   assert.equal(new Set(ids).size, ids.length);
   assert.deepEqual(
@@ -65,6 +65,7 @@ test("deterministic catalog QA routing meets its declared accuracy gate", async 
   assert.equal(report.accuracy, report.correct / report.total);
   assert.equal(report.minimumAccuracy, fixture.minimumAccuracy);
   assert.ok(report.accuracy >= fixture.minimumAccuracy, report.summary);
+  assert.equal(report.incorrect, 0, report.summary);
   assert.equal(report.cases.length, fixture.cases.length);
 
   for (const result of report.cases) {

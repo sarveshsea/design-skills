@@ -8,12 +8,14 @@ catalog QA gate. It does not execute or approximate Mémoire's runtime routing,
 an LLM classifier, embeddings, tool availability, multi-skill composition, or a
 real agent conversation.
 
-The CI requirement is at least 90% top-1 accuracy. An expected `null` result
-means the evaluator must abstain.
+The CI requirement is 100% top-1 accuracy for this checked-in set. An expected
+`null` result means the evaluator must abstain.
 
-The current checked-in fixture scores **44/45 (97.8%)**. The remaining
-confusion is printed by the command and retained as evidence rather than hidden
-through a fixture exception.
+The current checked-in fixture scores **45/45 (100%)**. The former WGSL WebGPU
+implementation/audit confusion was fixed by normalizing branded platform terms
+before camel-case token splitting; the original prompt remains in the fixture.
+Any future confusion is printed by the command and fails the gate rather than
+being hidden through a fixture exception.
 
 ## Inputs
 
@@ -83,5 +85,5 @@ node scripts/evaluate-routing.mjs --json
 - Changes to fixtures, weights, aliases, or abstention rules require review.
   Do not weaken cases merely to raise the percentage.
 
-CI runs this benchmark through the default `npm run check` command. A result
-below 90% fails the job.
+CI runs this benchmark through the default `npm run check` command. Any result
+below 100% fails the job.
