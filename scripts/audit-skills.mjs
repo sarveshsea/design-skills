@@ -45,18 +45,22 @@ function referencesIn(content) {
     .filter((target) => !/^[a-z][a-z+.-]*:/i.test(target));
 }
 
-function verdictFor(entry, dimensions) {
+export function classifyVerdict(entry, dimensions, mergeTarget = null) {
   const score = Object.values(dimensions).reduce((total, value) => total + value, 0);
   if (entry.status === "deprecated") return "Retire";
+  if (mergeTarget) return `Merge into ${mergeTarget}`;
   if (dimensions.sourceQuality < 10) return "Retire";
   if (dimensions.freshness <= 6) return "Update";
   if (score >= 90 && dimensions.triggerPrecision >= 15 && dimensions.actionability >= 15 && dimensions.uniqueness >= 8) return "Keep";
   return "Improve";
 }
 
-function reasonFor(entry, dimensions, age, verdict) {
+function reasonFor(entry, dimensions, age, verdict, mergeTarget, overlapIntents) {
   if (entry.status === "deprecated") {
     return `Deprecated compatibility surface; ${entry.replacement} already owns the canonical workflow. Retire this alias after its documented compatibility window and preserve the replacement path.`;
+  }
+  if (mergeTarget) {
+    return `Duplicates primary routing intent ${overlapIntents.join(", ")} already owned by ${mergeTarget}. Merge this skill's unique evidence and workflow material into ${mergeTarget}, then remove the duplicate primary owner.`;
   }
 
   const gaps = [];
@@ -161,6 +165,7 @@ export async function auditSkills(root, asOf = new Date(), auditedAt = asOf) {
       primaryIntentOwners.set(intent, owners);
     }
   }
+  for (const owners of primaryIntentOwners.values()) owners.sort((left, right) => left.localeCompare(right));
 
   const skills = [];
   for (const entry of registry.skills) {
@@ -183,6 +188,11 @@ export async function auditSkills(root, asOf = new Date(), auditedAt = asOf) {
     const freshnessWindow = Number.isInteger(entry.freshnessDays) ? entry.freshnessDays : 0;
     const descriptiveTags = (entry.tags ?? []).filter((tag) => !GENERIC_TAGS.has(tag));
     const uniqueIntent = (entry.routing?.intents ?? []).every((intent) => (primaryIntentOwners.get(intent) ?? [entry.name]).length === 1);
+    const overlapIntents = (entry.routing?.intents ?? []).filter((intent) => (primaryIntentOwners.get(intent) ?? []).length > 1);
+    const mergeTarget = overlapIntents
+      .map((intent) => primaryIntentOwners.get(intent)[0])
+      .filter((owner) => owner !== entry.name)
+      .sort((left, right) => left.localeCompare(right))[0] ?? null;
 
     const declaredCollections = [...(entry.collectionIds ?? [])].sort();
     const actualCollections = [...(collectionMembers.get(entry.name) ?? [])].sort();
@@ -218,7 +228,7 @@ export async function auditSkills(root, asOf = new Date(), auditedAt = asOf) {
         + ((entry.related ?? []).length > 0 || (entry.routing?.excludes ?? []).length > 0 || entry.routing?.role === "reference" ? 2 : 0),
     };
     const score = Object.values(dimensions).reduce((total, value) => total + value, 0);
-    const verdict = verdictFor(entry, dimensions);
+    const verdict = classifyVerdict(entry, dimensions, mergeTarget);
     skills.push({
       name: entry.name,
       path: `skills/${entry.name}/SKILL.md`,
@@ -226,7 +236,7 @@ export async function auditSkills(root, asOf = new Date(), auditedAt = asOf) {
       score,
       verdict,
       dimensions,
-      reason: reasonFor(entry, dimensions, age, verdict),
+      reason: reasonFor(entry, dimensions, age, verdict, mergeTarget, overlapIntents),
       evidence: {
         lines,
         localReferences: localReferences.length,
@@ -256,7 +266,7 @@ export async function auditSkills(root, asOf = new Date(), auditedAt = asOf) {
       maximumScore: 100,
       missingEvidenceScoresZero: true,
       dimensions: DIMENSION_MAXIMUMS,
-      dispositions: ["Keep", "Improve", "Update", "Merge", "Retire"],
+      dispositions: ["Keep", "Improve", "Update", "Merge into <canonical>", "Retire"],
     },
     summary: {
       totalSkills: skills.length,

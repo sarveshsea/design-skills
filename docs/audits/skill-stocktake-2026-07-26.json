@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "auditedAt": "2026-07-26T21:01:00.034Z",
+  "auditedAt": "2026-07-26T21:06:57.875Z",
   "evidenceAsOf": "2026-07-26T00:00:00.000Z",
   "methodology": {
     "maximumScore": 100,
@@ -18,7 +18,7 @@
       "Keep",
       "Improve",
       "Update",
-      "Merge",
+      "Merge into <canonical>",
       "Retire"
     ]
   },

@@ -1,7 +1,7 @@
 # Canonical Design Skill Stocktake
 
 Evidence date: 2026-07-26
-Completed at: 2026-07-26T21:01:00.034Z
+Completed at: 2026-07-26T21:06:57.875Z
 
 ## Summary
 
