@@ -2,6 +2,10 @@ import { access, lstat, readFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+import {
+  validateRoutingExclusions,
+} from "./validate-routing-exclusions.mjs";
+
 const NAME_PATTERN = /^[a-z][a-z0-9-]{0,62}[a-z0-9]$/;
 const LOCAL_LINK_PATTERN = /\[[^\]]*\]\(([^)]+)\)/g;
 const NOTE_CATEGORIES = new Set(["craft", "research", "connect", "generate"]);
@@ -31,6 +35,22 @@ const CAPABILITIES = new Set([
   "xcode.cli",
 ]);
 const WRITE_CAPABILITIES = new Set(["docker.runtime", "figma.write", "hyperframes.render", "linear.api", "memoire.mcp", "notion.api", "remotion.render"]);
+const SHADER_FRESHNESS_SKILLS = new Set(["creative-rendering-audit", "shader-design-engineering"]);
+
+function isValidHttpsUrl(value) {
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:" && Boolean(url.hostname);
+  } catch {
+    return false;
+  }
+}
+
+function ageInDays(then, now) {
+  const timestamp = Date.parse(then);
+  if (!Number.isFinite(timestamp)) return null;
+  return Math.floor((now.getTime() - timestamp) / 86_400_000);
+}
 
 function parseFrontmatter(content) {
   const lines = content.split(/\r?\n/);
@@ -69,7 +89,7 @@ function validateEnumArray(issues, prefix, value, allowed, label) {
   }
 }
 
-async function validateRegistry(root, folders) {
+async function validateRegistry(root, folders, now, freshnessSkillNames) {
   const issues = [];
   const registryPath = path.join(root, "registry", "skills.json");
   if (!(await exists(registryPath))) return ["registry/skills.json: canonical metadata registry is required"];
@@ -113,6 +133,7 @@ async function validateRegistry(root, folders) {
         }
       }
     }
+    issues.push(...validateRoutingExclusions(entry, entries, prefix));
     if (!PORTABILITY.has(entry.runtime?.portability)) issues.push(`${prefix}: unknown portability ${entry.runtime?.portability}`);
     const requiredCapabilities = entry.runtime?.requires;
     if (!Array.isArray(requiredCapabilities)) issues.push(`${prefix}: runtime.requires must be an array`);
@@ -151,6 +172,15 @@ async function validateRegistry(root, folders) {
       if (!oldEntry || oldEntry.status !== "deprecated" || oldEntry.replacement !== entry.name) issues.push(`${prefix}: supersedes ${superseded} must reciprocally reference this canonical replacement`);
     }
     if (!NOTE_CATEGORIES.has(entry.legacyCategory)) issues.push(`${prefix}: unknown legacyCategory ${entry.legacyCategory}`);
+    if (!Array.isArray(entry.sourceUrls) || entry.sourceUrls.length === 0 || entry.sourceUrls.some((url) => !isValidHttpsUrl(url))) {
+      issues.push(`${prefix}: sourceUrls must contain valid HTTPS URLs`);
+    }
+    if (!Number.isInteger(entry.freshnessDays) || entry.freshnessDays <= 0) issues.push(`${prefix}: freshnessDays must be a positive integer`);
+    const researchedAge = ageInDays(entry.lastResearchedAt, now);
+    if (researchedAge === null) issues.push(`${prefix}: lastResearchedAt must be a valid timestamp`);
+    if (freshnessSkillNames.has(entry.name) && researchedAge !== null && researchedAge > Math.min(entry.freshnessDays, 180)) {
+      issues.push(`${prefix}: shader reference review is stale (${researchedAge} days old; maximum ${Math.min(entry.freshnessDays, 180)})`);
+    }
   }
 
   const collectionsRoot = path.join(root, "registry", "collections");
@@ -291,8 +321,10 @@ async function validateSkill(root, folder) {
   return issues;
 }
 
-export async function validateRepository(root) {
+export async function validateRepository(root, options = {}) {
   const issues = [];
+  const now = options.now ?? new Date();
+  const freshnessSkillNames = options.freshnessSkillNames ?? SHADER_FRESHNESS_SKILLS;
   const skillsRoot = path.join(root, "skills");
   if (!(await exists(skillsRoot))) return ["skills/: directory is required"];
 
@@ -301,7 +333,7 @@ export async function validateRepository(root) {
     .map((entry) => entry.name)
     .sort();
   for (const folder of folders) issues.push(...await validateSkill(root, folder));
-  issues.push(...await validateRegistry(root, folders));
+  issues.push(...await validateRegistry(root, folders, now, freshnessSkillNames));
 
   const catalogPath = path.join(root, "catalog.json");
   if (!(await exists(catalogPath))) return [...issues, "catalog.json: file is required"];
@@ -391,10 +423,24 @@ export async function validateRepository(root) {
   } catch {}
   const registryByName = new Map(registryEntries.map((entry) => [entry.name, entry]));
   const referenceSources = provenance.referenceSources && typeof provenance.referenceSources === "object" ? provenance.referenceSources : {};
+  const freshnessReferenceIds = new Set(
+    (provenance.referenceClaims ?? [])
+      .filter((claim) => (claim.skills ?? []).some((skill) => freshnessSkillNames.has(skill)))
+      .map((claim) => claim.sourceId),
+  );
   const expectedReferencesBySkill = new Map();
   for (const [sourceId, reference] of Object.entries(referenceSources)) {
-    if (!reference.organization || !/^https:\/\//.test(reference.repository ?? "") || !/^[a-f0-9]{40}$/i.test(reference.commit ?? "") || !reference.relationship) {
+    if (!reference.organization || !isValidHttpsUrl(reference.repository) || !/^[a-f0-9]{40}$/i.test(reference.commit ?? "") || !reference.relationship) {
       issues.push(`provenance.json: reference source ${sourceId} requires organization, HTTPS repository, immutable commit, and relationship`);
+    }
+    if (freshnessReferenceIds.has(sourceId)) {
+      const freshnessDays = Number.isInteger(reference.freshnessDays) ? Math.min(reference.freshnessDays, 180) : null;
+      const verifiedAge = ageInDays(reference.verifiedAt, now);
+      if (freshnessDays === null || freshnessDays <= 0 || verifiedAge === null) {
+        issues.push(`provenance.json: shader reference ${sourceId} requires verifiedAt and a positive freshnessDays no greater than 180`);
+      } else if (verifiedAge > freshnessDays) {
+        issues.push(`provenance.json: shader reference ${sourceId} is stale (${verifiedAge} days old; maximum ${freshnessDays})`);
+      }
     }
   }
   for (const claim of provenance.referenceClaims ?? []) {
@@ -416,7 +462,7 @@ export async function validateRepository(root) {
     if (!source.author || !source.repository || !source.license || !source.relationship) {
       issues.push(`provenance.json: ${origin} requires author, repository, license, and relationship`);
     }
-    if (!/^https:\/\//.test(source.repository ?? "")) issues.push(`provenance.json: ${origin} repository must use HTTPS`);
+    if (!isValidHttpsUrl(source.repository)) issues.push(`provenance.json: ${origin} repository must use a valid HTTPS URL`);
     const repositoryLocal = source.relationship === "first-party-in-repository";
     if (repositoryLocal) {
       if (source.revision !== "repository-local" || source.commit) issues.push(`provenance.json: ${origin} must use repository-local revision semantics without a self-referential commit`);

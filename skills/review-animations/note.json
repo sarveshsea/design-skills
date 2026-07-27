@@ -1,6 +1,6 @@
 {
   "name": "review-animations",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. Default to flagging; approval is earned.",
   "author": "Emil Kowalski",
   "category": "craft",
@@ -26,5 +26,5 @@
     "memoire": ">=2.0.0"
   },
   "createdAt": "2026-07-15T00:00:00.000Z",
-  "updatedAt": "2026-07-15T00:00:00.000Z"
+  "updatedAt": "2026-07-26T00:00:00.000Z"
 }

@@ -1,0 +1,44 @@
+{
+  "name": "creative-rendering-audit",
+  "version": "0.1.0",
+  "description": "Audit shaders, GPU-driven effects, dithering, particles, and creative rendering for visual intent, correctness, performance, accessibility, fallbacks, evidence quality, and source licensing.",
+  "author": "Sarvesh Chidambaram",
+  "category": "craft",
+  "tags": [
+    "shader-audit",
+    "gpu",
+    "dithering",
+    "particles",
+    "rendering-performance",
+    "rendering-audit",
+    "reduced-motion",
+    "fallbacks",
+    "licensing",
+    "webgl2",
+    "webgpu",
+    "swiftui",
+    "metal"
+  ],
+  "sourceUrls": [
+    "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/WebGL_best_practices",
+    "https://www.w3.org/TR/WGSL/",
+    "https://developer.apple.com/documentation/swiftui/shader",
+    "https://www.khronos.org/blog/shader-ecosystem-survey-results-2026"
+  ],
+  "lastResearchedAt": "2026-07-26T00:00:00.000Z",
+  "freshnessDays": 180,
+  "skills": [
+    {
+      "file": "SKILL.md",
+      "name": "Creative Rendering Audit",
+      "activateOn": "creative-rendering-audit",
+      "freedomLevel": "medium"
+    }
+  ],
+  "dependencies": [],
+  "engines": {
+    "memoire": ">=2.6.0"
+  },
+  "createdAt": "2026-07-26T00:00:00.000Z",
+  "updatedAt": "2026-07-26T00:00:00.000Z"
+}

@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 1,
+  "description": "Representative catalog-routing prompts. This fixture evaluates deterministic metadata discoverability, not Memi runtime routing.",
+  "minimumAccuracy": 1,
+  "cases": [
+    {
+      "id": "shader-bayer-webgl",
+      "category": "shader-dither",
+      "prompt": "Add ordered Bayer dithering to this WebGL2 fragment shader.",
+      "expected": "shader-design-engineering"
+    },
+    {
+      "id": "shader-seeded-glsl",
+      "category": "shader-dither",
+      "prompt": "Implement deterministic seeded noise dithering in a GLSL shader.",
+      "expected": "shader-design-engineering"
+    },
+    {
+      "id": "shader-wgsl-ripple",
+      "category": "shader-dither",
+      "prompt": "Build a WGSL WebGPU ripple shader with a reduced-motion fallback.",
+      "expected": "shader-design-engineering"
+    },
+    {
+      "id": "shader-swiftui-metal",
+      "category": "shader-dither",
+      "prompt": "Create a SwiftUI Metal color effect for a ripple transition.",
+      "expected": "shader-design-engineering"
+    },
+    {
+      "id": "shader-debug-coordinates",
+      "category": "shader-dither",
+      "prompt": "Debug a WebGL2 fragment shader coordinate-space sampling bug.",
+      "expected": "shader-design-engineering"
+    },
+    {
+      "id": "shader-blue-noise-color",
+      "category": "shader-dither",
+      "prompt": "Implement blue-noise dithering in a shader with correct linear and sRGB color handling.",
+      "expected": "shader-design-engineering"
+    },
+    {
+      "id": "shader-uniform-controls",
+      "category": "shader-dither",
+      "prompt": "Integrate uniform controls into a WebGL2 canvas distortion shader.",
+      "expected": "shader-design-engineering"
+    },
+    {
+      "id": "shader-fix-compilation",
+      "category": "shader-dither",
+      "prompt": "Fix this shader compilation error.",
+      "expected": "shader-design-engineering"
+    },
+    {
+      "id": "render-audit-concise-webgl2",
+      "category": "creative-rendering",
+      "prompt": "Audit this WebGL2 shader.",
+      "expected": "creative-rendering-audit"
+    },
+    {
+      "id": "render-audit-swiftui-color-effect",
+      "category": "creative-rendering",
+      "prompt": "Audit a SwiftUI colorEffect.",
+      "expected": "creative-rendering-audit"
+    },
+    {
+      "id": "render-audit-create-webgpu",
+      "category": "creative-rendering",
+      "prompt": "Create a rendering audit for our WebGPU effect.",
+      "expected": "creative-rendering-audit"
+    },
+    {
+      "id": "render-audit-particles",
+      "category": "creative-rendering",
+      "prompt": "Audit this WebGL particle effect for frame budget and fallback behavior.",
+      "expected": "creative-rendering-audit"
+    },
+    {
+      "id": "render-audit-alpha-license",
+      "category": "creative-rendering",
+      "prompt": "Review a shader for alpha correctness, visual intent, and source licensing.",
+      "expected": "creative-rendering-audit"
+    },
+    {
+      "id": "render-audit-dither-stability",
+      "category": "creative-rendering",
+      "prompt": "Evaluate this dither effect for temporal stability and accessibility.",
+      "expected": "creative-rendering-audit"
+    },
+    {
+      "id": "render-audit-metal-sampling",
+      "category": "creative-rendering",
+      "prompt": "Audit a Metal particle effect's texture access, sample radius, and GPU cost.",
+      "expected": "creative-rendering-audit"
+    },
+    {
+      "id": "render-audit-reduced-motion",
+      "category": "creative-rendering",
+      "prompt": "Inspect this creative rendering demo for reduced motion and static fallbacks.",
+      "expected": "creative-rendering-audit"
+    },
+    {
+      "id": "render-audit-webgpu-evidence",
+      "category": "creative-rendering",
+      "prompt": "Assess the evidence quality and rendering performance of this WebGPU effect.",
+      "expected": "creative-rendering-audit"
+    },
+    {
+      "id": "swiftui-navigation-state",
+      "category": "swiftui",
+      "prompt": "Refactor this SwiftUI navigation flow and make state ownership explicit.",
+      "expected": "swiftui-design-engineering"
+    },
+    {
+      "id": "swiftui-production-interface",
+      "category": "swiftui",
+      "prompt": "Build a production SwiftUI interface with previews and simulator verification.",
+      "expected": "swiftui-design-engineering"
+    },
+    {
+      "id": "swiftui-tokens-accessibility",
+      "category": "swiftui",
+      "prompt": "Review this SwiftUI screen for design tokens and accessibility.",
+      "expected": "swiftui-design-engineering"
+    },
+    {
+      "id": "swiftui-liquid-glass-adopt",
+      "category": "swiftui",
+      "prompt": "Adopt Liquid Glass in this iOS 26 SwiftUI app.",
+      "expected": "swiftui-liquid-glass"
+    },
+    {
+      "id": "swiftui-liquid-glass-fallback",
+      "category": "swiftui",
+      "prompt": "Audit our GlassEffectContainer hierarchy and availability fallback.",
+      "expected": "swiftui-liquid-glass"
+    },
+    {
+      "id": "motion-create-choreography",
+      "category": "motion-animation-color",
+      "prompt": "Design the timing, easing, and choreography for these micro-interactions.",
+      "expected": "animation-craft"
+    },
+    {
+      "id": "motion-review-diff",
+      "category": "motion-animation-color",
+      "prompt": "Review this bounded animation code diff against a high craft bar.",
+      "expected": "review-animations"
+    },
+    {
+      "id": "motion-improvement-roadmap",
+      "category": "motion-animation-color",
+      "prompt": "Audit the motion across the app and produce a prioritized animation improvement plan.",
+      "expected": "improve-animations"
+    },
+    {
+      "id": "motion-find-opportunities",
+      "category": "motion-animation-color",
+      "prompt": "Find places in this interface that do not animate but should.",
+      "expected": "find-animation-opportunities"
+    },
+    {
+      "id": "motion-frame-budget",
+      "category": "motion-animation-color",
+      "prompt": "Check this UI animation against a 60fps render budget.",
+      "expected": "motion-performance"
+    },
+    {
+      "id": "color-oklch-palette",
+      "category": "motion-animation-color",
+      "prompt": "Generate an OKLCH palette and keep every color inside the display gamut.",
+      "expected": "better-colors"
+    },
+    {
+      "id": "color-tailwind-theme",
+      "category": "motion-animation-color",
+      "prompt": "Convert our hex theme to OKLCH tokens for Tailwind v4.",
+      "expected": "better-colors"
+    },
+    {
+      "id": "accessibility-wcag",
+      "category": "design-catalog",
+      "prompt": "Audit this checkout flow for WCAG 2.2, keyboard navigation, and screen reader support.",
+      "expected": "accessibility-audit"
+    },
+    {
+      "id": "accessibility-touch-focus",
+      "category": "design-catalog",
+      "prompt": "Check touch targets and focus management for accessibility failures.",
+      "expected": "accessibility-audit"
+    },
+    {
+      "id": "typography-variable-font",
+      "category": "design-catalog",
+      "prompt": "Configure a variable font, type scale, line height, and heading hierarchy.",
+      "expected": "better-typography"
+    },
+    {
+      "id": "design-system-governance",
+      "category": "design-catalog",
+      "prompt": "Define design system governance, token taxonomy, component APIs, and versioning.",
+      "expected": "design-systems"
+    },
+    {
+      "id": "component-classification",
+      "category": "design-catalog",
+      "prompt": "Plan a design system component catalog and check component-library coverage.",
+      "expected": "design-systems"
+    },
+    {
+      "id": "atomic-levels",
+      "category": "design-catalog",
+      "prompt": "Use Atomic Design to classify these UI pieces as atoms, molecules, organisms, templates, and pages.",
+      "expected": "atomic-design"
+    },
+    {
+      "id": "figma-system-audit",
+      "category": "design-catalog",
+      "prompt": "Audit this Figma file for token adoption and Code Connect coverage.",
+      "expected": "figma-audit"
+    },
+    {
+      "id": "mobile-touch-gestures",
+      "category": "design-catalog",
+      "prompt": "Review this mobile layout for thumb zones, touch gestures, and responsive breakpoints.",
+      "expected": "mobile-craft"
+    },
+    {
+      "id": "content-empty-state",
+      "category": "design-catalog",
+      "prompt": "Rewrite the empty state and error microcopy so people know how to recover.",
+      "expected": "content-design"
+    },
+    {
+      "id": "ia-taxonomy-navigation",
+      "category": "design-catalog",
+      "prompt": "Rework the information architecture, taxonomy, navigation labels, and filters.",
+      "expected": "information-architecture"
+    },
+    {
+      "id": "interaction-recovery",
+      "category": "design-catalog",
+      "prompt": "Design the feature flow across loading, feedback, errors, undo, and recovery states.",
+      "expected": "interaction-design"
+    },
+    {
+      "id": "research-synthesis",
+      "category": "design-catalog",
+      "prompt": "Synthesize qualitative interviews with affinity mapping and thematic analysis.",
+      "expected": "data-synthesis"
+    },
+    {
+      "id": "competitive-benchmark",
+      "category": "design-catalog",
+      "prompt": "Create a competitor feature matrix and UX benchmarking report.",
+      "expected": "competitive-intel"
+    },
+    {
+      "id": "product-framing",
+      "category": "design-catalog",
+      "prompt": "Frame this product opportunity into a testable problem statement and success criteria.",
+      "expected": "product-discovery-and-framing"
+    },
+    {
+      "id": "negative-database",
+      "category": "negative-near-miss",
+      "prompt": "Optimize this PostgreSQL query and add the missing index.",
+      "expected": null
+    },
+    {
+      "id": "negative-auth",
+      "category": "negative-near-miss",
+      "prompt": "Implement OAuth token rotation for the API.",
+      "expected": null
+    },
+    {
+      "id": "negative-copy-shader-book",
+      "category": "negative-near-miss",
+      "prompt": "Summarize the plot of a science fiction book about shaders.",
+      "expected": null
+    },
+    {
+      "id": "negative-metal-material",
+      "category": "negative-near-miss",
+      "prompt": "Estimate the cost of a metal roof and order construction materials.",
+      "expected": null
+    },
+    {
+      "id": "negative-motion-legal",
+      "category": "negative-near-miss",
+      "prompt": "Draft a legal motion for the court filing.",
+      "expected": null
+    },
+    {
+      "id": "negative-color-printer",
+      "category": "negative-near-miss",
+      "prompt": "Why is my office printer out of color ink?",
+      "expected": null
+    },
+    {
+      "id": "negative-api-performance-fallback",
+      "category": "negative-near-miss",
+      "prompt": "Audit our API performance and database fallback.",
+      "expected": null
+    },
+    {
+      "id": "negative-particle-supplier",
+      "category": "negative-near-miss",
+      "prompt": "Review particle supplier licensing and GPU pricing.",
+      "expected": null
+    },
+    {
+      "id": "negative-typescript-compilation",
+      "category": "negative-near-miss",
+      "prompt": "Fix this TypeScript compilation error.",
+      "expected": null
+    }
+  ]
+}

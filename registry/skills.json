@@ -312,6 +312,96 @@
       "freedomLevel": "medium"
     },
     {
+      "name": "creative-rendering-audit",
+      "displayName": "Creative Rendering Audit",
+      "type": "workflow",
+      "domains": [
+        "visual",
+        "motion",
+        "accessibility",
+        "implementation"
+      ],
+      "lifecycle": [
+        "validate"
+      ],
+      "actions": [
+        "audit",
+        "review"
+      ],
+      "surfaces": [
+        "web",
+        "ios",
+        "code"
+      ],
+      "maturity": "beta",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "creative-rendering-audit"
+        ],
+        "role": "primary",
+        "excludes": [
+          "shader-design-engineering",
+          "review-animations",
+          "improve-animations"
+        ]
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [
+          "browser.control",
+          "xcode.cli"
+        ],
+        "fallback": "Audit supplied source and rendered artifacts, and score unavailable runtime or device evidence as unassessed."
+      },
+      "dependencies": [],
+      "related": [
+        "shader-design-engineering",
+        "review-animations",
+        "motion-performance",
+        "accessibility-audit"
+      ],
+      "collectionIds": [
+        "implementation",
+        "ios-swift",
+        "motion-video",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "0.1.0",
+      "tags": [
+        "shader-audit",
+        "gpu",
+        "dithering",
+        "particles",
+        "rendering-performance",
+        "rendering-audit",
+        "reduced-motion",
+        "fallbacks",
+        "licensing",
+        "webgl2",
+        "webgpu",
+        "swiftui",
+        "metal"
+      ],
+      "sourceUrls": [
+        "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/WebGL_best_practices",
+        "https://www.w3.org/TR/WGSL/",
+        "https://developer.apple.com/documentation/swiftui/shader",
+        "https://www.khronos.org/blog/shader-ecosystem-survey-results-2026"
+      ],
+      "lastResearchedAt": "2026-07-26T00:00:00.000Z",
+      "freshnessDays": 180,
+      "engines": {
+        "memoire": ">=2.6.0"
+      },
+      "createdAt": "2026-07-26T00:00:00.000Z",
+      "updatedAt": "2026-07-26T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
       "type": "workflow",
       "maturity": "stable",
       "visibility": "public",
@@ -408,7 +498,10 @@
           "animation-craft"
         ],
         "role": "primary",
-        "excludes": []
+        "excludes": [
+          "shader-design-engineering",
+          "creative-rendering-audit"
+        ]
       },
       "runtime": {
         "portability": "portable",
@@ -421,13 +514,16 @@
         "hyperframes-video",
         "motion-performance"
       ],
-      "related": [],
+      "related": [
+        "shader-design-engineering",
+        "creative-rendering-audit"
+      ],
       "collectionIds": [
         "motion-video",
         "product-design"
       ],
       "legacyCategory": "craft",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "animation",
         "motion",
@@ -446,7 +542,7 @@
         "memoire": ">=2.0.0"
       },
       "createdAt": "2026-03-28T00:00:00.000Z",
-      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-26T00:00:00.000Z",
       "freedomLevel": "medium"
     },
     {
@@ -764,7 +860,9 @@
           "better-colors"
         ],
         "role": "primary",
-        "excludes": []
+        "excludes": [
+          "shader-design-engineering"
+        ]
       },
       "runtime": {
         "portability": "portable",
@@ -773,13 +871,15 @@
         "fallback": "Use user-supplied artifacts and document any unavailable verification."
       },
       "dependencies": [],
-      "related": [],
+      "related": [
+        "shader-design-engineering"
+      ],
       "collectionIds": [
         "core",
         "product-design"
       ],
       "legacyCategory": "craft",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "craft",
         "design-skills"
@@ -793,7 +893,7 @@
         "memoire": ">=2.0.0"
       },
       "createdAt": "2026-07-15T00:00:00.000Z",
-      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-26T00:00:00.000Z",
       "freedomLevel": "medium"
     },
     {
@@ -876,7 +976,10 @@
           "better-ui"
         ],
         "role": "primary",
-        "excludes": []
+        "excludes": [
+          "shader-design-engineering",
+          "creative-rendering-audit"
+        ]
       },
       "runtime": {
         "portability": "portable",
@@ -885,13 +988,16 @@
         "fallback": "Use user-supplied artifacts and document any unavailable verification."
       },
       "dependencies": [],
-      "related": [],
+      "related": [
+        "shader-design-engineering",
+        "creative-rendering-audit"
+      ],
       "collectionIds": [
         "core",
         "product-design"
       ],
       "legacyCategory": "craft",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "craft",
         "design-skills"
@@ -905,7 +1011,7 @@
         "memoire": ">=2.0.0"
       },
       "createdAt": "2026-07-15T00:00:00.000Z",
-      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-26T00:00:00.000Z",
       "freedomLevel": "medium"
     },
     {
@@ -1849,7 +1955,10 @@
           "emil-design-eng"
         ],
         "role": "reference",
-        "excludes": []
+        "excludes": [
+          "shader-design-engineering",
+          "creative-rendering-audit"
+        ]
       },
       "runtime": {
         "portability": "portable",
@@ -1858,12 +1967,15 @@
         "fallback": "Use user-supplied artifacts and document any unavailable verification."
       },
       "dependencies": [],
-      "related": [],
+      "related": [
+        "shader-design-engineering",
+        "creative-rendering-audit"
+      ],
       "collectionIds": [
         "product-design"
       ],
       "legacyCategory": "craft",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "craft",
         "design-skills"
@@ -1877,7 +1989,7 @@
         "memoire": ">=2.0.0"
       },
       "createdAt": "2026-07-15T00:00:00.000Z",
-      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-26T00:00:00.000Z",
       "freedomLevel": "high"
     },
     {
@@ -2799,7 +2911,9 @@
           "find-animation-opportunities"
         ],
         "role": "primary",
-        "excludes": []
+        "excludes": [
+          "shader-design-engineering"
+        ]
       },
       "runtime": {
         "portability": "portable",
@@ -2808,13 +2922,16 @@
         "fallback": "Use user-supplied artifacts and document any unavailable verification."
       },
       "dependencies": [],
-      "related": [],
+      "related": [
+        "shader-design-engineering",
+        "creative-rendering-audit"
+      ],
       "collectionIds": [
         "motion-video",
         "product-design"
       ],
       "legacyCategory": "craft",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "craft",
         "design-skills"
@@ -2828,7 +2945,7 @@
         "memoire": ">=2.0.0"
       },
       "createdAt": "2026-07-15T00:00:00.000Z",
-      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-26T00:00:00.000Z",
       "freedomLevel": "medium"
     },
     {
@@ -3102,7 +3219,9 @@
           "improve-animations"
         ],
         "role": "primary",
-        "excludes": []
+        "excludes": [
+          "creative-rendering-audit"
+        ]
       },
       "runtime": {
         "portability": "portable",
@@ -3111,13 +3230,15 @@
         "fallback": "Use user-supplied artifacts and document any unavailable verification."
       },
       "dependencies": [],
-      "related": [],
+      "related": [
+        "creative-rendering-audit"
+      ],
       "collectionIds": [
         "motion-video",
         "product-design"
       ],
       "legacyCategory": "craft",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "craft",
         "design-skills"
@@ -3131,7 +3252,7 @@
         "memoire": ">=2.0.0"
       },
       "createdAt": "2026-07-15T00:00:00.000Z",
-      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-26T00:00:00.000Z",
       "freedomLevel": "medium"
     },
     {
@@ -4018,7 +4139,9 @@
           "motion-performance"
         ],
         "role": "primary",
-        "excludes": []
+        "excludes": [
+          "creative-rendering-audit"
+        ]
       },
       "runtime": {
         "portability": "portable",
@@ -4027,13 +4150,16 @@
         "fallback": "Use user-supplied artifacts and document any unavailable verification."
       },
       "dependencies": [],
-      "related": [],
+      "related": [
+        "shader-design-engineering",
+        "creative-rendering-audit"
+      ],
       "collectionIds": [
         "motion-video",
         "product-design"
       ],
       "legacyCategory": "craft",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "tags": [
         "motion",
         "performance",
@@ -4051,7 +4177,7 @@
         "memoire": ">=2.0.0"
       },
       "createdAt": "2026-05-07T00:00:00.000Z",
-      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-26T00:00:00.000Z",
       "freedomLevel": "medium"
     },
     {
@@ -4574,7 +4700,9 @@
           "review-animations"
         ],
         "role": "primary",
-        "excludes": []
+        "excludes": [
+          "creative-rendering-audit"
+        ]
       },
       "runtime": {
         "portability": "portable",
@@ -4583,13 +4711,16 @@
         "fallback": "Use user-supplied artifacts and document any unavailable verification."
       },
       "dependencies": [],
-      "related": [],
+      "related": [
+        "creative-rendering-audit",
+        "shader-design-engineering"
+      ],
       "collectionIds": [
         "motion-video",
         "product-design"
       ],
       "legacyCategory": "craft",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "tags": [
         "craft",
         "design-skills"
@@ -4603,7 +4734,99 @@
         "memoire": ">=2.0.0"
       },
       "createdAt": "2026-07-15T00:00:00.000Z",
-      "updatedAt": "2026-07-15T00:00:00.000Z",
+      "updatedAt": "2026-07-26T00:00:00.000Z",
+      "freedomLevel": "medium"
+    },
+    {
+      "name": "shader-design-engineering",
+      "displayName": "Shader Design Engineering",
+      "type": "workflow",
+      "domains": [
+        "visual",
+        "motion",
+        "implementation",
+        "accessibility"
+      ],
+      "lifecycle": [
+        "design",
+        "deliver",
+        "validate"
+      ],
+      "actions": [
+        "create",
+        "integrate",
+        "review"
+      ],
+      "surfaces": [
+        "web",
+        "ios",
+        "code"
+      ],
+      "maturity": "beta",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "shader-design-engineering"
+        ],
+        "role": "primary",
+        "excludes": [
+          "creative-rendering-audit"
+        ]
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [
+          "browser.control",
+          "xcode.cli"
+        ],
+        "fallback": "Produce a platform-specific effect contract and source guidance, and mark runtime, profiling, or rendered checks unavailable."
+      },
+      "dependencies": [],
+      "related": [
+        "creative-rendering-audit",
+        "swiftui-design-engineering",
+        "motion-performance",
+        "better-colors",
+        "accessibility-audit"
+      ],
+      "collectionIds": [
+        "implementation",
+        "ios-swift",
+        "motion-video",
+        "product-design"
+      ],
+      "legacyCategory": "craft",
+      "version": "0.1.0",
+      "tags": [
+        "shaders",
+        "glsl",
+        "wgsl",
+        "webgl2",
+        "webgpu",
+        "metal",
+        "swiftui",
+        "dithering",
+        "shader-compilation",
+        "gpu-debugging",
+        "creative-rendering"
+      ],
+      "sourceUrls": [
+        "https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext",
+        "https://www.w3.org/TR/WGSL/",
+        "https://developer.apple.com/documentation/swiftui/shader",
+        "https://www.khronos.org/blog/shader-ecosystem-survey-results-2026",
+        "https://thebookofshaders.com/",
+        "https://github.com/patriciogonzalezvivo/lygia"
+      ],
+      "lastResearchedAt": "2026-07-26T00:00:00.000Z",
+      "freshnessDays": 180,
+      "engines": {
+        "memoire": ">=2.6.0"
+      },
+      "createdAt": "2026-07-26T00:00:00.000Z",
+      "updatedAt": "2026-07-26T00:00:00.000Z",
       "freedomLevel": "medium"
     },
     {
@@ -5213,30 +5436,63 @@
       "name": "ios-app-intents",
       "displayName": "iOS App Intents",
       "type": "workflow",
-      "domains": ["implementation", "interaction", "accessibility"],
-      "lifecycle": ["define", "deliver", "validate"],
-      "actions": ["create", "integrate", "review"],
-      "surfaces": ["ios", "code"],
+      "domains": [
+        "implementation",
+        "interaction",
+        "accessibility"
+      ],
+      "lifecycle": [
+        "define",
+        "deliver",
+        "validate"
+      ],
+      "actions": [
+        "create",
+        "integrate",
+        "review"
+      ],
+      "surfaces": [
+        "ios",
+        "code"
+      ],
       "maturity": "stable",
       "visibility": "public",
       "status": "canonical",
       "routing": {
-        "intents": ["ios-app-intents"],
+        "intents": [
+          "ios-app-intents"
+        ],
         "role": "primary",
         "excludes": []
       },
       "runtime": {
         "portability": "portable",
         "requires": [],
-        "optional": ["xcode.cli"],
+        "optional": [
+          "xcode.cli"
+        ],
         "fallback": "Produce the intent contract and verification commands, then mark simulator and system-surface proof unavailable."
       },
-      "dependencies": ["swift-concurrency-safety"],
-      "related": ["swiftui-design-engineering", "swift-testing"],
-      "collectionIds": ["ios-swift"],
+      "dependencies": [
+        "swift-concurrency-safety"
+      ],
+      "related": [
+        "swiftui-design-engineering",
+        "swift-testing"
+      ],
+      "collectionIds": [
+        "ios-swift"
+      ],
       "legacyCategory": "generate",
       "version": "1.0.0",
-      "tags": ["ios", "app-intents", "shortcuts", "siri", "widgets", "spotlight"],
+      "tags": [
+        "ios",
+        "app-intents",
+        "shortcuts",
+        "siri",
+        "widgets",
+        "spotlight"
+      ],
       "sourceUrls": [
         "https://developer.apple.com/documentation/appintents",
         "https://developer.apple.com/documentation/updates/appintents",
@@ -5244,7 +5500,9 @@
       ],
       "lastResearchedAt": "2026-07-17T00:00:00.000Z",
       "freshnessDays": 45,
-      "engines": {"memoire": ">=2.6.0"},
+      "engines": {
+        "memoire": ">=2.6.0"
+      },
       "createdAt": "2026-07-17T00:00:00.000Z",
       "updatedAt": "2026-07-17T00:00:00.000Z",
       "freedomLevel": "low"
@@ -5253,30 +5511,61 @@
       "name": "ios-performance-debugging",
       "displayName": "iOS Performance Debugging",
       "type": "workflow",
-      "domains": ["implementation", "systems"],
-      "lifecycle": ["validate", "measure"],
-      "actions": ["analyze", "audit"],
-      "surfaces": ["ios", "code"],
+      "domains": [
+        "implementation",
+        "systems"
+      ],
+      "lifecycle": [
+        "validate",
+        "measure"
+      ],
+      "actions": [
+        "analyze",
+        "audit"
+      ],
+      "surfaces": [
+        "ios",
+        "code"
+      ],
       "maturity": "stable",
       "visibility": "public",
       "status": "canonical",
       "routing": {
-        "intents": ["ios-performance-debugging"],
+        "intents": [
+          "ios-performance-debugging"
+        ],
         "role": "primary",
         "excludes": []
       },
       "runtime": {
         "portability": "capability-gated",
-        "requires": ["xcode.cli"],
+        "requires": [
+          "xcode.cli"
+        ],
         "optional": [],
         "fallback": "Perform a static SwiftUI performance review and provide exact Instruments or simulator commands for a macOS handoff."
       },
-      "dependencies": ["swiftui-design-engineering", "xcode-build-reliability"],
-      "related": ["swift-concurrency-safety", "swift-testing"],
-      "collectionIds": ["ios-swift"],
+      "dependencies": [
+        "swiftui-design-engineering",
+        "xcode-build-reliability"
+      ],
+      "related": [
+        "swift-concurrency-safety",
+        "swift-testing"
+      ],
+      "collectionIds": [
+        "ios-swift"
+      ],
       "legacyCategory": "craft",
       "version": "1.0.0",
-      "tags": ["ios", "swiftui", "instruments", "performance", "memory", "debugging"],
+      "tags": [
+        "ios",
+        "swiftui",
+        "instruments",
+        "performance",
+        "memory",
+        "debugging"
+      ],
       "sourceUrls": [
         "https://developer.apple.com/documentation/xcode/understanding-and-improving-swiftui-performance",
         "https://developer.apple.com/documentation/technologyoverviews/testing-and-performance",
@@ -5284,7 +5573,9 @@
       ],
       "lastResearchedAt": "2026-07-17T00:00:00.000Z",
       "freshnessDays": 45,
-      "engines": {"memoire": ">=2.6.0"},
+      "engines": {
+        "memoire": ">=2.6.0"
+      },
       "createdAt": "2026-07-17T00:00:00.000Z",
       "updatedAt": "2026-07-17T00:00:00.000Z",
       "freedomLevel": "low"
@@ -5293,30 +5584,59 @@
       "name": "swift-concurrency-safety",
       "displayName": "Swift Concurrency Safety",
       "type": "workflow",
-      "domains": ["implementation", "systems"],
-      "lifecycle": ["define", "deliver", "validate"],
-      "actions": ["create", "review"],
-      "surfaces": ["ios", "code"],
+      "domains": [
+        "implementation",
+        "systems"
+      ],
+      "lifecycle": [
+        "define",
+        "deliver",
+        "validate"
+      ],
+      "actions": [
+        "create",
+        "review"
+      ],
+      "surfaces": [
+        "ios",
+        "code"
+      ],
       "maturity": "stable",
       "visibility": "public",
       "status": "canonical",
       "routing": {
-        "intents": ["swift-concurrency-safety"],
+        "intents": [
+          "swift-concurrency-safety"
+        ],
         "role": "primary",
         "excludes": []
       },
       "runtime": {
         "portability": "portable",
         "requires": [],
-        "optional": ["xcode.cli"],
+        "optional": [
+          "xcode.cli"
+        ],
         "fallback": "Review isolation and Sendable boundaries statically, then disclose that compiler verification was not available."
       },
       "dependencies": [],
-      "related": ["swift-testing", "swiftdata-persistence"],
-      "collectionIds": ["ios-swift"],
+      "related": [
+        "swift-testing",
+        "swiftdata-persistence"
+      ],
+      "collectionIds": [
+        "ios-swift"
+      ],
       "legacyCategory": "generate",
       "version": "1.0.0",
-      "tags": ["swift", "concurrency", "actors", "sendable", "swift-6", "data-races"],
+      "tags": [
+        "swift",
+        "concurrency",
+        "actors",
+        "sendable",
+        "swift-6",
+        "data-races"
+      ],
       "sourceUrls": [
         "https://www.swift.org/migration/",
         "https://www.swift.org/documentation/",
@@ -5324,7 +5644,9 @@
       ],
       "lastResearchedAt": "2026-07-17T00:00:00.000Z",
       "freshnessDays": 60,
-      "engines": {"memoire": ">=2.6.0"},
+      "engines": {
+        "memoire": ">=2.6.0"
+      },
       "createdAt": "2026-07-17T00:00:00.000Z",
       "updatedAt": "2026-07-17T00:00:00.000Z",
       "freedomLevel": "medium"
@@ -5333,30 +5655,56 @@
       "name": "swift-testing",
       "displayName": "Swift Testing",
       "type": "workflow",
-      "domains": ["implementation"],
-      "lifecycle": ["validate"],
-      "actions": ["create", "review"],
-      "surfaces": ["ios", "code"],
+      "domains": [
+        "implementation"
+      ],
+      "lifecycle": [
+        "validate"
+      ],
+      "actions": [
+        "create",
+        "review"
+      ],
+      "surfaces": [
+        "ios",
+        "code"
+      ],
       "maturity": "stable",
       "visibility": "public",
       "status": "canonical",
       "routing": {
-        "intents": ["swift-testing"],
+        "intents": [
+          "swift-testing"
+        ],
         "role": "primary",
         "excludes": []
       },
       "runtime": {
         "portability": "portable",
         "requires": [],
-        "optional": ["xcode.cli"],
+        "optional": [
+          "xcode.cli"
+        ],
         "fallback": "Author the test plan and test source, then mark execution as pending on a Swift or Xcode toolchain."
       },
       "dependencies": [],
-      "related": ["xcode-build-reliability", "swift-concurrency-safety"],
-      "collectionIds": ["ios-swift"],
+      "related": [
+        "xcode-build-reliability",
+        "swift-concurrency-safety"
+      ],
+      "collectionIds": [
+        "ios-swift"
+      ],
       "legacyCategory": "generate",
       "version": "1.0.0",
-      "tags": ["swift", "testing", "xctest", "xcuitest", "parameterized-tests", "test-plan"],
+      "tags": [
+        "swift",
+        "testing",
+        "xctest",
+        "xcuitest",
+        "parameterized-tests",
+        "test-plan"
+      ],
       "sourceUrls": [
         "https://developer.apple.com/documentation/xcode/testing",
         "https://developer.apple.com/documentation/testing",
@@ -5364,7 +5712,9 @@
       ],
       "lastResearchedAt": "2026-07-17T00:00:00.000Z",
       "freshnessDays": 60,
-      "engines": {"memoire": ">=2.6.0"},
+      "engines": {
+        "memoire": ">=2.6.0"
+      },
       "createdAt": "2026-07-17T00:00:00.000Z",
       "updatedAt": "2026-07-17T00:00:00.000Z",
       "freedomLevel": "medium"
@@ -5373,37 +5723,70 @@
       "name": "swiftdata-persistence",
       "displayName": "SwiftData Persistence",
       "type": "workflow",
-      "domains": ["implementation", "systems"],
-      "lifecycle": ["define", "deliver", "validate"],
-      "actions": ["create", "review"],
-      "surfaces": ["ios", "code"],
+      "domains": [
+        "implementation",
+        "systems"
+      ],
+      "lifecycle": [
+        "define",
+        "deliver",
+        "validate"
+      ],
+      "actions": [
+        "create",
+        "review"
+      ],
+      "surfaces": [
+        "ios",
+        "code"
+      ],
       "maturity": "stable",
       "visibility": "public",
       "status": "canonical",
       "routing": {
-        "intents": ["swiftdata-persistence"],
+        "intents": [
+          "swiftdata-persistence"
+        ],
         "role": "primary",
         "excludes": []
       },
       "runtime": {
         "portability": "portable",
         "requires": [],
-        "optional": ["xcode.cli"],
+        "optional": [
+          "xcode.cli"
+        ],
         "fallback": "Produce the schema, migration, isolation, and test plan without claiming runtime persistence proof."
       },
-      "dependencies": ["swift-concurrency-safety"],
-      "related": ["swift-testing", "swiftui-design-engineering"],
-      "collectionIds": ["ios-swift"],
+      "dependencies": [
+        "swift-concurrency-safety"
+      ],
+      "related": [
+        "swift-testing",
+        "swiftui-design-engineering"
+      ],
+      "collectionIds": [
+        "ios-swift"
+      ],
       "legacyCategory": "generate",
       "version": "1.0.0",
-      "tags": ["swiftdata", "persistence", "migration", "cloudkit", "schema", "offline"],
+      "tags": [
+        "swiftdata",
+        "persistence",
+        "migration",
+        "cloudkit",
+        "schema",
+        "offline"
+      ],
       "sourceUrls": [
         "https://developer.apple.com/documentation/swiftdata",
         "https://developer.apple.com/documentation/updates/swiftdata"
       ],
       "lastResearchedAt": "2026-07-17T00:00:00.000Z",
       "freshnessDays": 45,
-      "engines": {"memoire": ">=2.6.0"},
+      "engines": {
+        "memoire": ">=2.6.0"
+      },
       "createdAt": "2026-07-17T00:00:00.000Z",
       "updatedAt": "2026-07-17T00:00:00.000Z",
       "freedomLevel": "medium"
@@ -5412,30 +5795,70 @@
       "name": "swiftui-design-engineering",
       "displayName": "SwiftUI Design Engineering",
       "type": "workflow",
-      "domains": ["product", "interaction", "visual", "implementation", "accessibility"],
-      "lifecycle": ["define", "design", "deliver", "validate"],
-      "actions": ["create", "audit", "review"],
-      "surfaces": ["ios", "code"],
+      "domains": [
+        "product",
+        "interaction",
+        "visual",
+        "implementation",
+        "accessibility"
+      ],
+      "lifecycle": [
+        "define",
+        "design",
+        "deliver",
+        "validate"
+      ],
+      "actions": [
+        "create",
+        "audit",
+        "review"
+      ],
+      "surfaces": [
+        "ios",
+        "code"
+      ],
       "maturity": "stable",
       "visibility": "public",
       "status": "canonical",
       "routing": {
-        "intents": ["swiftui-design-engineering"],
+        "intents": [
+          "swiftui-design-engineering"
+        ],
         "role": "primary",
-        "excludes": []
+        "excludes": [
+          "shader-design-engineering",
+          "creative-rendering-audit"
+        ]
       },
       "runtime": {
         "portability": "portable",
         "requires": [],
-        "optional": ["xcode.cli"],
+        "optional": [
+          "xcode.cli"
+        ],
         "fallback": "Produce source and a verification receipt that explicitly marks build, preview, and simulator checks unavailable."
       },
       "dependencies": [],
-      "related": ["swiftui-liquid-glass", "ios-performance-debugging", "mobile-craft"],
-      "collectionIds": ["ios-swift"],
+      "related": [
+        "swiftui-liquid-glass",
+        "ios-performance-debugging",
+        "mobile-craft",
+        "shader-design-engineering",
+        "creative-rendering-audit"
+      ],
+      "collectionIds": [
+        "ios-swift"
+      ],
       "legacyCategory": "craft",
-      "version": "1.0.0",
-      "tags": ["swiftui", "ios", "design-system", "accessibility", "navigation", "state"],
+      "version": "1.0.1",
+      "tags": [
+        "swiftui",
+        "ios",
+        "design-system",
+        "accessibility",
+        "navigation",
+        "state"
+      ],
       "sourceUrls": [
         "https://developer.apple.com/documentation/swiftui",
         "https://developer.apple.com/design/human-interface-guidelines/",
@@ -5444,39 +5867,75 @@
       ],
       "lastResearchedAt": "2026-07-17T00:00:00.000Z",
       "freshnessDays": 45,
-      "engines": {"memoire": ">=2.6.0"},
+      "engines": {
+        "memoire": ">=2.6.0"
+      },
       "createdAt": "2026-07-17T00:00:00.000Z",
-      "updatedAt": "2026-07-17T00:00:00.000Z",
+      "updatedAt": "2026-07-26T00:00:00.000Z",
       "freedomLevel": "medium"
     },
     {
       "name": "swiftui-liquid-glass",
       "displayName": "SwiftUI Liquid Glass",
       "type": "workflow",
-      "domains": ["interaction", "visual", "implementation", "accessibility"],
-      "lifecycle": ["design", "deliver", "validate"],
-      "actions": ["create", "audit", "review"],
-      "surfaces": ["ios", "code"],
+      "domains": [
+        "interaction",
+        "visual",
+        "implementation",
+        "accessibility"
+      ],
+      "lifecycle": [
+        "design",
+        "deliver",
+        "validate"
+      ],
+      "actions": [
+        "create",
+        "audit",
+        "review"
+      ],
+      "surfaces": [
+        "ios",
+        "code"
+      ],
       "maturity": "stable",
       "visibility": "public",
       "status": "canonical",
       "routing": {
-        "intents": ["swiftui-liquid-glass"],
+        "intents": [
+          "swiftui-liquid-glass"
+        ],
         "role": "primary",
         "excludes": []
       },
       "runtime": {
         "portability": "portable",
         "requires": [],
-        "optional": ["xcode.cli"],
+        "optional": [
+          "xcode.cli"
+        ],
         "fallback": "Review availability, hierarchy, and fallback code statically and defer rendering proof to a compatible simulator."
       },
-      "dependencies": ["swiftui-design-engineering"],
-      "related": ["apple-design", "ios-performance-debugging"],
-      "collectionIds": ["ios-swift"],
+      "dependencies": [
+        "swiftui-design-engineering"
+      ],
+      "related": [
+        "apple-design",
+        "ios-performance-debugging"
+      ],
+      "collectionIds": [
+        "ios-swift"
+      ],
       "legacyCategory": "craft",
       "version": "1.0.0",
-      "tags": ["swiftui", "liquid-glass", "ios-26", "materials", "accessibility", "performance"],
+      "tags": [
+        "swiftui",
+        "liquid-glass",
+        "ios-26",
+        "materials",
+        "accessibility",
+        "performance"
+      ],
       "sourceUrls": [
         "https://developer.apple.com/documentation/swiftui/glasseffectcontainer",
         "https://developer.apple.com/documentation/technologyoverviews/adopting-liquid-glass",
@@ -5484,7 +5943,9 @@
       ],
       "lastResearchedAt": "2026-07-17T00:00:00.000Z",
       "freshnessDays": 30,
-      "engines": {"memoire": ">=2.6.0"},
+      "engines": {
+        "memoire": ">=2.6.0"
+      },
       "createdAt": "2026-07-17T00:00:00.000Z",
       "updatedAt": "2026-07-17T00:00:00.000Z",
       "freedomLevel": "medium"
@@ -5493,30 +5954,61 @@
       "name": "xcode-build-reliability",
       "displayName": "Xcode Build Reliability",
       "type": "workflow",
-      "domains": ["implementation", "agent-ops"],
-      "lifecycle": ["deliver", "validate", "operate"],
-      "actions": ["integrate", "operate", "review"],
-      "surfaces": ["ios", "code", "agent-runtime"],
+      "domains": [
+        "implementation",
+        "agent-ops"
+      ],
+      "lifecycle": [
+        "deliver",
+        "validate",
+        "operate"
+      ],
+      "actions": [
+        "integrate",
+        "operate",
+        "review"
+      ],
+      "surfaces": [
+        "ios",
+        "code",
+        "agent-runtime"
+      ],
       "maturity": "stable",
       "visibility": "public",
       "status": "canonical",
       "routing": {
-        "intents": ["xcode-build-reliability"],
+        "intents": [
+          "xcode-build-reliability"
+        ],
         "role": "primary",
         "excludes": []
       },
       "runtime": {
         "portability": "capability-gated",
-        "requires": ["xcode.cli"],
+        "requires": [
+          "xcode.cli"
+        ],
         "optional": [],
         "fallback": "Generate the build contract and CI commands, then hand execution to a macOS runner with Xcode installed."
       },
       "dependencies": [],
-      "related": ["swift-testing", "ios-performance-debugging"],
-      "collectionIds": ["ios-swift"],
+      "related": [
+        "swift-testing",
+        "ios-performance-debugging"
+      ],
+      "collectionIds": [
+        "ios-swift"
+      ],
       "legacyCategory": "connect",
       "version": "1.0.0",
-      "tags": ["xcode", "xcodebuild", "xcbeautify", "simulator", "ci", "build-times"],
+      "tags": [
+        "xcode",
+        "xcodebuild",
+        "xcbeautify",
+        "simulator",
+        "ci",
+        "build-times"
+      ],
       "sourceUrls": [
         "https://developer.apple.com/documentation/xcode/building-and-running-an-app",
         "https://developer.apple.com/documentation/xcode/testing",
@@ -5524,7 +6016,9 @@
       ],
       "lastResearchedAt": "2026-07-17T00:00:00.000Z",
       "freshnessDays": 45,
-      "engines": {"memoire": ">=2.6.0"},
+      "engines": {
+        "memoire": ">=2.6.0"
+      },
       "createdAt": "2026-07-17T00:00:00.000Z",
       "updatedAt": "2026-07-17T00:00:00.000Z",
       "freedomLevel": "low"

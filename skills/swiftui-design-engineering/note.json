@@ -1,6 +1,6 @@
 {
   "name": "swiftui-design-engineering",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Design, build, refactor, and review production SwiftUI interfaces with explicit state ownership, navigation, accessibility, design tokens, previews, and simulator verification.",
   "author": "Sarvesh Chidambaram",
   "category": "craft",
@@ -33,5 +33,5 @@
     "memoire": ">=2.6.0"
   },
   "createdAt": "2026-07-17T00:00:00.000Z",
-  "updatedAt": "2026-07-17T00:00:00.000Z"
+  "updatedAt": "2026-07-26T00:00:00.000Z"
 }

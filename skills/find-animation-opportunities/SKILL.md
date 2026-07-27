@@ -5,7 +5,7 @@ description: Search a codebase or UI for places that don't animate but should, a
 
 # Finding Animation Opportunities
 
-A search skill. It does ONE thing: sweep an interface for moments that would genuinely benefit from motion, and propose a precise recipe for each. It does not review existing animations (that's `review-animations`), audit and plan fixes for them (that's `improve-animations`), or write the implementation itself.
+A search skill. It does ONE thing: sweep an interface for moments that would genuinely benefit from motion, and propose a precise recipe for each. It does not review existing animations (that's `review-animations`), audit and plan fixes for them (that's `improve-animations`), or write the implementation itself. Route proposed shader, dither, particle, distortion, and other custom GPU implementations to `shader-design-engineering`; route reviews of existing effects to `creative-rendering-audit`.
 
 ## Operating Posture
 

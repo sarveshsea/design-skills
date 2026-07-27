@@ -1,0 +1,44 @@
+{
+  "name": "shader-design-engineering",
+  "version": "0.1.0",
+  "description": "Design, implement, and verify intentional real-time shader effects for WebGL2, WebGPU/WGSL, and SwiftUI/Metal, including dithering, color correctness, accessible fallbacks, profiling, and debugging.",
+  "author": "Sarvesh Chidambaram",
+  "category": "craft",
+  "tags": [
+    "shaders",
+    "glsl",
+    "wgsl",
+    "webgl2",
+    "webgpu",
+    "metal",
+    "swiftui",
+    "dithering",
+    "shader-compilation",
+    "gpu-debugging",
+    "creative-rendering"
+  ],
+  "sourceUrls": [
+    "https://developer.mozilla.org/en-US/docs/Web/API/WebGL2RenderingContext",
+    "https://www.w3.org/TR/WGSL/",
+    "https://developer.apple.com/documentation/swiftui/shader",
+    "https://www.khronos.org/blog/shader-ecosystem-survey-results-2026",
+    "https://thebookofshaders.com/",
+    "https://github.com/patriciogonzalezvivo/lygia"
+  ],
+  "lastResearchedAt": "2026-07-26T00:00:00.000Z",
+  "freshnessDays": 180,
+  "skills": [
+    {
+      "file": "SKILL.md",
+      "name": "Shader Design Engineering",
+      "activateOn": "shader-design-engineering",
+      "freedomLevel": "medium"
+    }
+  ],
+  "dependencies": [],
+  "engines": {
+    "memoire": ">=2.6.0"
+  },
+  "createdAt": "2026-07-26T00:00:00.000Z",
+  "updatedAt": "2026-07-26T00:00:00.000Z"
+}

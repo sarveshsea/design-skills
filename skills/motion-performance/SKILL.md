@@ -12,6 +12,9 @@ and renderable.
 
 - Animate transform and opacity first; treat layout and paint-heavy properties
   as exceptions that need proof.
+- Route shader, dither, particle, and custom GPU effects to
+  `shader-design-engineering`; use `creative-rendering-audit` for named-device
+  profiling, fallback verification, and a scored rendering verdict.
 - Define fixed dimensions, fps, and duration for video projects before render.
 - Keep text within safe crop zones for 16:9, 9:16, and square variants.
 - Add reduced-motion alternatives for UI surfaces that embed generated motion.

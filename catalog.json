@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-17T00:00:00.000Z",
+  "generatedAt": "2026-07-26T00:00:00.000Z",
   "skills": [
     {
       "name": "accessibility-audit",
@@ -397,7 +397,10 @@
           "animation-craft"
         ],
         "role": "primary",
-        "excludes": []
+        "excludes": [
+          "shader-design-engineering",
+          "creative-rendering-audit"
+        ]
       },
       "runtime": {
         "portability": "portable",
@@ -410,12 +413,15 @@
         "hyperframes-video",
         "motion-performance"
       ],
-      "related": [],
+      "related": [
+        "shader-design-engineering",
+        "creative-rendering-audit"
+      ],
       "collectionIds": [
         "motion-video",
         "product-design"
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "craft",
       "tags": [
         "animation",
@@ -741,7 +747,9 @@
           "better-colors"
         ],
         "role": "primary",
-        "excludes": []
+        "excludes": [
+          "shader-design-engineering"
+        ]
       },
       "runtime": {
         "portability": "portable",
@@ -750,12 +758,14 @@
         "fallback": "Use user-supplied artifacts and document any unavailable verification."
       },
       "dependencies": [],
-      "related": [],
+      "related": [
+        "shader-design-engineering"
+      ],
       "collectionIds": [
         "core",
         "product-design"
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "craft",
       "tags": [
         "craft",
@@ -851,7 +861,10 @@
           "better-ui"
         ],
         "role": "primary",
-        "excludes": []
+        "excludes": [
+          "shader-design-engineering",
+          "creative-rendering-audit"
+        ]
       },
       "runtime": {
         "portability": "portable",
@@ -860,12 +873,15 @@
         "fallback": "Use user-supplied artifacts and document any unavailable verification."
       },
       "dependencies": [],
-      "related": [],
+      "related": [
+        "shader-design-engineering",
+        "creative-rendering-audit"
+      ],
       "collectionIds": [
         "core",
         "product-design"
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "craft",
       "tags": [
         "craft",
@@ -1179,6 +1195,101 @@
       "upstreamCommit": null,
       "relationship": "first-party-in-repository",
       "path": "skills/content-design"
+    },
+    {
+      "name": "creative-rendering-audit",
+      "displayName": "Creative Rendering Audit",
+      "description": "Audit shaders, GPU-driven effects, dithering, particles, and creative rendering for visual intent, correctness, performance, accessibility, fallbacks, evidence quality, and source licensing.",
+      "type": "workflow",
+      "lifecycle": [
+        "validate"
+      ],
+      "domains": [
+        "visual",
+        "motion",
+        "accessibility",
+        "implementation"
+      ],
+      "actions": [
+        "audit",
+        "review"
+      ],
+      "surfaces": [
+        "web",
+        "ios",
+        "code"
+      ],
+      "maturity": "beta",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "creative-rendering-audit"
+        ],
+        "role": "primary",
+        "excludes": [
+          "shader-design-engineering",
+          "review-animations",
+          "improve-animations"
+        ]
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [
+          "browser.control",
+          "xcode.cli"
+        ],
+        "fallback": "Audit supplied source and rendered artifacts, and score unavailable runtime or device evidence as unassessed."
+      },
+      "dependencies": [],
+      "related": [
+        "shader-design-engineering",
+        "review-animations",
+        "motion-performance",
+        "accessibility-audit"
+      ],
+      "collectionIds": [
+        "implementation",
+        "ios-swift",
+        "motion-video",
+        "product-design"
+      ],
+      "version": "0.1.0",
+      "category": "craft",
+      "tags": [
+        "shader-audit",
+        "gpu",
+        "dithering",
+        "particles",
+        "rendering-performance",
+        "rendering-audit",
+        "reduced-motion",
+        "fallbacks",
+        "licensing",
+        "webgl2",
+        "webgpu",
+        "swiftui",
+        "metal"
+      ],
+      "origin": "design-skills-first-party",
+      "author": "Sarvesh Chidambaram",
+      "license": "MIT",
+      "source": "https://github.com/sarveshsea/design-skills",
+      "sourceRevision": "repository-local",
+      "upstreamCommit": null,
+      "relationship": "first-party-in-repository",
+      "officialReferences": [
+        {
+          "sourceId": "senior-engineering-partner",
+          "organization": "Ben Greenberg",
+          "repository": "https://github.com/bjgreenberg/senior-engineering-partner",
+          "commit": "a25e9e741e797fffaa0ecc6598f1c261e8bcaa15",
+          "relationship": "link-only-router"
+        }
+      ],
+      "path": "skills/creative-rendering-audit"
     },
     {
       "name": "cron-agent-workflows",
@@ -1802,7 +1913,10 @@
           "emil-design-eng"
         ],
         "role": "reference",
-        "excludes": []
+        "excludes": [
+          "shader-design-engineering",
+          "creative-rendering-audit"
+        ]
       },
       "runtime": {
         "portability": "portable",
@@ -1811,11 +1925,14 @@
         "fallback": "Use user-supplied artifacts and document any unavailable verification."
       },
       "dependencies": [],
-      "related": [],
+      "related": [
+        "shader-design-engineering",
+        "creative-rendering-audit"
+      ],
       "collectionIds": [
         "product-design"
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "craft",
       "tags": [
         "craft",
@@ -2793,7 +2910,9 @@
           "find-animation-opportunities"
         ],
         "role": "primary",
-        "excludes": []
+        "excludes": [
+          "shader-design-engineering"
+        ]
       },
       "runtime": {
         "portability": "portable",
@@ -2802,12 +2921,15 @@
         "fallback": "Use user-supplied artifacts and document any unavailable verification."
       },
       "dependencies": [],
-      "related": [],
+      "related": [
+        "shader-design-engineering",
+        "creative-rendering-audit"
+      ],
       "collectionIds": [
         "motion-video",
         "product-design"
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "craft",
       "tags": [
         "craft",
@@ -3084,7 +3206,9 @@
           "improve-animations"
         ],
         "role": "primary",
-        "excludes": []
+        "excludes": [
+          "creative-rendering-audit"
+        ]
       },
       "runtime": {
         "portability": "portable",
@@ -3093,12 +3217,14 @@
         "fallback": "Use user-supplied artifacts and document any unavailable verification."
       },
       "dependencies": [],
-      "related": [],
+      "related": [
+        "creative-rendering-audit"
+      ],
       "collectionIds": [
         "motion-video",
         "product-design"
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "craft",
       "tags": [
         "craft",
@@ -4131,7 +4257,9 @@
           "motion-performance"
         ],
         "role": "primary",
-        "excludes": []
+        "excludes": [
+          "creative-rendering-audit"
+        ]
       },
       "runtime": {
         "portability": "portable",
@@ -4140,12 +4268,15 @@
         "fallback": "Use user-supplied artifacts and document any unavailable verification."
       },
       "dependencies": [],
-      "related": [],
+      "related": [
+        "shader-design-engineering",
+        "creative-rendering-audit"
+      ],
       "collectionIds": [
         "motion-video",
         "product-design"
       ],
-      "version": "0.1.0",
+      "version": "0.1.1",
       "category": "craft",
       "tags": [
         "motion",
@@ -4672,7 +4803,9 @@
           "review-animations"
         ],
         "role": "primary",
-        "excludes": []
+        "excludes": [
+          "creative-rendering-audit"
+        ]
       },
       "runtime": {
         "portability": "portable",
@@ -4681,12 +4814,15 @@
         "fallback": "Use user-supplied artifacts and document any unavailable verification."
       },
       "dependencies": [],
-      "related": [],
+      "related": [
+        "creative-rendering-audit",
+        "shader-design-engineering"
+      ],
       "collectionIds": [
         "motion-video",
         "product-design"
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "craft",
       "tags": [
         "craft",
@@ -4813,6 +4949,115 @@
       "upstreamCommit": "0fcc01ceb630e623c1cfe1adae04ddcf0da6a43e",
       "relationship": "first-party",
       "path": "skills/self-improving-agent"
+    },
+    {
+      "name": "shader-design-engineering",
+      "displayName": "Shader Design Engineering",
+      "description": "Design, implement, and verify intentional real-time shader effects for WebGL2, WebGPU/WGSL, and SwiftUI/Metal, including dithering, color correctness, accessible fallbacks, profiling, and debugging.",
+      "type": "workflow",
+      "lifecycle": [
+        "design",
+        "deliver",
+        "validate"
+      ],
+      "domains": [
+        "visual",
+        "motion",
+        "implementation",
+        "accessibility"
+      ],
+      "actions": [
+        "create",
+        "integrate",
+        "review"
+      ],
+      "surfaces": [
+        "web",
+        "ios",
+        "code"
+      ],
+      "maturity": "beta",
+      "freedomLevel": "medium",
+      "visibility": "public",
+      "status": "canonical",
+      "routing": {
+        "intents": [
+          "shader-design-engineering"
+        ],
+        "role": "primary",
+        "excludes": [
+          "creative-rendering-audit"
+        ]
+      },
+      "runtime": {
+        "portability": "portable",
+        "requires": [],
+        "optional": [
+          "browser.control",
+          "xcode.cli"
+        ],
+        "fallback": "Produce a platform-specific effect contract and source guidance, and mark runtime, profiling, or rendered checks unavailable."
+      },
+      "dependencies": [],
+      "related": [
+        "creative-rendering-audit",
+        "swiftui-design-engineering",
+        "motion-performance",
+        "better-colors",
+        "accessibility-audit"
+      ],
+      "collectionIds": [
+        "implementation",
+        "ios-swift",
+        "motion-video",
+        "product-design"
+      ],
+      "version": "0.1.0",
+      "category": "craft",
+      "tags": [
+        "shaders",
+        "glsl",
+        "wgsl",
+        "webgl2",
+        "webgpu",
+        "metal",
+        "swiftui",
+        "dithering",
+        "shader-compilation",
+        "gpu-debugging",
+        "creative-rendering"
+      ],
+      "origin": "design-skills-first-party",
+      "author": "Sarvesh Chidambaram",
+      "license": "MIT",
+      "source": "https://github.com/sarveshsea/design-skills",
+      "sourceRevision": "repository-local",
+      "upstreamCommit": null,
+      "relationship": "first-party-in-repository",
+      "officialReferences": [
+        {
+          "sourceId": "book-of-shaders",
+          "organization": "Patricio Gonzalez Vivo",
+          "repository": "https://github.com/patriciogonzalezvivo/thebookofshaders",
+          "commit": "5a537e76d7367dbbcda537723394b5dc03114449",
+          "relationship": "link-only-router"
+        },
+        {
+          "sourceId": "lygia",
+          "organization": "Patricio Gonzalez Vivo and contributors",
+          "repository": "https://github.com/patriciogonzalezvivo/lygia",
+          "commit": "7ad33a0484d985cf8f3bfb2c6c13e88c3ddad1d1",
+          "relationship": "link-only-router"
+        },
+        {
+          "sourceId": "senior-engineering-partner",
+          "organization": "Ben Greenberg",
+          "repository": "https://github.com/bjgreenberg/senior-engineering-partner",
+          "commit": "a25e9e741e797fffaa0ecc6598f1c261e8bcaa15",
+          "relationship": "link-only-router"
+        }
+      ],
+      "path": "skills/shader-design-engineering"
     },
     {
       "name": "superpower",
@@ -5171,7 +5416,10 @@
           "swiftui-design-engineering"
         ],
         "role": "primary",
-        "excludes": []
+        "excludes": [
+          "shader-design-engineering",
+          "creative-rendering-audit"
+        ]
       },
       "runtime": {
         "portability": "portable",
@@ -5185,12 +5433,14 @@
       "related": [
         "swiftui-liquid-glass",
         "ios-performance-debugging",
-        "mobile-craft"
+        "mobile-craft",
+        "shader-design-engineering",
+        "creative-rendering-audit"
       ],
       "collectionIds": [
         "ios-swift"
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "craft",
       "tags": [
         "swiftui",

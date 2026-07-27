@@ -254,6 +254,31 @@ test("rejects broad always activation and duplicate primary intent owners", asyn
   assert.ok(issues.some((issue) => issue.includes("primary routing intent")));
 });
 
+test("rejects unknown, self-referential, and malformed routing exclusions", async () => {
+  const root = await fixture();
+  await updateRegistry(root, (registry) => {
+    registry.skills[0].routing.excludes = [
+      "review-layout",
+      "missing-skill",
+      "Not Kebab Case",
+    ];
+  });
+
+  const issues = await validateRepository(root);
+  assert.ok(
+    issues.some((issue) => issue.includes("cannot exclude itself")),
+    issues.join("\n"),
+  );
+  assert.ok(
+    issues.some((issue) => issue.includes("unknown routing exclusion missing-skill")),
+    issues.join("\n"),
+  );
+  assert.ok(
+    issues.some((issue) => issue.includes("routing exclusion Not Kebab Case")),
+    issues.join("\n"),
+  );
+});
+
 test("rejects quarantined skills in public collections", async () => {
   const root = await fixture();
   await updateRegistry(root, (registry) => {
@@ -343,4 +368,37 @@ test("rejects license evidence outside the repository", async () => {
   await writeFile(provenancePath, `${JSON.stringify(provenance, null, 2)}\n`);
   const issues = await validateRepository(root);
   assert.ok(issues.some((issue) => issue.includes("repository-contained relative file")));
+});
+
+test("rejects malformed source URLs and stale shader reference reviews", async () => {
+  const root = await fixture();
+  await updateRegistry(root, (registry) => {
+    registry.skills[0].sourceUrls = ["https://"];
+  });
+  const provenancePath = path.join(root, "provenance.json");
+  const provenance = JSON.parse(await readFile(provenancePath, "utf8"));
+  provenance.referenceSources = {
+    "shader-reference": {
+      organization: "Example",
+      repository: "https://example.com/shaders",
+      commit: "0123456789abcdef0123456789abcdef01234567",
+      relationship: "official-resource-link-only",
+      verifiedAt: "2025-01-01T00:00:00.000Z",
+      freshnessDays: 180,
+    },
+  };
+  provenance.referenceClaims = [{
+    sourceId: "shader-reference",
+    skills: ["review-layout"],
+    relationship: "link-only-router",
+    contentScope: "Link-only shader reference.",
+  }];
+  await writeFile(provenancePath, `${JSON.stringify(provenance, null, 2)}\n`);
+
+  const issues = await validateRepository(root, {
+    now: new Date("2026-07-26T00:00:00.000Z"),
+    freshnessSkillNames: new Set(["review-layout"]),
+  });
+  assert.ok(issues.some((issue) => issue.includes("sourceUrls must contain valid HTTPS URLs")));
+  assert.ok(issues.some((issue) => issue.includes("shader-reference") && issue.includes("stale")));
 });

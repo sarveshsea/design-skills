@@ -23,3 +23,21 @@ jobs:
         run: test -z "$(git status --porcelain)"
       - name: Verify Agent Skills discovery
         run: npm exec --no -- skills add . --list
+      - name: Clean-install shader design engineering
+        shell: bash
+        run: |
+          install_root="$(mktemp -d)"
+          cd "$install_root"
+          "$GITHUB_WORKSPACE/node_modules/.bin/skills" add "$GITHUB_WORKSPACE" --skill shader-design-engineering --agent codex --yes
+          test -f .agents/skills/shader-design-engineering/SKILL.md
+          test -f .agents/skills/shader-design-engineering/references/webgl2-glsl.md
+          test "$(find .agents/skills -mindepth 1 -maxdepth 1 -type d | wc -l | tr -d ' ')" = "1"
+      - name: Clean-install creative rendering audit
+        shell: bash
+        run: |
+          install_root="$(mktemp -d)"
+          cd "$install_root"
+          "$GITHUB_WORKSPACE/node_modules/.bin/skills" add "$GITHUB_WORKSPACE" --skill creative-rendering-audit --agent codex --yes
+          test -f .agents/skills/creative-rendering-audit/SKILL.md
+          test -f .agents/skills/creative-rendering-audit/references/audit-rubric.md
+          test "$(find .agents/skills -mindepth 1 -maxdepth 1 -type d | wc -l | tr -d ' ')" = "1"

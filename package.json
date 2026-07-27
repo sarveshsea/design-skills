@@ -5,15 +5,22 @@
   "description": "Curated, installable design skills for AI coding agents.",
   "type": "module",
   "scripts": {
+    "audit:skills": "node scripts/audit-skills-cli.mjs --as-of 2026-07-26",
+    "check:routing": "node scripts/evaluate-routing-cli.mjs",
     "sync": "node scripts/sync-catalog.mjs",
     "test": "node --test",
+    "test:coverage": "npm run test:coverage:audit && npm run test:coverage:routing && npm run test:coverage:validation",
+    "test:coverage:audit": "c8 --check-coverage --per-file --include=scripts/audit-skills.mjs --lines 90 --branches 90 node --test tests/audit-skills.test.mjs",
+    "test:coverage:routing": "c8 --check-coverage --per-file --include=scripts/evaluate-routing.mjs --lines 90 --branches 90 node --test tests/routing-benchmark.test.mjs",
+    "test:coverage:validation": "c8 --check-coverage --per-file --include=scripts/validate-routing-exclusions.mjs --lines 90 --branches 90 node --test tests/validate-routing-exclusions.test.mjs",
     "validate": "node scripts/validate.mjs",
-    "check": "npm run validate && npm run sync && npm run test && npm run validate"
+    "check": "npm run validate && npm run sync && npm run test && npm run test:coverage && npm run check:routing && npm run validate"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=20.19.0"
   },
   "devDependencies": {
+    "c8": "12.0.0",
     "skills": "1.5.17"
   }
 }

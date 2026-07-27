@@ -6,8 +6,10 @@
   "visibility": "public",
   "defaultInstall": false,
   "include": [
+    "creative-rendering-audit",
     "ios-app-intents",
     "ios-performance-debugging",
+    "shader-design-engineering",
     "swift-concurrency-safety",
     "swift-testing",
     "swiftdata-persistence",

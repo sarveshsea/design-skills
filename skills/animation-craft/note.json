@@ -1,6 +1,6 @@
 {
   "name": "animation-craft",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Motion design and micro-interaction craft — timing, easing, UI choreography, and links into the current Remotion/Hyperframes production packs.",
   "author": "Sarvesh Chidambaram",
   "category": "craft",
@@ -35,5 +35,5 @@
     "memoire": ">=2.0.0"
   },
   "createdAt": "2026-03-28T00:00:00.000Z",
-  "updatedAt": "2026-07-15T00:00:00.000Z"
+  "updatedAt": "2026-07-26T00:00:00.000Z"
 }

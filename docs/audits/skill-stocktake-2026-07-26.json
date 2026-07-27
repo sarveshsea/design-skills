@@ -1,0 +1,3134 @@
+{
+  "schemaVersion": 1,
+  "auditedAt": "2026-07-26T21:06:57.875Z",
+  "evidenceAsOf": "2026-07-26T00:00:00.000Z",
+  "methodology": {
+    "maximumScore": 100,
+    "missingEvidenceScoresZero": true,
+    "dimensions": {
+      "triggerPrecision": 20,
+      "actionability": 20,
+      "freshness": 15,
+      "sourceQuality": 15,
+      "progressiveDisclosure": 10,
+      "installation": 10,
+      "uniqueness": 10
+    },
+    "dispositions": [
+      "Keep",
+      "Improve",
+      "Update",
+      "Merge into <canonical>",
+      "Retire"
+    ]
+  },
+  "summary": {
+    "totalSkills": 94,
+    "canonicalSkills": 88,
+    "deprecatedSkills": 6,
+    "meanScore": 86,
+    "verdictCounts": {
+      "Improve": 66,
+      "Update": 8,
+      "Keep": 14,
+      "Retire": 6
+    },
+    "duplicatePrimaryIntents": []
+  },
+  "skills": [
+    {
+      "name": "accessibility-audit",
+      "path": "skills/accessibility-audit/SKILL.md",
+      "status": "canonical",
+      "score": 79,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 8,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; add a bounded workflow, verification step, and explicit output contract. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 9,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "core",
+          "product-design"
+        ],
+        "routingIntents": [
+          "accessibility-audit"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "agent-memory-profiles",
+      "path": "skills/agent-memory-profiles/SKILL.md",
+      "status": "canonical",
+      "score": 84,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 16,
+        "freshness": 8,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but refresh sources last reviewed 80 days ago. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 28,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+        "ageDays": 80,
+        "freshnessDays": 60,
+        "sourceCount": 3,
+        "collections": [
+          "memoire-operations"
+        ],
+        "routingIntents": [
+          "agent-memory-profiles"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "agent-messaging-gateway",
+      "path": "skills/agent-messaging-gateway/SKILL.md",
+      "status": "canonical",
+      "score": 78,
+      "verdict": "Update",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 20,
+        "freshness": 2,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; refresh sources last reviewed 80 days ago. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 28,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+        "ageDays": 80,
+        "freshnessDays": 30,
+        "sourceCount": 3,
+        "collections": [
+          "memoire-operations"
+        ],
+        "routingIntents": [
+          "agent-messaging-gateway"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "agent-session-checkpoints",
+      "path": "skills/agent-session-checkpoints/SKILL.md",
+      "status": "canonical",
+      "score": 80,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 16,
+        "freshness": 8,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; refresh sources last reviewed 80 days ago. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 28,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+        "ageDays": 80,
+        "freshnessDays": 60,
+        "sourceCount": 3,
+        "collections": [
+          "memoire-operations"
+        ],
+        "routingIntents": [
+          "agent-session-checkpoints"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "agent-skill-migration",
+      "path": "skills/agent-skill-migration/SKILL.md",
+      "status": "canonical",
+      "score": 78,
+      "verdict": "Update",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 20,
+        "freshness": 2,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; refresh sources last reviewed 80 days ago. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 28,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+        "ageDays": 80,
+        "freshnessDays": 30,
+        "sourceCount": 3,
+        "collections": [
+          "memoire-operations"
+        ],
+        "routingIntents": [
+          "agent-skill-migration"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "ai-interaction-design",
+      "path": "skills/ai-interaction-design/SKILL.md",
+      "status": "canonical",
+      "score": 100,
+      "verdict": "Keep",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 20,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Bounded trigger, actionable workflow, current sources, immutable provenance, progressive references, and install metadata all validate; retain as a distinct canonical skill.",
+      "evidence": {
+        "lines": 44,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 365,
+        "sourceCount": 1,
+        "collections": [
+          "core",
+          "product-design"
+        ],
+        "routingIntents": [
+          "design-ai-interaction"
+        ],
+        "routingExcludes": [
+          "interaction-design"
+        ]
+      }
+    },
+    {
+      "name": "animation-craft",
+      "path": "skills/animation-craft/SKILL.md",
+      "status": "canonical",
+      "score": 84,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 16,
+        "actionability": 8,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Useful bounded capability, but add a bounded workflow, verification step, and explicit output contract. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 9,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+        "ageDays": 80,
+        "freshnessDays": 90,
+        "sourceCount": 2,
+        "collections": [
+          "motion-video",
+          "product-design"
+        ],
+        "routingIntents": [
+          "animation-craft"
+        ],
+        "routingExcludes": [
+          "shader-design-engineering",
+          "creative-rendering-audit"
+        ]
+      }
+    },
+    {
+      "name": "animation-vocabulary",
+      "path": "skills/animation-vocabulary/SKILL.md",
+      "status": "canonical",
+      "score": 93,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 16,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 7
+      },
+      "reason": "Useful bounded capability, but replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 174,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "motion-video",
+          "product-design"
+        ],
+        "routingIntents": [
+          "animation-vocabulary"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "apple-design",
+      "path": "skills/apple-design/SKILL.md",
+      "status": "canonical",
+      "score": 86,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 15,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 7,
+        "installation": 10,
+        "uniqueness": 7
+      },
+      "reason": "Useful bounded capability, but move detail into directly linked one-level references; replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 285,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 2,
+        "collections": [
+          "product-design"
+        ],
+        "routingIntents": [
+          "apple-design"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "apple-desktop-automation",
+      "path": "skills/apple-desktop-automation/SKILL.md",
+      "status": "canonical",
+      "score": 84,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 20,
+        "freshness": 8,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; refresh sources last reviewed 80 days ago. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 28,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+        "ageDays": 80,
+        "freshnessDays": 60,
+        "sourceCount": 3,
+        "collections": [
+          "product-design"
+        ],
+        "routingIntents": [
+          "apple-desktop-automation"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "approval-sandbox-policies",
+      "path": "skills/approval-sandbox-policies/SKILL.md",
+      "status": "canonical",
+      "score": 74,
+      "verdict": "Update",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 12,
+        "freshness": 2,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but add a bounded workflow, verification step, and explicit output contract; refresh sources last reviewed 80 days ago. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 28,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+        "ageDays": 80,
+        "freshnessDays": 30,
+        "sourceCount": 3,
+        "collections": [
+          "memoire-operations"
+        ],
+        "routingIntents": [
+          "approval-sandbox-policies"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "atomic-design",
+      "path": "skills/atomic-design/SKILL.md",
+      "status": "canonical",
+      "score": 70,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 8,
+        "actionability": 7,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 5
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; add a bounded workflow, verification step, and explicit output contract; replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 86,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "design-systems",
+          "product-design"
+        ],
+        "routingIntents": [
+          "atomic-design"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "better-colors",
+      "path": "skills/better-colors/SKILL.md",
+      "status": "canonical",
+      "score": 85,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 8,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 7
+      },
+      "reason": "Useful bounded capability, but add a bounded workflow, verification step, and explicit output contract; replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 94,
+        "localReferences": 8,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "core",
+          "product-design"
+        ],
+        "routingIntents": [
+          "better-colors"
+        ],
+        "routingExcludes": [
+          "shader-design-engineering"
+        ]
+      }
+    },
+    {
+      "name": "better-typography",
+      "path": "skills/better-typography/SKILL.md",
+      "status": "canonical",
+      "score": 75,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 12,
+        "actionability": 8,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 5
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; add a bounded workflow, verification step, and explicit output contract; replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 167,
+        "localReferences": 7,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "core",
+          "product-design"
+        ],
+        "routingIntents": [
+          "better-typography"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "better-ui",
+      "path": "skills/better-ui/SKILL.md",
+      "status": "canonical",
+      "score": 89,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 12,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 7
+      },
+      "reason": "Useful bounded capability, but add a bounded workflow, verification step, and explicit output contract; replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 128,
+        "localReferences": 6,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "core",
+          "product-design"
+        ],
+        "routingIntents": [
+          "better-ui"
+        ],
+        "routingExcludes": [
+          "shader-design-engineering",
+          "creative-rendering-audit"
+        ]
+      }
+    },
+    {
+      "name": "browser-research-agent",
+      "path": "skills/browser-research-agent/SKILL.md",
+      "status": "deprecated",
+      "score": 83,
+      "verdict": "Retire",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 16,
+        "freshness": 2,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Deprecated compatibility surface; web-research already owns the canonical workflow. Retire this alias after its documented compatibility window and preserve the replacement path.",
+      "evidence": {
+        "lines": 30,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+        "ageDays": 80,
+        "freshnessDays": 30,
+        "sourceCount": 3,
+        "collections": [],
+        "routingIntents": [
+          "browser-research-agent"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "codex-ops",
+      "path": "skills/codex-ops/SKILL.md",
+      "status": "canonical",
+      "score": 90,
+      "verdict": "Keep",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 15,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Bounded trigger, actionable workflow, current sources, immutable provenance, progressive references, and install metadata all validate; retain as a distinct canonical skill.",
+      "evidence": {
+        "lines": 91,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "memoire-operations"
+        ],
+        "routingIntents": [
+          "codex-ops"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "competitive-intel",
+      "path": "skills/competitive-intel/SKILL.md",
+      "status": "canonical",
+      "score": 83,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 8,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but add a bounded workflow, verification step, and explicit output contract. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 9,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "research",
+          "product-design"
+        ],
+        "routingIntents": [
+          "competitive-intel"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "component-catalog",
+      "path": "skills/component-catalog/SKILL.md",
+      "status": "canonical",
+      "score": 93,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 16,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 7
+      },
+      "reason": "Useful bounded capability, but replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 20,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "design-systems",
+          "product-design"
+        ],
+        "routingIntents": [
+          "component-catalog"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "content-design",
+      "path": "skills/content-design/SKILL.md",
+      "status": "canonical",
+      "score": 100,
+      "verdict": "Keep",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 20,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Bounded trigger, actionable workflow, current sources, immutable provenance, progressive references, and install metadata all validate; retain as a distinct canonical skill.",
+      "evidence": {
+        "lines": 43,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 365,
+        "sourceCount": 1,
+        "collections": [
+          "core",
+          "product-design"
+        ],
+        "routingIntents": [
+          "design-product-content"
+        ],
+        "routingExcludes": [
+          "information-architecture"
+        ]
+      }
+    },
+    {
+      "name": "creative-rendering-audit",
+      "path": "skills/creative-rendering-audit/SKILL.md",
+      "status": "canonical",
+      "score": 100,
+      "verdict": "Keep",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 20,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Bounded trigger, actionable workflow, current sources, immutable provenance, progressive references, and install metadata all validate; retain as a distinct canonical skill.",
+      "evidence": {
+        "lines": 80,
+        "localReferences": 2,
+        "lastResearchedAt": "2026-07-26T00:00:00.000Z",
+        "ageDays": 0,
+        "freshnessDays": 180,
+        "sourceCount": 4,
+        "collections": [
+          "implementation",
+          "ios-swift",
+          "motion-video",
+          "product-design"
+        ],
+        "routingIntents": [
+          "creative-rendering-audit"
+        ],
+        "routingExcludes": [
+          "review-animations",
+          "improve-animations"
+        ]
+      }
+    },
+    {
+      "name": "cron-agent-workflows",
+      "path": "skills/cron-agent-workflows/SKILL.md",
+      "status": "canonical",
+      "score": 80,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 16,
+        "freshness": 8,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; refresh sources last reviewed 80 days ago. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 28,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+        "ageDays": 80,
+        "freshnessDays": 60,
+        "sourceCount": 3,
+        "collections": [
+          "memoire-operations"
+        ],
+        "routingIntents": [
+          "cron-agent-workflows"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "dashboard-from-research",
+      "path": "skills/dashboard-from-research/SKILL.md",
+      "status": "canonical",
+      "score": 88,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 20,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 5
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 122,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "research",
+          "product-design"
+        ],
+        "routingIntents": [
+          "dashboard-from-research"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "data-synthesis",
+      "path": "skills/data-synthesis/SKILL.md",
+      "status": "canonical",
+      "score": 80,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 12,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 7,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; add a bounded workflow, verification step, and explicit output contract; move detail into directly linked one-level references. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 285,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "core",
+          "research",
+          "product-design"
+        ],
+        "routingIntents": [
+          "data-synthesis"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "design-extract",
+      "path": "skills/design-extract/SKILL.md",
+      "status": "canonical",
+      "score": 83,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 11,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 5
+      },
+      "reason": "Useful bounded capability, but add a bounded workflow, verification step, and explicit output contract; replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 59,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "product-design"
+        ],
+        "routingIntents": [
+          "design-extract"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "design-measurement-and-experimentation",
+      "path": "skills/design-measurement-and-experimentation/SKILL.md",
+      "status": "canonical",
+      "score": 100,
+      "verdict": "Keep",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 20,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Bounded trigger, actionable workflow, current sources, immutable provenance, progressive references, and install metadata all validate; retain as a distinct canonical skill.",
+      "evidence": {
+        "lines": 43,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 365,
+        "sourceCount": 1,
+        "collections": [
+          "core",
+          "product-design",
+          "research"
+        ],
+        "routingIntents": [
+          "measure-design-outcomes"
+        ],
+        "routingExcludes": [
+          "usability-testing"
+        ]
+      }
+    },
+    {
+      "name": "design-sandbox-proof",
+      "path": "skills/design-sandbox-proof/SKILL.md",
+      "status": "deprecated",
+      "score": 88,
+      "verdict": "Retire",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 8,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Deprecated compatibility surface; memoire-design-tooling already owns the canonical workflow. Retire this alias after its documented compatibility window and preserve the replacement path.",
+      "evidence": {
+        "lines": 48,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-04T00:00:00.000Z",
+        "ageDays": 22,
+        "freshnessDays": 30,
+        "sourceCount": 3,
+        "collections": [],
+        "routingIntents": [
+          "design-sandbox-proof"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "design-system-reference",
+      "path": "skills/design-system-reference/SKILL.md",
+      "status": "canonical",
+      "score": 93,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 16,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 7
+      },
+      "reason": "Useful bounded capability, but replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 20,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "design-systems",
+          "product-design"
+        ],
+        "routingIntents": [
+          "design-system-reference"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "design-systems",
+      "path": "skills/design-systems/SKILL.md",
+      "status": "canonical",
+      "score": 79,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 8,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; add a bounded workflow, verification step, and explicit output contract. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 9,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "core",
+          "design-systems",
+          "product-design"
+        ],
+        "routingIntents": [
+          "design-systems"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "dialkit",
+      "path": "skills/dialkit/SKILL.md",
+      "status": "canonical",
+      "score": 79,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 7,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 5
+      },
+      "reason": "Useful bounded capability, but add a bounded workflow, verification step, and explicit output contract; replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 47,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "product-design"
+        ],
+        "routingIntents": [
+          "dialkit"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "docker-environments",
+      "path": "skills/docker-environments/SKILL.md",
+      "status": "canonical",
+      "score": 84,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 12,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 7,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but add a bounded workflow, verification step, and explicit output contract; move detail into directly linked one-level references. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 404,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "implementation"
+        ],
+        "routingIntents": [
+          "docker-environments"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "emil-design-eng",
+      "path": "skills/emil-design-eng/SKILL.md",
+      "status": "canonical",
+      "score": 93,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 16,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 7
+      },
+      "reason": "Useful bounded capability, but replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 19,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "product-design"
+        ],
+        "routingIntents": [
+          "emil-design-eng"
+        ],
+        "routingExcludes": [
+          "shader-design-engineering",
+          "creative-rendering-audit"
+        ]
+      }
+    },
+    {
+      "name": "figma-audit",
+      "path": "skills/figma-audit/SKILL.md",
+      "status": "canonical",
+      "score": 80,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 8,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 5
+      },
+      "reason": "Useful bounded capability, but add a bounded workflow, verification step, and explicit output contract; replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 156,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "figma",
+          "product-design"
+        ],
+        "routingIntents": [
+          "figma-audit"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "figma-code-connect",
+      "path": "skills/figma-code-connect/SKILL.md",
+      "status": "canonical",
+      "score": 91,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 11,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Useful bounded capability, but add a bounded workflow, verification step, and explicit output contract. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 22,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 2,
+        "collections": [
+          "figma"
+        ],
+        "routingIntents": [
+          "figma-code-connect"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "figma-create-file",
+      "path": "skills/figma-create-file/SKILL.md",
+      "status": "canonical",
+      "score": 87,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 7,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Useful bounded capability, but add a bounded workflow, verification step, and explicit output contract. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 22,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 2,
+        "collections": [
+          "figma"
+        ],
+        "routingIntents": [
+          "figma-create-file"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "figma-design-systems",
+      "path": "skills/figma-design-systems/SKILL.md",
+      "status": "canonical",
+      "score": 91,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 11,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Useful bounded capability, but add a bounded workflow, verification step, and explicit output contract. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 25,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 2,
+        "collections": [
+          "figma"
+        ],
+        "routingIntents": [
+          "figma-design-systems"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "figma-ds-rules",
+      "path": "skills/figma-ds-rules/SKILL.md",
+      "status": "canonical",
+      "score": 95,
+      "verdict": "Keep",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 15,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Bounded trigger, actionable workflow, current sources, immutable provenance, progressive references, and install metadata all validate; retain as a distinct canonical skill.",
+      "evidence": {
+        "lines": 23,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 2,
+        "collections": [
+          "figma"
+        ],
+        "routingIntents": [
+          "figma-ds-rules"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "figma-generate-design",
+      "path": "skills/figma-generate-design/SKILL.md",
+      "status": "canonical",
+      "score": 88,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 20,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 5
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 142,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "figma",
+          "product-design"
+        ],
+        "routingIntents": [
+          "figma-generate-design"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "figma-generate-library",
+      "path": "skills/figma-generate-library/SKILL.md",
+      "status": "canonical",
+      "score": 88,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 20,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 5
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 161,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "figma",
+          "product-design"
+        ],
+        "routingIntents": [
+          "figma-generate-library"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "figma-implement-design",
+      "path": "skills/figma-implement-design/SKILL.md",
+      "status": "canonical",
+      "score": 91,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 11,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Useful bounded capability, but add a bounded workflow, verification step, and explicit output contract. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 24,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 2,
+        "collections": [
+          "figma"
+        ],
+        "routingIntents": [
+          "figma-implement-design"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "figma-library-builder",
+      "path": "skills/figma-library-builder/SKILL.md",
+      "status": "deprecated",
+      "score": 95,
+      "verdict": "Retire",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 15,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Deprecated compatibility surface; figma-generate-library already owns the canonical workflow. Retire this alias after its documented compatibility window and preserve the replacement path.",
+      "evidence": {
+        "lines": 25,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 2,
+        "collections": [],
+        "routingIntents": [
+          "figma-library-builder"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "figma-plugin-api",
+      "path": "skills/figma-plugin-api/SKILL.md",
+      "status": "canonical",
+      "score": 95,
+      "verdict": "Keep",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 15,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Bounded trigger, actionable workflow, current sources, immutable provenance, progressive references, and install metadata all validate; retain as a distinct canonical skill.",
+      "evidence": {
+        "lines": 26,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 2,
+        "collections": [
+          "figma"
+        ],
+        "routingIntents": [
+          "figma-plugin-api"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "figma-prototype",
+      "path": "skills/figma-prototype/SKILL.md",
+      "status": "canonical",
+      "score": 84,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 16,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 5
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 138,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "figma",
+          "product-design"
+        ],
+        "routingIntents": [
+          "figma-prototype"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "figma-sync",
+      "path": "skills/figma-sync/SKILL.md",
+      "status": "canonical",
+      "score": 82,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 11,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; add a bounded workflow, verification step, and explicit output contract. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 160,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "figma",
+          "product-design"
+        ],
+        "routingIntents": [
+          "figma-sync"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "figma-use",
+      "path": "skills/figma-use/SKILL.md",
+      "status": "canonical",
+      "score": 83,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 15,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 5
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 176,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "figma",
+          "product-design"
+        ],
+        "routingIntents": [
+          "figma-use"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "figma-web-capture",
+      "path": "skills/figma-web-capture/SKILL.md",
+      "status": "canonical",
+      "score": 82,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 11,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; add a bounded workflow, verification step, and explicit output contract. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 77,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "figma",
+          "product-design"
+        ],
+        "routingIntents": [
+          "figma-web-capture"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "find-animation-opportunities",
+      "path": "skills/find-animation-opportunities/SKILL.md",
+      "status": "canonical",
+      "score": 97,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 20,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 7
+      },
+      "reason": "Useful bounded capability, but replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 133,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "motion-video",
+          "product-design"
+        ],
+        "routingIntents": [
+          "find-animation-opportunities"
+        ],
+        "routingExcludes": [
+          "shader-design-engineering"
+        ]
+      }
+    },
+    {
+      "name": "flutter-gen",
+      "path": "skills/flutter-gen/SKILL.md",
+      "status": "canonical",
+      "score": 83,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 12,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; add a bounded workflow, verification step, and explicit output contract. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 9,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "implementation"
+        ],
+        "routingIntents": [
+          "flutter-gen"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "gateway-ops-observability",
+      "path": "skills/gateway-ops-observability/SKILL.md",
+      "status": "canonical",
+      "score": 70,
+      "verdict": "Update",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 12,
+        "freshness": 2,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; add a bounded workflow, verification step, and explicit output contract; refresh sources last reviewed 80 days ago. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 28,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+        "ageDays": 80,
+        "freshnessDays": 30,
+        "sourceCount": 3,
+        "collections": [
+          "memoire-operations"
+        ],
+        "routingIntents": [
+          "gateway-ops-observability"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "hermes-agent-bridge",
+      "path": "skills/hermes-agent-bridge/SKILL.md",
+      "status": "canonical",
+      "score": 70,
+      "verdict": "Update",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 12,
+        "freshness": 2,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; add a bounded workflow, verification step, and explicit output contract; refresh sources last reviewed 80 days ago. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 28,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+        "ageDays": 80,
+        "freshnessDays": 30,
+        "sourceCount": 3,
+        "collections": [
+          "memoire-operations"
+        ],
+        "routingIntents": [
+          "hermes-agent-bridge"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "hyperframes-video",
+      "path": "skills/hyperframes-video/SKILL.md",
+      "status": "canonical",
+      "score": 79,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 11,
+        "freshness": 8,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but add a bounded workflow, verification step, and explicit output contract; refresh sources last reviewed 80 days ago. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 36,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+        "ageDays": 80,
+        "freshnessDays": 60,
+        "sourceCount": 4,
+        "collections": [
+          "motion-video",
+          "product-design",
+          "implementation"
+        ],
+        "routingIntents": [
+          "hyperframes-video"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "improve-animations",
+      "path": "skills/improve-animations/SKILL.md",
+      "status": "canonical",
+      "score": 97,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 20,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 7
+      },
+      "reason": "Useful bounded capability, but replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 102,
+        "localReferences": 4,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "motion-video",
+          "product-design"
+        ],
+        "routingIntents": [
+          "improve-animations"
+        ],
+        "routingExcludes": [
+          "creative-rendering-audit"
+        ]
+      }
+    },
+    {
+      "name": "information-architecture",
+      "path": "skills/information-architecture/SKILL.md",
+      "status": "canonical",
+      "score": 100,
+      "verdict": "Keep",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 20,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Bounded trigger, actionable workflow, current sources, immutable provenance, progressive references, and install metadata all validate; retain as a distinct canonical skill.",
+      "evidence": {
+        "lines": 43,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 365,
+        "sourceCount": 1,
+        "collections": [
+          "core",
+          "product-design"
+        ],
+        "routingIntents": [
+          "design-information-architecture"
+        ],
+        "routingExcludes": [
+          "interaction-design",
+          "content-design"
+        ]
+      }
+    },
+    {
+      "name": "interaction-design",
+      "path": "skills/interaction-design/SKILL.md",
+      "status": "canonical",
+      "score": 100,
+      "verdict": "Keep",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 20,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Bounded trigger, actionable workflow, current sources, immutable provenance, progressive references, and install metadata all validate; retain as a distinct canonical skill.",
+      "evidence": {
+        "lines": 42,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 365,
+        "sourceCount": 1,
+        "collections": [
+          "core",
+          "product-design"
+        ],
+        "routingIntents": [
+          "design-product-interaction"
+        ],
+        "routingExcludes": [
+          "information-architecture",
+          "content-design"
+        ]
+      }
+    },
+    {
+      "name": "interface-craft-gate",
+      "path": "skills/interface-craft-gate/SKILL.md",
+      "status": "canonical",
+      "score": 81,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 8,
+        "actionability": 15,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 56,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-04T00:00:00.000Z",
+        "ageDays": 22,
+        "freshnessDays": 30,
+        "sourceCount": 3,
+        "collections": [
+          "memoire-operations"
+        ],
+        "routingIntents": [
+          "interface-craft-gate"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "interview-research",
+      "path": "skills/interview-research/SKILL.md",
+      "status": "canonical",
+      "score": 79,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 8,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; add a bounded workflow, verification step, and explicit output contract. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 9,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "research",
+          "product-design"
+        ],
+        "routingIntents": [
+          "interview-research"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "ios-app-intents",
+      "path": "skills/ios-app-intents/SKILL.md",
+      "status": "canonical",
+      "score": 89,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 16,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 23,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-17T00:00:00.000Z",
+        "ageDays": 9,
+        "freshnessDays": 45,
+        "sourceCount": 3,
+        "collections": [
+          "ios-swift"
+        ],
+        "routingIntents": [
+          "ios-app-intents"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "ios-performance-debugging",
+      "path": "skills/ios-performance-debugging/SKILL.md",
+      "status": "canonical",
+      "score": 93,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 20,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 28,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-17T00:00:00.000Z",
+        "ageDays": 9,
+        "freshnessDays": 45,
+        "sourceCount": 3,
+        "collections": [
+          "ios-swift"
+        ],
+        "routingIntents": [
+          "ios-performance-debugging"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "linear-sync",
+      "path": "skills/linear-sync/SKILL.md",
+      "status": "canonical",
+      "score": 87,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 12,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but add a bounded workflow, verification step, and explicit output contract. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 9,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "product-design"
+        ],
+        "routingIntents": [
+          "linear-sync"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "mcp-server-studio",
+      "path": "skills/mcp-server-studio/SKILL.md",
+      "status": "canonical",
+      "score": 80,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 16,
+        "freshness": 8,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; refresh sources last reviewed 80 days ago. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 28,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+        "ageDays": 80,
+        "freshnessDays": 60,
+        "sourceCount": 3,
+        "collections": [
+          "memoire-operations"
+        ],
+        "routingIntents": [
+          "mcp-server-studio"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "memoire-design-tooling",
+      "path": "skills/memoire-design-tooling/SKILL.md",
+      "status": "canonical",
+      "score": 87,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 15,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 5
+      },
+      "reason": "Useful bounded capability, but replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 112,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "memoire-operations"
+        ],
+        "routingIntents": [
+          "memoire-design-tooling"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "memoire-mcp-agent-skills",
+      "path": "skills/memoire-mcp-agent-skills/SKILL.md",
+      "status": "deprecated",
+      "score": 92,
+      "verdict": "Retire",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 12,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Deprecated compatibility surface; memoire-design-tooling already owns the canonical workflow. Retire this alias after its documented compatibility window and preserve the replacement path.",
+      "evidence": {
+        "lines": 70,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-04T00:00:00.000Z",
+        "ageDays": 22,
+        "freshnessDays": 30,
+        "sourceCount": 3,
+        "collections": [],
+        "routingIntents": [
+          "memoire-mcp-agent-skills"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "memoire-studio-macos",
+      "path": "skills/memoire-studio-macos/SKILL.md",
+      "status": "deprecated",
+      "score": 87,
+      "verdict": "Retire",
+      "dimensions": {
+        "triggerPrecision": 16,
+        "actionability": 11,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Deprecated compatibility surface; memoire-design-tooling already owns the canonical workflow. Retire this alias after its documented compatibility window and preserve the replacement path.",
+      "evidence": {
+        "lines": 46,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-04T00:00:00.000Z",
+        "ageDays": 22,
+        "freshnessDays": 30,
+        "sourceCount": 3,
+        "collections": [],
+        "routingIntents": [
+          "memoire-studio-macos"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "memoire-v2-surface-map",
+      "path": "skills/memoire-v2-surface-map/SKILL.md",
+      "status": "deprecated",
+      "score": 91,
+      "verdict": "Retire",
+      "dimensions": {
+        "triggerPrecision": 16,
+        "actionability": 15,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Deprecated compatibility surface; memoire-design-tooling already owns the canonical workflow. Retire this alias after its documented compatibility window and preserve the replacement path.",
+      "evidence": {
+        "lines": 49,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-04T00:00:00.000Z",
+        "ageDays": 22,
+        "freshnessDays": 30,
+        "sourceCount": 5,
+        "collections": [],
+        "routingIntents": [
+          "memoire-v2-surface-map"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "mermaid-jam",
+      "path": "skills/mermaid-jam/SKILL.md",
+      "status": "canonical",
+      "score": 86,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 11,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but add a bounded workflow, verification step, and explicit output contract. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 90,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "figma",
+          "product-design"
+        ],
+        "routingIntents": [
+          "mermaid-jam"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "mobile-craft",
+      "path": "skills/mobile-craft/SKILL.md",
+      "status": "canonical",
+      "score": 81,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 8,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; add a bounded workflow, verification step, and explicit output contract. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 19,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 2,
+        "collections": [
+          "product-design"
+        ],
+        "routingIntents": [
+          "mobile-craft"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "model-router-diagnostics",
+      "path": "skills/model-router-diagnostics/SKILL.md",
+      "status": "canonical",
+      "score": 74,
+      "verdict": "Update",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 16,
+        "freshness": 2,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; refresh sources last reviewed 80 days ago. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 28,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+        "ageDays": 80,
+        "freshnessDays": 30,
+        "sourceCount": 3,
+        "collections": [
+          "memoire-operations"
+        ],
+        "routingIntents": [
+          "model-router-diagnostics"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "motion-performance",
+      "path": "skills/motion-performance/SKILL.md",
+      "status": "canonical",
+      "score": 90,
+      "verdict": "Keep",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 17,
+        "freshness": 8,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Useful bounded capability, but refresh sources last reviewed 80 days ago. Retain as canonical and address these minor follow-ups during routine maintenance.",
+      "evidence": {
+        "lines": 30,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+        "ageDays": 80,
+        "freshnessDays": 60,
+        "sourceCount": 2,
+        "collections": [
+          "motion-video",
+          "product-design"
+        ],
+        "routingIntents": [
+          "motion-performance"
+        ],
+        "routingExcludes": [
+          "creative-rendering-audit"
+        ]
+      }
+    },
+    {
+      "name": "motion-video",
+      "path": "skills/motion-video/SKILL.md",
+      "status": "canonical",
+      "score": 80,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 15,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 7,
+        "installation": 10,
+        "uniqueness": 5
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; move detail into directly linked one-level references; replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 350,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "motion-video",
+          "product-design"
+        ],
+        "routingIntents": [
+          "motion-video"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "multi-agent",
+      "path": "skills/multi-agent/SKILL.md",
+      "status": "canonical",
+      "score": 79,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 11,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 5
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; add a bounded workflow, verification step, and explicit output contract; replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 159,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "figma",
+          "memoire-operations"
+        ],
+        "routingIntents": [
+          "multi-agent"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "multi-agent-kanban",
+      "path": "skills/multi-agent-kanban/SKILL.md",
+      "status": "canonical",
+      "score": 80,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 16,
+        "freshness": 8,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; refresh sources last reviewed 80 days ago. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 28,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+        "ageDays": 80,
+        "freshnessDays": 60,
+        "sourceCount": 3,
+        "collections": [
+          "memoire-operations"
+        ],
+        "routingIntents": [
+          "multi-agent-kanban"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "notion-sync",
+      "path": "skills/notion-sync/SKILL.md",
+      "status": "canonical",
+      "score": 83,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 8,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but add a bounded workflow, verification step, and explicit output contract. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 9,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "product-design"
+        ],
+        "routingIntents": [
+          "notion-sync"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "openclaw-agent-bridge",
+      "path": "skills/openclaw-agent-bridge/SKILL.md",
+      "status": "canonical",
+      "score": 70,
+      "verdict": "Update",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 12,
+        "freshness": 2,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; add a bounded workflow, verification step, and explicit output contract; refresh sources last reviewed 80 days ago. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 28,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+        "ageDays": 80,
+        "freshnessDays": 30,
+        "sourceCount": 3,
+        "collections": [
+          "memoire-operations"
+        ],
+        "routingIntents": [
+          "openclaw-agent-bridge"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "product-discovery-and-framing",
+      "path": "skills/product-discovery-and-framing/SKILL.md",
+      "status": "canonical",
+      "score": 100,
+      "verdict": "Keep",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 20,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Bounded trigger, actionable workflow, current sources, immutable provenance, progressive references, and install metadata all validate; retain as a distinct canonical skill.",
+      "evidence": {
+        "lines": 52,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 365,
+        "sourceCount": 1,
+        "collections": [
+          "core",
+          "product-design",
+          "research"
+        ],
+        "routingIntents": [
+          "frame-product-opportunity"
+        ],
+        "routingExcludes": [
+          "interaction-design"
+        ]
+      }
+    },
+    {
+      "name": "react-native-gen",
+      "path": "skills/react-native-gen/SKILL.md",
+      "status": "canonical",
+      "score": 83,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 12,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; add a bounded workflow, verification step, and explicit output contract. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 125,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "implementation"
+        ],
+        "routingIntents": [
+          "react-native-gen"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "remotion-video",
+      "path": "skills/remotion-video/SKILL.md",
+      "status": "canonical",
+      "score": 83,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 15,
+        "freshness": 8,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but refresh sources last reviewed 80 days ago. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 36,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+        "ageDays": 80,
+        "freshnessDays": 60,
+        "sourceCount": 2,
+        "collections": [
+          "motion-video",
+          "product-design",
+          "implementation"
+        ],
+        "routingIntents": [
+          "remotion-video"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "review-animations",
+      "path": "skills/review-animations/SKILL.md",
+      "status": "canonical",
+      "score": 84,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 16,
+        "actionability": 11,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 7
+      },
+      "reason": "Useful bounded capability, but add a bounded workflow, verification step, and explicit output contract; replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 112,
+        "localReferences": 3,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "motion-video",
+          "product-design"
+        ],
+        "routingIntents": [
+          "review-animations"
+        ],
+        "routingExcludes": [
+          "creative-rendering-audit"
+        ]
+      }
+    },
+    {
+      "name": "secure-secrets-for-agents",
+      "path": "skills/secure-secrets-for-agents/SKILL.md",
+      "status": "canonical",
+      "score": 74,
+      "verdict": "Update",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 16,
+        "freshness": 2,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; refresh sources last reviewed 80 days ago. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 28,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+        "ageDays": 80,
+        "freshnessDays": 30,
+        "sourceCount": 3,
+        "collections": [
+          "memoire-operations"
+        ],
+        "routingIntents": [
+          "secure-secrets-for-agents"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "self-improving-agent",
+      "path": "skills/self-improving-agent/SKILL.md",
+      "status": "canonical",
+      "score": 79,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 8,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; add a bounded workflow, verification step, and explicit output contract. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 9,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "memoire-operations"
+        ],
+        "routingIntents": [
+          "self-improving-agent"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "shader-design-engineering",
+      "path": "skills/shader-design-engineering/SKILL.md",
+      "status": "canonical",
+      "score": 100,
+      "verdict": "Keep",
+      "dimensions": {
+        "triggerPrecision": 20,
+        "actionability": 20,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Bounded trigger, actionable workflow, current sources, immutable provenance, progressive references, and install metadata all validate; retain as a distinct canonical skill.",
+      "evidence": {
+        "lines": 64,
+        "localReferences": 5,
+        "lastResearchedAt": "2026-07-26T00:00:00.000Z",
+        "ageDays": 0,
+        "freshnessDays": 180,
+        "sourceCount": 6,
+        "collections": [
+          "implementation",
+          "ios-swift",
+          "motion-video",
+          "product-design"
+        ],
+        "routingIntents": [
+          "shader-design-engineering"
+        ],
+        "routingExcludes": [
+          "creative-rendering-audit"
+        ]
+      }
+    },
+    {
+      "name": "superpower",
+      "path": "skills/superpower/SKILL.md",
+      "status": "canonical",
+      "score": 87,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 15,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 5
+      },
+      "reason": "Useful bounded capability, but replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 90,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "memoire-operations"
+        ],
+        "routingIntents": [
+          "superpower"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "survey-connect",
+      "path": "skills/survey-connect/SKILL.md",
+      "status": "canonical",
+      "score": 83,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 12,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; add a bounded workflow, verification step, and explicit output contract. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 9,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "research",
+          "product-design"
+        ],
+        "routingIntents": [
+          "survey-connect"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "swift-concurrency-safety",
+      "path": "skills/swift-concurrency-safety/SKILL.md",
+      "status": "canonical",
+      "score": 89,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 16,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 30,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-17T00:00:00.000Z",
+        "ageDays": 9,
+        "freshnessDays": 60,
+        "sourceCount": 3,
+        "collections": [
+          "ios-swift"
+        ],
+        "routingIntents": [
+          "swift-concurrency-safety"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "swift-testing",
+      "path": "skills/swift-testing/SKILL.md",
+      "status": "canonical",
+      "score": 97,
+      "verdict": "Keep",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 20,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Bounded trigger, actionable workflow, current sources, immutable provenance, progressive references, and install metadata all validate; retain as a distinct canonical skill.",
+      "evidence": {
+        "lines": 26,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-17T00:00:00.000Z",
+        "ageDays": 9,
+        "freshnessDays": 60,
+        "sourceCount": 3,
+        "collections": [
+          "ios-swift"
+        ],
+        "routingIntents": [
+          "swift-testing"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "swiftdata-persistence",
+      "path": "skills/swiftdata-persistence/SKILL.md",
+      "status": "canonical",
+      "score": 89,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 16,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 20,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-17T00:00:00.000Z",
+        "ageDays": 9,
+        "freshnessDays": 45,
+        "sourceCount": 2,
+        "collections": [
+          "ios-swift"
+        ],
+        "routingIntents": [
+          "swiftdata-persistence"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "swiftui-design-engineering",
+      "path": "skills/swiftui-design-engineering/SKILL.md",
+      "status": "canonical",
+      "score": 96,
+      "verdict": "Keep",
+      "dimensions": {
+        "triggerPrecision": 16,
+        "actionability": 20,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Bounded trigger, actionable workflow, current sources, immutable provenance, progressive references, and install metadata all validate; retain as a distinct canonical skill.",
+      "evidence": {
+        "lines": 36,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-17T00:00:00.000Z",
+        "ageDays": 9,
+        "freshnessDays": 45,
+        "sourceCount": 4,
+        "collections": [
+          "ios-swift"
+        ],
+        "routingIntents": [
+          "swiftui-design-engineering"
+        ],
+        "routingExcludes": [
+          "shader-design-engineering",
+          "creative-rendering-audit"
+        ]
+      }
+    },
+    {
+      "name": "swiftui-liquid-glass",
+      "path": "skills/swiftui-liquid-glass/SKILL.md",
+      "status": "canonical",
+      "score": 89,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 16,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 31,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-17T00:00:00.000Z",
+        "ageDays": 9,
+        "freshnessDays": 30,
+        "sourceCount": 3,
+        "collections": [
+          "ios-swift"
+        ],
+        "routingIntents": [
+          "swiftui-liquid-glass"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "token-architecture",
+      "path": "skills/token-architecture/SKILL.md",
+      "status": "canonical",
+      "score": 83,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 15,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 7,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; move detail into directly linked one-level references. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 321,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "design-systems",
+          "product-design"
+        ],
+        "routingIntents": [
+          "token-architecture"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "usability-testing",
+      "path": "skills/usability-testing/SKILL.md",
+      "status": "canonical",
+      "score": 87,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 15,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 7,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but move detail into directly linked one-level references. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 319,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "core",
+          "research",
+          "product-design"
+        ],
+        "routingIntents": [
+          "usability-testing"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "ux-tenets-traps",
+      "path": "skills/ux-tenets-traps/SKILL.md",
+      "status": "canonical",
+      "score": 92,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 20,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 5
+      },
+      "reason": "Useful bounded capability, but replace generic tags and declare neighboring workflow boundaries. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 65,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "core",
+          "product-design"
+        ],
+        "routingIntents": [
+          "ux-tenets-traps"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "vue-gen",
+      "path": "skills/vue-gen/SKILL.md",
+      "status": "canonical",
+      "score": 83,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 15,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 7,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions; move detail into directly linked one-level references. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 379,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "implementation"
+        ],
+        "routingIntents": [
+          "vue-gen"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "web-research",
+      "path": "skills/web-research/SKILL.md",
+      "status": "canonical",
+      "score": 83,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 8,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but add a bounded workflow, verification step, and explicit output contract. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 9,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-15T00:00:00.000Z",
+        "ageDays": 11,
+        "freshnessDays": 90,
+        "sourceCount": 1,
+        "collections": [
+          "core",
+          "research",
+          "product-design"
+        ],
+        "routingIntents": [
+          "web-research"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "website-to-video",
+      "path": "skills/website-to-video/SKILL.md",
+      "status": "canonical",
+      "score": 88,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 17,
+        "actionability": 20,
+        "freshness": 8,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 8
+      },
+      "reason": "Useful bounded capability, but refresh sources last reviewed 80 days ago. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 27,
+        "localReferences": 0,
+        "lastResearchedAt": "2026-05-07T00:00:00.000Z",
+        "ageDays": 80,
+        "freshnessDays": 60,
+        "sourceCount": 2,
+        "collections": [
+          "motion-video",
+          "implementation",
+          "product-design"
+        ],
+        "routingIntents": [
+          "website-to-video"
+        ],
+        "routingExcludes": []
+      }
+    },
+    {
+      "name": "xcode-build-reliability",
+      "path": "skills/xcode-build-reliability/SKILL.md",
+      "status": "canonical",
+      "score": 93,
+      "verdict": "Improve",
+      "dimensions": {
+        "triggerPrecision": 13,
+        "actionability": 20,
+        "freshness": 15,
+        "sourceQuality": 15,
+        "progressiveDisclosure": 10,
+        "installation": 10,
+        "uniqueness": 10
+      },
+      "reason": "Useful bounded capability, but tighten the trigger description and routing exclusions. Keep the skill and address these concrete gaps before promoting it as a default route.",
+      "evidence": {
+        "lines": 27,
+        "localReferences": 1,
+        "lastResearchedAt": "2026-07-17T00:00:00.000Z",
+        "ageDays": 9,
+        "freshnessDays": 45,
+        "sourceCount": 3,
+        "collections": [
+          "ios-swift"
+        ],
+        "routingIntents": [
+          "xcode-build-reliability"
+        ],
+        "routingExcludes": []
+      }
+    }
+  ]
+}

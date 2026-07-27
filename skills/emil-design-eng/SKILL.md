@@ -5,7 +5,7 @@ description: Apply Emil Kowalski's design-engineering guidance when polishing in
 
 # Emil design engineering
 
-Use this skill as a broad design-engineering field guide. Prefer a narrower skill such as `review-animations`, `improve-animations`, or `find-animation-opportunities` when the request has one bounded motion outcome.
+Use this skill as a broad design-engineering field guide. Prefer a narrower skill such as `review-animations`, `improve-animations`, or `find-animation-opportunities` when the request has one bounded motion outcome. Route shader, dither, particle, and GPU-effect implementation to `shader-design-engineering`, and route rendering evidence audits to `creative-rendering-audit`.
 
 ## Workflow
 

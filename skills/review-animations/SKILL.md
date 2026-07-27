@@ -5,7 +5,7 @@ description: Reviews animation and motion code against a high craft bar derived 
 
 # Reviewing Animations
 
-A specialized review skill. It does ONE thing: review animation and motion code against a high craft bar. It does not write features, fix unrelated bugs, or review non-motion code. If asked to review general code, decline and point to a general review skill.
+A specialized review skill. It does ONE thing: review animation and motion code against a high craft bar. It does not write features, fix unrelated bugs, or review non-motion code. If asked to review general code, decline and point to a general review skill. If the dominant implementation is a shader, dither, particle system, or custom GPU renderer, route correctness, performance, fallback, and licensing to `creative-rendering-audit`; keep this skill focused on motion purpose and feel.
 
 ## Operating Posture
 

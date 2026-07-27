@@ -2,8 +2,9 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
+import { fileURLToPath } from "node:url";
 
-const root = path.resolve(import.meta.dirname, "..");
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 async function readJson(relativePath) {
   return JSON.parse(await readFile(path.join(root, relativePath), "utf8"));
@@ -48,8 +49,10 @@ test("iOS and Swift collection exposes the complete agent build loop", async () 
   const collection = await readJson("registry/collections/ios-swift.json");
   const byName = new Map(registry.skills.map((entry) => [entry.name, entry]));
   const expected = [
+    "creative-rendering-audit",
     "ios-app-intents",
     "ios-performance-debugging",
+    "shader-design-engineering",
     "swift-concurrency-safety",
     "swift-testing",
     "swiftdata-persistence",
