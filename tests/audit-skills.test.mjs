@@ -3,7 +3,16 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
 
-import { auditSkills, classifyVerdict } from "../scripts/audit-skills.mjs";
+import {
+  auditSkills,
+  buildVerdictReason,
+  classifyVerdict,
+  daysBetween,
+  findLocalReferences,
+  isValidHttpsSource,
+  parseSkillFrontmatter,
+  renderAuditMarkdown,
+} from "../scripts/audit-skills.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
 
@@ -50,4 +59,133 @@ test("stocktake emits a concrete merge target for a duplicate primary intent", (
     uniqueness: 5,
   };
   assert.equal(classifyVerdict(entry, dimensions, "review-layout"), "Merge into review-layout");
+});
+
+test("stocktake parsing helpers reject malformed evidence and preserve local references", () => {
+  assert.deepEqual(parseSkillFrontmatter("not frontmatter"), {
+    name: "",
+    description: "",
+    body: "not frontmatter",
+  });
+  assert.equal(
+    parseSkillFrontmatter(
+      "---\nname: shader-test\ndescription: \"Use when testing shaders.\"\n---\n\nBody.\n",
+    ).description,
+    "Use when testing shaders.",
+  );
+  assert.equal(isValidHttpsSource("https://example.com/reference"), true);
+  assert.equal(isValidHttpsSource("http://example.com/reference"), false);
+  assert.equal(isValidHttpsSource("not a URL"), false);
+  assert.equal(
+    daysBetween("invalid", new Date("2026-07-26T00:00:00.000Z")),
+    Number.POSITIVE_INFINITY,
+  );
+  assert.equal(
+    daysBetween("2026-07-27T00:00:00.000Z", new Date("2026-07-26T00:00:00.000Z")),
+    0,
+  );
+  assert.deepEqual(
+    findLocalReferences(
+      "[Local](references/guide.md#part) [Remote](https://example.com/guide.md)",
+    ),
+    ["references/guide.md"],
+  );
+});
+
+test("stocktake verdicts and reasons cover every disposition boundary", () => {
+  const complete = {
+    triggerPrecision: 20,
+    actionability: 20,
+    freshness: 15,
+    sourceQuality: 15,
+    progressiveDisclosure: 10,
+    installation: 10,
+    uniqueness: 10,
+  };
+  const entry = { name: "shader-test", status: "canonical" };
+
+  assert.equal(
+    classifyVerdict({ ...entry, status: "deprecated" }, complete),
+    "Retire",
+  );
+  assert.equal(classifyVerdict(entry, complete, "shader-owner"), "Merge into shader-owner");
+  assert.equal(
+    classifyVerdict(entry, { ...complete, sourceQuality: 5 }),
+    "Retire",
+  );
+  assert.equal(
+    classifyVerdict(entry, { ...complete, freshness: 2 }),
+    "Update",
+  );
+  assert.equal(classifyVerdict(entry, complete), "Keep");
+  assert.equal(
+    classifyVerdict(entry, { ...complete, triggerPrecision: 10 }),
+    "Improve",
+  );
+
+  assert.match(
+    buildVerdictReason(
+      { ...entry, status: "deprecated", replacement: "shader-owner" },
+      complete,
+      0,
+      "Retire",
+      null,
+      [],
+    ),
+    /Retire this alias/,
+  );
+  assert.match(
+    buildVerdictReason(
+      entry,
+      complete,
+      0,
+      "Merge into shader-owner",
+      "shader-owner",
+      ["shader-design"],
+    ),
+    /Merge this skill/,
+  );
+  assert.match(
+    buildVerdictReason(entry, complete, 0, "Keep", null, []),
+    /retain as a distinct canonical skill/,
+  );
+  assert.match(
+    buildVerdictReason(
+      entry,
+      {
+        triggerPrecision: 0,
+        actionability: 0,
+        freshness: 0,
+        sourceQuality: 0,
+        progressiveDisclosure: 0,
+        installation: 0,
+        uniqueness: 0,
+      },
+      Number.POSITIVE_INFINITY,
+      "Improve",
+      null,
+      [],
+    ),
+    /invalid date/,
+  );
+});
+
+test("stocktake markdown renders summary, rubric, and escaped result rows", async () => {
+  const audit = await auditSkills(
+    root,
+    new Date("2026-07-26T00:00:00.000Z"),
+    new Date("2026-07-26T22:14:37.000Z"),
+  );
+  const markdown = renderAuditMarkdown({
+    ...audit,
+    skills: [{
+      ...audit.skills[0],
+      reason: "Evidence | escaped",
+    }],
+  });
+
+  assert.match(markdown, /^# Canonical Design Skill Stocktake/m);
+  assert.match(markdown, /Evidence date: 2026-07-26/);
+  assert.match(markdown, /Trigger precision/);
+  assert.match(markdown, /Evidence \\\\| escaped/);
 });
