@@ -1,6 +1,5 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
 
 const STOP_WORDS = new Set([
   "a",
@@ -115,6 +114,26 @@ const AMBIGUOUS_CONTEXT_TOKENS = new Set([
   "web",
 ]);
 
+const OUT_OF_DOMAIN_TOKENS = new Set([
+  "api",
+  "auth",
+  "book",
+  "construction",
+  "court",
+  "database",
+  "index",
+  "ink",
+  "legal",
+  "oauth",
+  "plot",
+  "postgres",
+  "pric",
+  "printer",
+  "query",
+  "roof",
+  "supplier",
+]);
+
 const FEATURE_WEIGHTS = Object.freeze({
   tag: 5,
   description: 2,
@@ -215,7 +234,12 @@ function buildCandidate(entry, description) {
   for (const surface of entry.surfaces ?? []) {
     addWeightedFeature(features, surface, FEATURE_WEIGHTS.surface, "surface");
   }
-  return { name: entry.name, features };
+  return {
+    name: entry.name,
+    actions: [...(entry.actions ?? [])],
+    excludes: [...(entry.routing.excludes ?? [])],
+    features,
+  };
 }
 
 function expandPrompt(prompt) {
@@ -234,7 +258,13 @@ function expandPrompt(prompt) {
       phrases.add(tokens.slice(index, index + width).join(" "));
     }
   }
-  return { tokens: expandedTokens, phrases };
+  return {
+    tokens: expandedTokens,
+    phrases,
+    outOfDomainTokenCount: [...expandedTokens].filter((token) =>
+      OUT_OF_DOMAIN_TOKENS.has(token)
+    ).length,
+  };
 }
 
 function containsFeature(query, feature) {
@@ -255,6 +285,7 @@ function buildDocumentFrequency(candidates) {
 
 function scoreCandidate(candidate, query, documentFrequency, candidateCount) {
   const matches = [];
+  const matchedActions = new Set();
   const evidenceTokens = new Set();
   let matchedPhrase = false;
   let score = 0;
@@ -269,6 +300,7 @@ function scoreCandidate(candidate, query, documentFrequency, candidateCount) {
       source: feature.source,
       contribution: Number(contribution.toFixed(3)),
     });
+    if (feature.source === "action") matchedActions.add(feature.key);
     if (feature.source !== "action") {
       const featureTokens = splitTokens(feature.key);
       if (featureTokens.length > 1) matchedPhrase = true;
@@ -288,11 +320,13 @@ function scoreCandidate(candidate, query, documentFrequency, candidateCount) {
       : evidenceTokens.size / promptEvidenceTokens.length;
   return {
     name: candidate.name,
+    excludes: candidate.excludes,
     score: Number(score.toFixed(3)),
     evidenceTokenCount: evidenceTokens.size,
     evidenceTokens: [...evidenceTokens].sort(),
     evidenceCoverage: Number(evidenceCoverage.toFixed(3)),
     matchedPhrase,
+    matchedActions: [...matchedActions].sort(),
     hasDistinctiveEvidence: [...evidenceTokens].some(
       (token) => !AMBIGUOUS_CONTEXT_TOKENS.has(token),
     ),
@@ -352,7 +386,22 @@ export function routePrompt(
         (candidate.evidenceTokenCount >= minimumMatchedFeatures &&
           candidate.hasDistinctiveEvidence)),
   );
-  const predicted = eligibleCandidates[0]?.name ?? null;
+  const eligibleByName = new Map(
+    eligibleCandidates.map((candidate) => [candidate.name, candidate]),
+  );
+  const boundaryCandidates = eligibleCandidates.filter((candidate) =>
+    !candidate.excludes.some((excludedName) => {
+      const excludedCandidate = eligibleByName.get(excludedName);
+      return (
+        excludedCandidate?.matchedActions.length > 0 &&
+        candidate.matchedActions.length === 0
+      );
+    })
+  );
+  const predicted =
+    query.outOfDomainTokenCount >= 2
+      ? null
+      : (boundaryCandidates[0] ?? eligibleCandidates[0])?.name ?? null;
 
   return {
     predicted,
@@ -397,33 +446,3 @@ export function evaluateRoutingBenchmark(catalog, fixture) {
     cases,
   };
 }
-
-async function runCli() {
-  const root = path.resolve(import.meta.dirname, "..");
-  const fixture = JSON.parse(
-    await readFile(
-      path.join(root, "tests", "fixtures", "routing-prompts.json"),
-      "utf8",
-    ),
-  );
-  const catalog = await loadRoutingCatalog(root);
-  const report = evaluateRoutingBenchmark(catalog, fixture);
-  if (process.argv.includes("--json")) {
-    process.stdout.write(`${JSON.stringify(report, null, 2)}\n`);
-  } else {
-    console.log(`Catalog routing QA: ${report.summary}`);
-    console.log(report.scope);
-    for (const result of report.cases.filter((entry) => !entry.correct)) {
-      const candidates = result.rankedCandidates
-        .map((candidate) => `${candidate.name} (${candidate.score})`)
-        .join(", ");
-      console.log(`- ${result.id}: ${result.confusion}; candidates: ${candidates || "none"}`);
-    }
-  }
-  if (!report.passed) process.exitCode = 1;
-}
-
-const isDirectRun =
-  process.argv[1] &&
-  fileURLToPath(import.meta.url) === path.resolve(process.argv[1]);
-if (isDirectRun) await runCli();

@@ -1,14 +1,22 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import {
+  mkdir,
+  mkdtemp,
+  readFile,
+  writeFile,
+} from "node:fs/promises";
+import os from "node:os";
 import path from "node:path";
 import test from "node:test";
+import { fileURLToPath } from "node:url";
 
 import {
   evaluateRoutingBenchmark,
   loadRoutingCatalog,
+  routePrompt,
 } from "../scripts/evaluate-routing.mjs";
 
-const root = path.resolve(import.meta.dirname, "..");
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 async function readFixture() {
   return JSON.parse(
@@ -17,6 +25,37 @@ async function readFixture() {
       "utf8",
     ),
   );
+}
+
+async function minimalRoutingCatalog() {
+  const fixtureRoot = await mkdtemp(
+    path.join(os.tmpdir(), "design-skills-routing-"),
+  );
+  await mkdir(path.join(fixtureRoot, "registry"), { recursive: true });
+  await mkdir(path.join(fixtureRoot, "skills", "minimal-route"), {
+    recursive: true,
+  });
+  await writeFile(
+    path.join(fixtureRoot, "registry", "skills.json"),
+    `${JSON.stringify({
+      schemaVersion: 2,
+      skills: [{
+        name: "minimal-route",
+        displayName: "",
+        visibility: "public",
+        status: "canonical",
+        routing: {
+          intents: ["minimal-route"],
+          role: "primary",
+        },
+      }],
+    })}\n`,
+  );
+  await writeFile(
+    path.join(fixtureRoot, "skills", "minimal-route", "SKILL.md"),
+    "No frontmatter is available.",
+  );
+  return loadRoutingCatalog(fixtureRoot);
 }
 
 test("representative routing fixture is bounded and covers required categories", async () => {
@@ -106,4 +145,36 @@ test("near-miss prompts abstain instead of claiming an unrelated design skill", 
     assert.equal(result.predicted, null, `${result.id}: ${result.confusion}`);
     assert.equal(result.correct, true);
   }
+});
+
+test("routing handles empty catalogs, explicit thresholds, and empty benchmarks", async () => {
+  assert.deepEqual(routePrompt([], ""), {
+    predicted: null,
+    rankedCandidates: [],
+  });
+
+  const catalog = await loadRoutingCatalog(root);
+  assert.equal(
+    routePrompt(catalog, "Audit this WebGL2 shader.", {
+      minimumScore: Number.POSITIVE_INFINITY,
+      minimumMatchedFeatures: Number.POSITIVE_INFINITY,
+    }).predicted,
+    null,
+  );
+
+  const empty = evaluateRoutingBenchmark(catalog, {
+    minimumAccuracy: 1,
+    cases: [],
+  });
+  assert.equal(empty.total, 0);
+  assert.equal(empty.accuracy, 0);
+  assert.equal(empty.passed, false);
+
+  const minimal = await minimalRoutingCatalog();
+  assert.deepEqual(minimal[0].actions, []);
+  assert.deepEqual(minimal[0].excludes, []);
+  assert.equal(
+    routePrompt(minimal, "minimal route").predicted,
+    "minimal-route",
+  );
 });

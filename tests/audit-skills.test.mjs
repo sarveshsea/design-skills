@@ -1,7 +1,14 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import {
+  mkdir,
+  mkdtemp,
+  readFile,
+  writeFile,
+} from "node:fs/promises";
+import os from "node:os";
 import path from "node:path";
 import test from "node:test";
+import { fileURLToPath } from "node:url";
 
 import {
   auditSkills,
@@ -14,7 +21,70 @@ import {
   renderAuditMarkdown,
 } from "../scripts/audit-skills.mjs";
 
-const root = path.resolve(import.meta.dirname, "..");
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+
+async function degradedAuditFixture() {
+  const fixtureRoot = await mkdtemp(
+    path.join(os.tmpdir(), "design-skills-audit-"),
+  );
+  await mkdir(path.join(fixtureRoot, "skills", "thin-skill"), {
+    recursive: true,
+  });
+  await mkdir(path.join(fixtureRoot, "registry", "collections"), {
+    recursive: true,
+  });
+  await writeFile(
+    path.join(fixtureRoot, "skills", "thin-skill", "SKILL.md"),
+    [
+      "---",
+      "name: thin-skill",
+      "description: Thin.",
+      "---",
+      "",
+      "# Thin",
+      "",
+      "[Missing](references/missing.md)",
+      "",
+    ].join("\n"),
+  );
+  await writeFile(
+    path.join(fixtureRoot, "skills", "thin-skill", "note.json"),
+    `${JSON.stringify({
+      name: "wrong-name",
+      skills: [],
+      dependencies: [],
+    })}\n`,
+  );
+  await writeFile(
+    path.join(fixtureRoot, "registry", "skills.json"),
+    `${JSON.stringify({
+      schemaVersion: 2,
+      skills: [{
+        name: "thin-skill",
+        displayName: "Thin Skill",
+        status: "quarantined",
+        visibility: "internal",
+        routing: {
+          intents: ["thin-one", "thin-two"],
+          role: "reference",
+          excludes: [],
+        },
+        sourceUrls: ["not a URL"],
+        lastResearchedAt: "invalid",
+        collectionIds: ["missing"],
+      }],
+    }, null, 2)}\n`,
+  );
+  await writeFile(
+    path.join(fixtureRoot, "registry", "collections", "empty.json"),
+    `${JSON.stringify({ id: "empty", include: [] }, null, 2)}\n`,
+  );
+  await writeFile(
+    path.join(fixtureRoot, "provenance.json"),
+    `${JSON.stringify({ schemaVersion: 1 }, null, 2)}\n`,
+  );
+  return fixtureRoot;
+}
 
 test("stocktake scores every registered skill with a decision-enabling verdict", async () => {
   const registry = JSON.parse(await readFile(path.join(root, "registry", "skills.json"), "utf8"));
@@ -152,6 +222,17 @@ test("stocktake verdicts and reasons cover every disposition boundary", () => {
   assert.match(
     buildVerdictReason(
       entry,
+      { ...complete, actionability: 10 },
+      0,
+      "Keep",
+      null,
+      [],
+    ),
+    /minor follow-ups/,
+  );
+  assert.match(
+    buildVerdictReason(
+      entry,
       {
         triggerPrecision: 0,
         actionability: 0,
@@ -188,4 +269,22 @@ test("stocktake markdown renders summary, rubric, and escaped result rows", asyn
   assert.match(markdown, /Evidence date: 2026-07-26/);
   assert.match(markdown, /Trigger precision/);
   assert.match(markdown, /Evidence \\\\| escaped/);
+});
+
+test("stocktake gives no assumed credit to malformed and missing evidence", async () => {
+  const fixtureRoot = await degradedAuditFixture();
+  const audit = await auditSkills(
+    fixtureRoot,
+    new Date("2026-07-26T00:00:00.000Z"),
+  );
+  const [skill] = audit.skills;
+
+  assert.equal(skill.verdict, "Retire");
+  assert.equal(skill.dimensions.actionability, 0);
+  assert.equal(skill.dimensions.freshness, 0);
+  assert.equal(skill.dimensions.sourceQuality, 0);
+  assert.equal(skill.dimensions.installation, 0);
+  assert.equal(skill.evidence.localReferences, 1);
+  assert.equal(skill.evidence.ageDays, null);
+  assert.match(skill.reason, /invalid date/);
 });

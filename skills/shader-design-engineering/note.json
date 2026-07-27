@@ -13,6 +13,7 @@
     "metal",
     "swiftui",
     "dithering",
+    "shader-compilation",
     "gpu-debugging",
     "creative-rendering"
   ],

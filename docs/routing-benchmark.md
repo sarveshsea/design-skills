@@ -11,11 +11,10 @@ real agent conversation.
 The CI requirement is 100% top-1 accuracy for this checked-in set. An expected
 `null` result means the evaluator must abstain.
 
-The current checked-in fixture scores **45/45 (100%)**. The former WGSL WebGPU
-implementation/audit confusion was fixed by normalizing branded platform terms
-before camel-case token splitting; the original prompt remains in the fixture.
-Any future confusion is printed by the command and fails the gate rather than
-being hidden through a fixture exception.
+The current checked-in fixture scores **52/52 (100%)**. It includes concise
+implementation and audit prompts plus negative controls that share shader-adjacent
+words. Any future confusion is printed by the command and fails the gate rather
+than being hidden through a fixture exception.
 
 ## Inputs
 
@@ -46,13 +45,15 @@ features from:
 2. skill name and display name;
 3. tags;
 4. the skill description;
-5. action, domain, and surface facets.
+5. action, domain, and surface facets;
+6. validated action-aware exclusions between overlapping primary routes.
 
 Matches receive an inverse-catalog-frequency weight so rarer terms contribute
 more than generic terms. Multi-token phrases are stronger than isolated words.
 The evaluator abstains unless the leading eligible route reaches the minimum
 score and has either a matched phrase or at least two evidence tokens including
-one non-ambiguous context term.
+one non-ambiguous context term. Prompts with multiple explicit out-of-domain
+signals abstain even when they contain an isolated shader-adjacent term.
 
 Results include numerator, denominator, accuracy, the required threshold, every
 case's expected and predicted route, its top three scored candidates, matching
@@ -67,7 +68,7 @@ npm run check:routing
 Generate the complete machine-readable evidence:
 
 ```bash
-node scripts/evaluate-routing.mjs --json
+node scripts/evaluate-routing-cli.mjs --json
 ```
 
 ## Limitations

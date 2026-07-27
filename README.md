@@ -115,7 +115,7 @@ descriptions:
 
 ```bash
 npm run check:routing
-node scripts/evaluate-routing.mjs --json
+node scripts/evaluate-routing-cli.mjs --json
 ```
 
 This is a deterministic catalog-quality gate, not an evaluation of Mémoire's

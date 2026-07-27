@@ -2,6 +2,10 @@ import { access, lstat, readFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+import {
+  validateRoutingExclusions,
+} from "./validate-routing-exclusions.mjs";
+
 const NAME_PATTERN = /^[a-z][a-z0-9-]{0,62}[a-z0-9]$/;
 const LOCAL_LINK_PATTERN = /\[[^\]]*\]\(([^)]+)\)/g;
 const NOTE_CATEGORIES = new Set(["craft", "research", "connect", "generate"]);
@@ -129,6 +133,7 @@ async function validateRegistry(root, folders, now, freshnessSkillNames) {
         }
       }
     }
+    issues.push(...validateRoutingExclusions(entry, entries, prefix));
     if (!PORTABILITY.has(entry.runtime?.portability)) issues.push(`${prefix}: unknown portability ${entry.runtime?.portability}`);
     const requiredCapabilities = entry.runtime?.requires;
     if (!Array.isArray(requiredCapabilities)) issues.push(`${prefix}: runtime.requires must be an array`);

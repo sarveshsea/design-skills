@@ -1229,6 +1229,7 @@
         ],
         "role": "primary",
         "excludes": [
+          "shader-design-engineering",
           "review-animations",
           "improve-animations"
         ]
@@ -1263,9 +1264,14 @@
         "dithering",
         "particles",
         "rendering-performance",
+        "rendering-audit",
         "reduced-motion",
         "fallbacks",
-        "licensing"
+        "licensing",
+        "webgl2",
+        "webgpu",
+        "swiftui",
+        "metal"
       ],
       "origin": "design-skills-first-party",
       "author": "Sarvesh Chidambaram",
@@ -5017,6 +5023,7 @@
         "metal",
         "swiftui",
         "dithering",
+        "shader-compilation",
         "gpu-debugging",
         "creative-rendering"
       ],

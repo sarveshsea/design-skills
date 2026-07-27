@@ -10,9 +10,14 @@
     "dithering",
     "particles",
     "rendering-performance",
+    "rendering-audit",
     "reduced-motion",
     "fallbacks",
-    "licensing"
+    "licensing",
+    "webgl2",
+    "webgpu",
+    "swiftui",
+    "metal"
   ],
   "sourceUrls": [
     "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/WebGL_best_practices",
