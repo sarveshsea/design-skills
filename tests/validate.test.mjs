@@ -254,6 +254,31 @@ test("rejects broad always activation and duplicate primary intent owners", asyn
   assert.ok(issues.some((issue) => issue.includes("primary routing intent")));
 });
 
+test("rejects unknown, self-referential, and malformed routing exclusions", async () => {
+  const root = await fixture();
+  await updateRegistry(root, (registry) => {
+    registry.skills[0].routing.excludes = [
+      "review-layout",
+      "missing-skill",
+      "Not Kebab Case",
+    ];
+  });
+
+  const issues = await validateRepository(root);
+  assert.ok(
+    issues.some((issue) => issue.includes("cannot exclude itself")),
+    issues.join("\n"),
+  );
+  assert.ok(
+    issues.some((issue) => issue.includes("unknown routing exclusion missing-skill")),
+    issues.join("\n"),
+  );
+  assert.ok(
+    issues.some((issue) => issue.includes("routing exclusion Not Kebab Case")),
+    issues.join("\n"),
+  );
+});
+
 test("rejects quarantined skills in public collections", async () => {
   const root = await fixture();
   await updateRegistry(root, (registry) => {

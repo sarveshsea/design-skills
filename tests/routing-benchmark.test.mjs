@@ -26,7 +26,7 @@ test("representative routing fixture is bounded and covers required categories",
 
   assert.equal(fixture.schemaVersion, 1);
   assert.equal(fixture.minimumAccuracy, 1);
-  assert.ok(fixture.cases.length >= 40);
+  assert.ok(fixture.cases.length >= 50);
   assert.equal(new Set(ids).size, ids.length);
   assert.deepEqual(
     [...categories].sort(),
@@ -40,7 +40,23 @@ test("representative routing fixture is bounded and covers required categories",
     ],
   );
   assert.ok(
-    fixture.cases.filter((entry) => entry.expected === null).length >= 5,
+    fixture.cases.filter((entry) => entry.expected === null).length >= 9,
+  );
+});
+
+test("catalog candidates retain validated routing exclusions", async () => {
+  const catalog = await loadRoutingCatalog(root);
+  const shader = catalog.find(
+    (entry) => entry.name === "shader-design-engineering",
+  );
+  const renderingAudit = catalog.find(
+    (entry) => entry.name === "creative-rendering-audit",
+  );
+
+  assert.deepEqual(shader.excludes, ["creative-rendering-audit"]);
+  assert.ok(
+    renderingAudit.excludes.includes("shader-design-engineering"),
+    "audit and implementation owners must declare their boundary",
   );
 });
 

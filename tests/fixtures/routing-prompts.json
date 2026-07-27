@@ -46,6 +46,30 @@
       "expected": "shader-design-engineering"
     },
     {
+      "id": "shader-fix-compilation",
+      "category": "shader-dither",
+      "prompt": "Fix this shader compilation error.",
+      "expected": "shader-design-engineering"
+    },
+    {
+      "id": "render-audit-concise-webgl2",
+      "category": "creative-rendering",
+      "prompt": "Audit this WebGL2 shader.",
+      "expected": "creative-rendering-audit"
+    },
+    {
+      "id": "render-audit-swiftui-color-effect",
+      "category": "creative-rendering",
+      "prompt": "Audit a SwiftUI colorEffect.",
+      "expected": "creative-rendering-audit"
+    },
+    {
+      "id": "render-audit-create-webgpu",
+      "category": "creative-rendering",
+      "prompt": "Create a rendering audit for our WebGPU effect.",
+      "expected": "creative-rendering-audit"
+    },
+    {
       "id": "render-audit-particles",
       "category": "creative-rendering",
       "prompt": "Audit this WebGL particle effect for frame budget and fallback behavior.",
@@ -271,6 +295,24 @@
       "id": "negative-color-printer",
       "category": "negative-near-miss",
       "prompt": "Why is my office printer out of color ink?",
+      "expected": null
+    },
+    {
+      "id": "negative-api-performance-fallback",
+      "category": "negative-near-miss",
+      "prompt": "Audit our API performance and database fallback.",
+      "expected": null
+    },
+    {
+      "id": "negative-particle-supplier",
+      "category": "negative-near-miss",
+      "prompt": "Review particle supplier licensing and GPU pricing.",
+      "expected": null
+    },
+    {
+      "id": "negative-typescript-compilation",
+      "category": "negative-near-miss",
+      "prompt": "Fix this TypeScript compilation error.",
       "expected": null
     }
   ]
