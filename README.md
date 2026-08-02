@@ -1,5 +1,9 @@
 # Design Skills
 
+<p align="center">
+  <img src="assets/memi-brand-banner.png" alt="Memi — the design layer for agentic AI." width="100%" />
+</p>
+
 [![CI](https://github.com/sarveshsea/design-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/sarveshsea/design-skills/actions/workflows/ci.yml)
 [![Agent Skills](https://skills.sh/b/sarveshsea/design-skills)](https://skills.sh/sarveshsea/design-skills)
 [![License: MIT](https://img.shields.io/badge/license-MIT-111827.svg)](LICENSE)
