@@ -15,12 +15,12 @@ Use this Note when a task needs the memi ecosystem linked consistently across np
 | --- | --- | --- |
 | npm package | `@memi-design/cli` | `npm i -g @memi-design/cli` |
 | CLI proof | local `memi` binary | `memi diagnose`, `memi ux audit --json`, `memi craft audit --json`, `memi tokens --from ./src --report` |
-| MCP server | `server.json` in `sarveshsea/memi` | `memi mcp start --no-figma` |
-| Agent Skills | `skills/memoire-design-tooling/SKILL.md` | `npx skills add sarveshsea/memi --skill memoire-design-tooling` |
-| Codex plugin | `plugins/memoire` | `codex plugin marketplace add sarveshsea/memi --ref main --sparse .agents/plugins --sparse plugins/memoire` |
-| macOS Studio | `sarveshsea/memi-studio` | Tauri/Rust-backed app linked to CLI and MCP workflows |
-| Proof sandbox | `sarveshsea/design-sandbox` | `pnpm memi:agent`, `pnpm memi:diagnose`, `pnpm memi:ux`, `pnpm verify` |
-| Design Skills | `sarveshsea/design-skills` | `npx skills add sarveshsea/design-skills` or `memi notes install <name> --catalog https://www.memoire.cv/notes/community/catalog.v1.json` |
+| MCP server | `server.json` in `memi-design/memi` | `memi mcp start --no-figma` |
+| Agent Skills | `skills/memoire-design-tooling/SKILL.md` | `npx skills add memi-design/memi --skill memoire-design-tooling` |
+| Codex plugin | `plugins/memoire` | `codex plugin marketplace add memi-design/memi --ref main --sparse .agents/plugins --sparse plugins/memoire` |
+| macOS Studio | `memi-design/memi-studio` | Current Tauri/Rust-backed companion linked to CLI and MCP workflows |
+| Proof sandbox | `memi-design/design-sandbox` | `pnpm memi:agent`, `pnpm memi:diagnose`, `pnpm memi:ux`, `pnpm verify` |
+| Design Skills | `memi-design/design-skills` | `npx skills add memi-design/design-skills` or `memi notes install <name> --catalog https://memoire.cv/notes/community/catalog.v1.json` |
 
 ## Review checklist
 
@@ -41,8 +41,8 @@ memi is interface understanding for AI coding agents. Install the npm CLI, expos
 
 ## Sources
 
-- https://github.com/sarveshsea/memi
+- https://github.com/memi-design/memi
 - https://www.npmjs.com/package/@memi-design/cli
-- https://github.com/sarveshsea/memi-studio
-- https://github.com/sarveshsea/design-sandbox
-- https://github.com/sarveshsea/design-skills
+- https://github.com/memi-design/memi-studio
+- https://github.com/memi-design/design-sandbox
+- https://github.com/memi-design/design-skills

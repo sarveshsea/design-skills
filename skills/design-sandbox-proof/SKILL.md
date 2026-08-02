@@ -12,7 +12,7 @@ Use this Note when a user asks for a real repo that proves memi works with app c
 ## Clone and verify
 
 ```bash
-git clone https://github.com/sarveshsea/design-sandbox.git
+git clone https://github.com/memi-design/design-sandbox.git
 cd design-sandbox
 pnpm install
 pnpm memi:agent
@@ -42,6 +42,6 @@ design-sandbox is the public memi proof workspace: a small Next.js/Tailwind/shad
 
 ## Sources
 
-- https://github.com/sarveshsea/design-sandbox
-- https://github.com/sarveshsea/memi
+- https://github.com/memi-design/design-sandbox
+- https://github.com/memi-design/memi
 - https://www.npmjs.com/package/@memi-design/cli

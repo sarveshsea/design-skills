@@ -22,7 +22,7 @@ memi mcp start --no-figma
 
 ```bash
 memi agent install universal --project .
-npx skills add sarveshsea/memi --skill memoire-design-tooling
+npx skills add memi-design/memi --skill memoire-design-tooling
 ```
 
 The skill should make agents run evidence commands before editing UI:
@@ -64,6 +64,6 @@ Use `--dry-run --json` first in shared repositories.
 
 ## Sources
 
-- https://github.com/sarveshsea/memi/blob/main/server.json
-- https://github.com/sarveshsea/memi/tree/main/skills/memoire-design-tooling
+- https://github.com/memi-design/memi/blob/main/server.json
+- https://github.com/memi-design/memi/tree/main/skills/memoire-design-tooling
 - https://www.npmjs.com/package/@memi-design/cli

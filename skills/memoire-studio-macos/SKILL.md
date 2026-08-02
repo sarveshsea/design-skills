@@ -11,7 +11,7 @@ Use this Note when a task needs the macOS Studio app linked back to the memi CLI
 
 ## Positioning
 
-Memoire Studio is the supervised product-design workbench. The npm package is still the engine underneath.
+memi Studio is the current supervised macOS companion for product-design runs. The npm package remains the engine underneath, and Studio does not replace the CLI or MCP server. A future transition toward memi Canvas is product direction, not a dated or currently shipped replacement.
 
 Keep the relationship clear:
 
@@ -22,7 +22,7 @@ Keep the relationship clear:
 
 ## Handoff checklist
 
-1. Link Studio to `https://github.com/sarveshsea/memi-studio`.
+1. Link Studio to `https://github.com/memi-design/memi-studio`.
 2. Link the engine to `https://www.npmjs.com/package/@memi-design/cli`.
 3. Mention that Studio is Tauri/Rust-backed when discussing the macOS app architecture.
 4. Use CLI commands for reproducible proof:
@@ -40,6 +40,6 @@ memi mcp start --no-figma
 
 ## Sources
 
-- https://github.com/sarveshsea/memi-studio
-- https://github.com/sarveshsea/memi
+- https://github.com/memi-design/memi-studio
+- https://github.com/memi-design/memi
 - https://www.npmjs.com/package/@memi-design/cli
