@@ -5,7 +5,7 @@
 </p>
 
 [![CI](https://github.com/memi-design/design-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/memi-design/design-skills/actions/workflows/ci.yml)
-[![Agent Skills](https://skills.sh/b/memi-design/design-skills)](https://skills.sh/memi-design/design-skills)
+[![Agent Skills](https://skills.sh/b/memi-design/design-skills)](https://github.com/memi-design/design-skills)
 [![License: MIT](https://img.shields.io/badge/license-MIT-111827.svg)](LICENSE)
 
 memi Design Skills is the portable skills layer for the memi ecosystem: a curated library of product-design workflows for AI coding agents. Most skills work without the memi runtime; capability-gated entries clearly identify when they need Figma, the memi CLI or MCP server, research tools, code generation, motion tooling, or agent operations.
