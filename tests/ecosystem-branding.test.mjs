@@ -85,6 +85,13 @@ test("public catalog copy uses the memi organization and preserves the legacy pa
   assert.match(readme, /portable skills layer for the memi ecosystem/);
   assert.match(readme, /^## Installation$/m);
   assert.match(readme, /npx skills@1\.5\.17 add memi-design\/design-skills --list/);
+  assert.match(readme, /npx skills@1\.5\.17 add memi-design\/design-skills --skill better-ui/);
+  assert.ok(
+    readme.includes(
+      "Installing the repository without `--skill` may offer or install the entire discoverable corpus, including integration-specific and internal compatibility payloads.",
+    ),
+  );
+  assert.match(readme, /Review \[`catalog\.json`\]\(catalog\.json\) first\./);
   assert.match(
     readme,
     /\[!\[Agent Skills\]\(https:\/\/skills\.sh\/b\/memi-design\/design-skills\)\]\(https:\/\/github\.com\/memi-design\/design-skills#installation\)/,
