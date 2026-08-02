@@ -22,7 +22,11 @@ test("public catalog copy uses the memi organization and preserves the legacy pa
   assert.match(readme, /94 installable skills: 88 canonical workflows and 6 deprecated compatibility entries/);
   assert.match(readme, /portable skills layer for the memi ecosystem/);
   assert.match(readme, /npx skills@1\.5\.17 add memi-design\/design-skills --list/);
-  assert.match(readme, /https:\/\/skills\.sh\/memi-design\/design-skills/);
+  assert.match(
+    readme,
+    /\[!\[Agent Skills\]\(https:\/\/skills\.sh\/b\/memi-design\/design-skills\)\]\(https:\/\/github\.com\/memi-design\/design-skills\)/,
+  );
+  assert.doesNotMatch(readme, /\]\(https:\/\/skills\.sh\/memi-design\/design-skills\)/);
   assert.match(readme, /https:\/\/memoire\.cv/);
   assert.match(readme, /https:\/\/github\.com\/memi-design\/memi-studio/);
   assert.doesNotMatch(readme, /sarveshsea\/design-skills/);
