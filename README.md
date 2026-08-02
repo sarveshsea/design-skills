@@ -1,14 +1,16 @@
-# Design Skills
+# memi Design Skills
 
 <p align="center">
   <img src="assets/memi-brand-banner.png" alt="Memi — the design layer for agentic AI." width="100%" />
 </p>
 
-[![CI](https://github.com/sarveshsea/design-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/sarveshsea/design-skills/actions/workflows/ci.yml)
-[![Agent Skills](https://skills.sh/b/sarveshsea/design-skills)](https://skills.sh/sarveshsea/design-skills)
+[![CI](https://github.com/memi-design/design-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/memi-design/design-skills/actions/workflows/ci.yml)
+[![Agent Skills](https://skills.sh/b/memi-design/design-skills)](https://skills.sh/memi-design/design-skills)
 [![License: MIT](https://img.shields.io/badge/license-MIT-111827.svg)](LICENSE)
 
-Design Skills is a curated library of product-design workflows for AI coding agents. It combines portable design judgment with clearly labeled integration workflows for Figma, Mémoire, research tools, code generation, motion, and agent operations.
+memi Design Skills is the portable skills layer for the memi ecosystem: a curated library of product-design workflows for AI coding agents. Most skills work without the memi runtime; capability-gated entries clearly identify when they need Figma, the memi CLI or MCP server, research tools, code generation, motion tooling, or agent operations.
+
+[memoire.cv](https://memoire.cv) · [memi engine and CLI](https://github.com/memi-design/memi) · [memi Studio](https://github.com/memi-design/memi-studio)
 
 <!-- GENERATED:CATALOG-SUMMARY:START -->
 The current catalog contains **94 installable skills: 88 canonical workflows and 6 deprecated compatibility entries**.
@@ -27,17 +29,17 @@ The repository keeps three sources of truth:
 Inspect the available skills before installing:
 
 ```bash
-npx skills@1.5.17 add sarveshsea/design-skills --list
+npx skills@1.5.17 add memi-design/design-skills --list
 ```
 
 Install only the workflow you need:
 
 ```bash
-npx skills@1.5.17 add sarveshsea/design-skills --skill better-ui
-npx skills@1.5.17 add sarveshsea/design-skills --skill accessibility-audit
-npx skills@1.5.17 add sarveshsea/design-skills --skill swiftui-design-engineering
-npx skills@1.5.17 add sarveshsea/design-skills --skill shader-design-engineering
-npx skills@1.5.17 add sarveshsea/design-skills --skill creative-rendering-audit
+npx skills@1.5.17 add memi-design/design-skills --skill better-ui
+npx skills@1.5.17 add memi-design/design-skills --skill accessibility-audit
+npx skills@1.5.17 add memi-design/design-skills --skill swiftui-design-engineering
+npx skills@1.5.17 add memi-design/design-skills --skill shader-design-engineering
+npx skills@1.5.17 add memi-design/design-skills --skill creative-rendering-audit
 ```
 
 Installing the repository without `--skill` may offer or install the entire discoverable corpus, including integration-specific and internal compatibility payloads. Review [`catalog.json`](catalog.json) first. The upstream Skills CLI does not currently implement this repository's collection manifests as an installation primitive.
@@ -45,14 +47,14 @@ Installing the repository without `--skill` may offer or install the entire disc
 Mémoire can consume the same folders as Notes:
 
 ```bash
-memi notes install better-ui --catalog https://www.memoire.cv/notes/community/catalog.v1.json
+memi notes install better-ui --catalog https://memoire.cv/notes/community/catalog.v1.json
 ```
 
 ## Portability
 
 - **Portable:** usable from supplied files, screenshots, or text without a proprietary runtime.
 - **Capability-gated:** requires a declared integration such as Figma, Docker, Linear, Notion, Remotion, or Hyperframes.
-- **Mémoire-only:** depends on the Mémoire engine or MCP surface.
+- **memi-only:** depends on the memi engine or MCP surface.
 - **Quarantined:** blocked from public collections and routing when redistribution or safety evidence is unresolved.
 
 Discoverability does not imply that a client has every required tool. Check each catalog entry's `runtime.requires`, fallback, visibility, maturity, and status before use.
@@ -75,11 +77,13 @@ Collections are curated navigation and policy manifests under `registry/collecti
 | `research` | 9 | Optional | Evidence collection, synthesis, and evaluative research workflows. |
 <!-- GENERATED:COLLECTIONS:END -->
 
-The default `core` collection is intentionally limited to public, stable, canonical, portable skills. Figma and Mémoire workflows live in capability-specific collections.
+The default `core` collection is intentionally limited to public, stable, canonical, portable skills. Figma and memi workflows live in capability-specific collections.
 
 ## Compatibility migrations
 
 Renamed or consolidated slugs remain self-contained for one compatibility release. They do not own primary routing intents or appear in collections.
+
+`@memoire/design-skills` remains a legacy repository-tooling identifier for compatibility. It is not the public npm installation surface; install the catalog from `memi-design/design-skills` with the Skills CLI commands above.
 
 | Historical slug | Canonical workflow |
 | --- | --- |
@@ -105,7 +109,7 @@ Explicit installation of a historical slug continues to work during the compatib
 | Build a shader or dither effect | [`shader-design-engineering`](skills/shader-design-engineering/SKILL.md) |
 | Audit shaders, particles, or GPU effects | [`creative-rendering-audit`](skills/creative-rendering-audit/SKILL.md) |
 | Synthesize research | [`data-synthesis`](skills/data-synthesis/SKILL.md) |
-| Work through Mémoire | [`memoire-design-tooling`](skills/memoire-design-tooling/SKILL.md) |
+| Work through memi | [`memoire-design-tooling`](skills/memoire-design-tooling/SKILL.md) |
 | Build or review SwiftUI | [`swiftui-design-engineering`](skills/swiftui-design-engineering/SKILL.md) |
 | Adopt Liquid Glass | [`swiftui-liquid-glass`](skills/swiftui-liquid-glass/SKILL.md) |
 | Fix Swift 6 concurrency | [`swift-concurrency-safety`](skills/swift-concurrency-safety/SKILL.md) |
@@ -122,7 +126,7 @@ npm run check:routing
 node scripts/evaluate-routing-cli.mjs --json
 ```
 
-This is a deterministic catalog-quality gate, not an evaluation of Mémoire's
+This is a deterministic catalog-quality gate, not an evaluation of memi's
 runtime intent classifier. The fixture, scoring method, abstention rules,
 confusions, and limitations are documented in
 [`docs/routing-benchmark.md`](docs/routing-benchmark.md).

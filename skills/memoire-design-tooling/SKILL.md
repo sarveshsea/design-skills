@@ -68,7 +68,7 @@ memi agent install cursor --project .
 memi agent install codex
 memi agent install codex-plugin
 memi agent install opencode --project .
-npx skills add sarveshsea/memi --skill memoire-design-tooling
+npx skills add memi-design/memi --skill memoire-design-tooling
 ```
 
 Use `memi agent install --dry-run --json` before writing kit files in shared repositories.

@@ -50,6 +50,6 @@ Do not describe a UI as polished unless the handoff names:
 
 ## Sources
 
-- https://github.com/sarveshsea/memi
+- https://github.com/memi-design/memi
 - https://www.npmjs.com/package/@memi-design/cli
-- https://github.com/sarveshsea/design-sandbox
+- https://github.com/memi-design/design-sandbox

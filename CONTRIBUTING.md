@@ -1,6 +1,6 @@
 # Contributing
 
-Design Skills accepts focused, source-backed skills that improve an agent's design judgment or design workflow.
+memi Design Skills accepts focused, source-backed skills that improve an agent's design judgment or design workflow.
 
 ## Before writing
 
