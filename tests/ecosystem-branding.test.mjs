@@ -87,7 +87,7 @@ test("public catalog copy uses the memi organization and preserves the legacy pa
   assert.match(readme, /npx skills@1\.5\.17 add memi-design\/design-skills --list/);
   assert.match(
     readme,
-    /\[!\[Agent Skills\]\(https:\/\/skills\.sh\/b\/memi-design\/design-skills\)\]\(https:\/\/github\.com\/memi-design\/design-skills\)/,
+    /\[!\[Agent Skills\]\(https:\/\/skills\.sh\/b\/memi-design\/design-skills\)\]\(https:\/\/github\.com\/memi-design\/design-skills#installation\)/,
   );
   assert.doesNotMatch(readme, /\]\(https:\/\/skills\.sh\/memi-design\/design-skills\)/);
   assert.match(readme, /https:\/\/memoire\.cv/);

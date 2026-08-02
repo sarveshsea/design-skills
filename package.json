@@ -3,6 +3,7 @@
   "version": "1.2.0",
   "private": true,
   "description": "Curated, installable design skills for AI coding agents.",
+  "license": "MIT",
   "homepage": "https://github.com/memi-design/design-skills",
   "repository": {
     "type": "git",

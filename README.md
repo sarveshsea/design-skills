@@ -1,16 +1,20 @@
 # memi Design Skills
 
 <p align="center">
+  <img src="assets/memi-avatar.png" alt="Memi pixel-heart mark" width="64" />
+  <br />
   <img src="assets/memi-brand-banner.png" alt="Memi — the design layer for agentic AI." width="100%" />
 </p>
 
 [![CI](https://github.com/memi-design/design-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/memi-design/design-skills/actions/workflows/ci.yml)
-[![Agent Skills](https://skills.sh/b/memi-design/design-skills)](https://github.com/memi-design/design-skills)
+[![Agent Skills](https://skills.sh/b/memi-design/design-skills)](https://github.com/memi-design/design-skills#installation)
 [![License: MIT](https://img.shields.io/badge/license-MIT-111827.svg)](LICENSE)
 
-memi Design Skills is the portable skills layer for the memi ecosystem: a curated library of product-design workflows for AI coding agents. Most skills work without the memi runtime; capability-gated entries clearly identify when they need Figma, the memi CLI or MCP server, research tools, code generation, motion tooling, or agent operations.
+Governed catalog of portable and capability-gated design workflows for coding agents. memi Design Skills is the portable skills layer for the memi ecosystem: a curated library of product-design workflows for AI coding agents. Most skills work without the memi runtime; capability-gated entries clearly identify when they need Figma, the memi CLI or MCP server, research tools, code generation, motion tooling, or agent operations.
 
 [memoire.cv](https://memoire.cv) · [memi engine and CLI](https://github.com/memi-design/memi) · [memi Studio](https://github.com/memi-design/memi-studio)
+
+**Status:** Available as a source repository catalog.
 
 <!-- GENERATED:CATALOG-SUMMARY:START -->
 The current catalog contains **94 installable skills: 88 canonical workflows and 6 deprecated compatibility entries**.
@@ -24,7 +28,7 @@ The repository keeps three sources of truth:
 
 `note.json` manifests and `catalog.json` are deterministic generated projections. Do not edit them directly.
 
-## Install safely
+## Installation
 
 Inspect the available skills before installing:
 
@@ -83,7 +87,7 @@ The default `core` collection is intentionally limited to public, stable, canoni
 
 Renamed or consolidated slugs remain self-contained for one compatibility release. They do not own primary routing intents or appear in collections.
 
-`@memoire/design-skills` remains a legacy repository-tooling identifier for compatibility. It is not the public npm installation surface; install the catalog from `memi-design/design-skills` with the Skills CLI commands above.
+`@memoire/design-skills` remains a legacy repository-tooling identifier for compatibility. Repository tooling identifier only; not a public npm installation surface. Install the catalog from `memi-design/design-skills` with the Skills CLI commands above.
 
 | Historical slug | Canonical workflow |
 | --- | --- |
